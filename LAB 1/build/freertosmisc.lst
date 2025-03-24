@@ -1,0 +1,258 @@
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 1
+
+
+   1              		.file	"freertosmisc.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text.vApplicationTickHook,"ax",@progbits
+  10              		.align	1
+  11              		.globl	vApplicationTickHook
+  13              	vApplicationTickHook:
+  14              	.LFB2:
+  15              		.file 1 "lib/freertos/src/freertosmisc.c"
+   1:lib/freertos/src/freertosmisc.c **** #include "FreeRTOS.h"
+   2:lib/freertos/src/freertosmisc.c **** #include "task.h"
+   3:lib/freertos/src/freertosmisc.c **** void vApplicationTickHook( void )
+   4:lib/freertos/src/freertosmisc.c **** {
+  16              		.loc 1 4 1
+  17              		.cfi_startproc
+   5:lib/freertos/src/freertosmisc.c **** BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+  18              		.loc 1 5 1
+  19              	.LVL0:
+   6:lib/freertos/src/freertosmisc.c **** static uint32_t ulCount = 0;
+  20              		.loc 1 6 1
+   7:lib/freertos/src/freertosmisc.c **** 
+   8:lib/freertos/src/freertosmisc.c ****     /* The RTOS tick hook function is enabled by setting configUSE_TICK_HOOK to
+   9:lib/freertos/src/freertosmisc.c ****     1 in FreeRTOSConfig.h.
+  10:lib/freertos/src/freertosmisc.c **** 
+  11:lib/freertos/src/freertosmisc.c ****     "Give" the semaphore on every 500th tick interrupt. */
+  12:lib/freertos/src/freertosmisc.c ****     // xSemaphoreGiveFromISR( xEventSemaphore, &xHigherPriorityTaskWoken );
+  13:lib/freertos/src/freertosmisc.c ****     //    ulCount = 0UL;
+  14:lib/freertos/src/freertosmisc.c **** 
+  15:lib/freertos/src/freertosmisc.c ****    // 	GPIO_REG(GPIO_OUTPUT_VAL)  ^=   (0x1 << GREEN_LED_GPIO_OFFSET) ;
+  16:lib/freertos/src/freertosmisc.c ****     	
+  17:lib/freertos/src/freertosmisc.c **** 
+  18:lib/freertos/src/freertosmisc.c ****     /* If xHigherPriorityTaskWoken is pdTRUE then a context switch should
+  19:lib/freertos/src/freertosmisc.c ****     normally be performed before leaving the interrupt (because during the
+  20:lib/freertos/src/freertosmisc.c ****     execution of the interrupt a task of equal or higher priority than the
+  21:lib/freertos/src/freertosmisc.c ****     running task was unblocked).  The syntax required to context switch from
+  22:lib/freertos/src/freertosmisc.c ****     an interrupt is port dependent, so check the documentation of the port you
+  23:lib/freertos/src/freertosmisc.c ****     are using.
+  24:lib/freertos/src/freertosmisc.c **** 
+  25:lib/freertos/src/freertosmisc.c ****     In this case, the function is running in the context of the tick interrupt,
+  26:lib/freertos/src/freertosmisc.c ****     which will automatically check for the higher priority task to run anyway,
+  27:lib/freertos/src/freertosmisc.c ****     so no further action is required. */
+  28:lib/freertos/src/freertosmisc.c **** }
+  21              		.loc 1 28 1 is_stmt 0
+  22 0000 8280     		ret
+  23              		.cfi_endproc
+  24              	.LFE2:
+  26              		.section	.text.vApplicationMallocFailedHook,"ax",@progbits
+  27              		.align	1
+  28              		.globl	vApplicationMallocFailedHook
+  30              	vApplicationMallocFailedHook:
+  31              	.LFB3:
+  29:lib/freertos/src/freertosmisc.c **** /*-----------------------------------------------------------*/
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 2
+
+
+  30:lib/freertos/src/freertosmisc.c **** 
+  31:lib/freertos/src/freertosmisc.c **** void vApplicationMallocFailedHook( void )
+  32:lib/freertos/src/freertosmisc.c **** {
+  32              		.loc 1 32 1 is_stmt 1
+  33              		.cfi_startproc
+  34              	.L3:
+  33:lib/freertos/src/freertosmisc.c ****     /* The malloc failed hook is enabled by setting
+  34:lib/freertos/src/freertosmisc.c ****     configUSE_MALLOC_FAILED_HOOK to 1 in FreeRTOSConfig.h.
+  35:lib/freertos/src/freertosmisc.c **** 
+  36:lib/freertos/src/freertosmisc.c ****     Called if a call to pvPortMalloc() fails because there is insufficient
+  37:lib/freertos/src/freertosmisc.c ****     free memory available in the FreeRTOS heap.  pvPortMalloc() is called
+  38:lib/freertos/src/freertosmisc.c ****     internally by FreeRTOS API functions that create tasks, queues, software
+  39:lib/freertos/src/freertosmisc.c ****     timers, and semaphores.  The size of the FreeRTOS heap is set by the
+  40:lib/freertos/src/freertosmisc.c ****     configTOTAL_HEAP_SIZE configuration constant in FreeRTOSConfig.h. */
+  41:lib/freertos/src/freertosmisc.c **** 
+  42:lib/freertos/src/freertosmisc.c ****     for( ;; );
+  35              		.loc 1 42 5 discriminator 1
+  36              		.loc 1 42 14 discriminator 1
+  37 0000 01A0     		j	.L3
+  38              		.cfi_endproc
+  39              	.LFE3:
+  41              		.section	.text.vApplicationStackOverflowHook,"ax",@progbits
+  42              		.align	1
+  43              		.globl	vApplicationStackOverflowHook
+  45              	vApplicationStackOverflowHook:
+  46              	.LFB4:
+  43:lib/freertos/src/freertosmisc.c **** }
+  44:lib/freertos/src/freertosmisc.c **** /*-----------------------------------------------------------*/
+  45:lib/freertos/src/freertosmisc.c **** 
+  46:lib/freertos/src/freertosmisc.c **** void vApplicationStackOverflowHook( TaskHandle_t xTask, signed char *pcTaskName )
+  47:lib/freertos/src/freertosmisc.c **** {
+  47              		.loc 1 47 1
+  48              		.cfi_startproc
+  49              	.LVL1:
+  48:lib/freertos/src/freertosmisc.c ****   //  ( void ) pcTaskName;
+  49:lib/freertos/src/freertosmisc.c ****    // ( void ) xTask;
+  50:lib/freertos/src/freertosmisc.c **** 
+  51:lib/freertos/src/freertosmisc.c ****     /* Run time stack overflow checking is performed if
+  52:lib/freertos/src/freertosmisc.c ****     configconfigCHECK_FOR_STACK_OVERFLOW is defined to 1 or 2.  This hook
+  53:lib/freertos/src/freertosmisc.c ****     function is called if a stack overflow is detected.  pxCurrentTCB can be
+  54:lib/freertos/src/freertosmisc.c ****     inspected in the debugger if the task name passed into this function is
+  55:lib/freertos/src/freertosmisc.c ****     corrupt. */
+  56:lib/freertos/src/freertosmisc.c ****     write(1, "Stack Overflow\n", 15);
+  50              		.loc 1 56 5
+  51 0000 B7050000 		lui	a1,%hi(.LC0)
+  52              	.LVL2:
+  47:lib/freertos/src/freertosmisc.c ****   //  ( void ) pcTaskName;
+  53              		.loc 1 47 1 is_stmt 0
+  54 0004 4111     		addi	sp,sp,-16
+  55              	.LCFI0:
+  56              		.cfi_def_cfa_offset 16
+  57              		.loc 1 56 5
+  58 0006 3D46     		li	a2,15
+  59 0008 93850500 		addi	a1,a1,%lo(.LC0)
+  60 000c 0545     		li	a0,1
+  61              	.LVL3:
+  47:lib/freertos/src/freertosmisc.c ****   //  ( void ) pcTaskName;
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 3
+
+
+  62              		.loc 1 47 1
+  63 000e 06C6     		sw	ra,12(sp)
+  64              		.cfi_offset 1, -4
+  65              		.loc 1 56 5
+  66 0010 97000000 		call	write
+  66      E7800000 
+  67              	.LVL4:
+  68              	.L5:
+  57:lib/freertos/src/freertosmisc.c ****     for( ;; );
+  69              		.loc 1 57 5 is_stmt 1 discriminator 1
+  70              		.loc 1 57 14 discriminator 1
+  71 0018 01A0     		j	.L5
+  72              		.cfi_endproc
+  73              	.LFE4:
+  75              		.section	.text.vApplicationIdleHook,"ax",@progbits
+  76              		.align	1
+  77              		.globl	vApplicationIdleHook
+  79              	vApplicationIdleHook:
+  80              	.LFB7:
+  81              		.cfi_startproc
+  82 0000 8280     		ret
+  83              		.cfi_endproc
+  84              	.LFE7:
+  86              		.section	.rodata.vApplicationStackOverflowHook.str1.4,"aMS",@progbits,1
+  87              		.align	2
+  88              	.LC0:
+  89 0000 53746163 		.string	"Stack Overflow\n"
+  89      6B204F76 
+  89      6572666C 
+  89      6F770A00 
+  90              		.text
+  91              	.Letext0:
+  92              		.file 2 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\lib\\gcc\\riscv64-unk
+  93              		.file 3 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+  94              		.file 4 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+  95              		.file 5 "lib/freertos/include/portmacro.h"
+  96              		.file 6 "lib/freertos/include/task.h"
+  97              		.file 7 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 freertosmisc.c
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:13     .text.vApplicationTickHook:0000000000000000 vApplicationTickHook
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:17     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:18     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:20     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:21     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:22     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:23     .text.vApplicationTickHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:30     .text.vApplicationMallocFailedHook:0000000000000000 vApplicationMallocFailedHook
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:33     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:35     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:36     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:37     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:38     .text.vApplicationMallocFailedHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:45     .text.vApplicationStackOverflowHook:0000000000000000 vApplicationStackOverflowHook
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:48     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:50     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:51     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:54     .text.vApplicationStackOverflowHook:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:56     .text.vApplicationStackOverflowHook:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:58     .text.vApplicationStackOverflowHook:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:63     .text.vApplicationStackOverflowHook:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:64     .text.vApplicationStackOverflowHook:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:66     .text.vApplicationStackOverflowHook:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:70     .text.vApplicationStackOverflowHook:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:71     .text.vApplicationStackOverflowHook:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:72     .text.vApplicationStackOverflowHook:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:79     .text.vApplicationIdleHook:0000000000000000 vApplicationIdleHook
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:81     .text.vApplicationIdleHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:83     .text.vApplicationIdleHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:26     .text.vApplicationTickHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:41     .text.vApplicationMallocFailedHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:75     .text.vApplicationStackOverflowHook:000000000000001a .L0 
+                     .debug_frame:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:34     .text.vApplicationMallocFailedHook:0000000000000000 .L3
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:88     .rodata.vApplicationStackOverflowHook.str1.4:0000000000000000 .LC0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:68     .text.vApplicationStackOverflowHook:0000000000000018 .L5
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:351    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:784    .debug_str:000000000000016d .LASF26
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:750    .debug_str:0000000000000049 .LASF27
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:796    .debug_str:000000000000022a .LASF28
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:726    .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:736    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:744    .debug_str:0000000000000020 .LASF8
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:764    .debug_str:00000000000000cb .LASF0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:756    .debug_str:0000000000000089 .LASF1
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:772    .debug_str:000000000000011c .LASF2
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:792    .debug_str:0000000000000212 .LASF3
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:794    .debug_str:000000000000021e .LASF4
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:752    .debug_str:0000000000000069 .LASF5
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:780    .debug_str:0000000000000158 .LASF6
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:788    .debug_str:00000000000001fe .LASF7
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:760    .debug_str:00000000000000a2 .LASF9
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:754    .debug_str:0000000000000077 .LASF10
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:766    .debug_str:00000000000000d8 .LASF11
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:786    .debug_str:00000000000001f5 .LASF12
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 5
+
+
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:776    .debug_str:000000000000012f .LASF17
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:790    .debug_str:0000000000000207 .LASF13
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:798    .debug_str:000000000000026e .LASF14
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:748    .debug_str:000000000000003c .LASF15
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:774    .debug_str:000000000000012a .LASF16
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:740    .debug_str:0000000000000006 .LASF18
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:800    .debug_str:000000000000027a .LASF29
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:770    .debug_str:000000000000010c .LASF23
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:762    .debug_str:00000000000000ad .LASF30
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:46     .text.vApplicationStackOverflowHook:0000000000000000 .LFB4
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:73     .text.vApplicationStackOverflowHook:000000000000001a .LFE4
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:668    .debug_loc:0000000000000000 .LLST0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:738    .debug_str:0000000000000000 .LASF19
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:681    .debug_loc:0000000000000020 .LLST1
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:782    .debug_str:0000000000000162 .LASF20
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:695    .debug_loc:0000000000000041 .LLST2
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:758    .debug_str:000000000000009c .LASF21
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:67     .text.vApplicationStackOverflowHook:0000000000000018 .LVL4
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:768    .debug_str:00000000000000ef .LASF31
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:31     .text.vApplicationMallocFailedHook:0000000000000000 .LFB3
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:39     .text.vApplicationMallocFailedHook:0000000000000002 .LFE3
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:746    .debug_str:0000000000000027 .LASF22
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:778    .debug_str:000000000000013f .LASF24
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:742    .debug_str:0000000000000018 .LASF25
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:14     .text.vApplicationTickHook:0000000000000000 .LFB2
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:24     .text.vApplicationTickHook:0000000000000002 .LFE2
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:55     .text.vApplicationStackOverflowHook:0000000000000006 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:49     .text.vApplicationStackOverflowHook:0000000000000000 .LVL1
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:61     .text.vApplicationStackOverflowHook:000000000000000e .LVL3
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:52     .text.vApplicationStackOverflowHook:0000000000000004 .LVL2
+C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:99     .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+write

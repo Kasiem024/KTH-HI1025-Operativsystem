@@ -1,0 +1,1908 @@
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
+
+
+   1              		.file	"port.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text.prvTaskExitError,"ax",@progbits
+  10              		.align	1
+  12              	prvTaskExitError:
+  13              	.LFB11:
+  14              		.file 1 "lib/freertos/src/port.c"
+   1:lib/freertos/src/port.c **** /*
+   2:lib/freertos/src/port.c ****     FreeRTOS V9.0.0 - Copyright (C) 2016 Real Time Engineers Ltd.
+   3:lib/freertos/src/port.c ****     All rights reserved
+   4:lib/freertos/src/port.c **** 
+   5:lib/freertos/src/port.c ****     VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
+   6:lib/freertos/src/port.c **** 
+   7:lib/freertos/src/port.c ****     This file is part of the FreeRTOS distribution.
+   8:lib/freertos/src/port.c **** 
+   9:lib/freertos/src/port.c ****     FreeRTOS is free software; you can redistribute it and/or modify it under
+  10:lib/freertos/src/port.c ****     the terms of the GNU General Public License (version 2) as published by the
+  11:lib/freertos/src/port.c ****     Free Software Foundation >>>> AND MODIFIED BY <<<< the FreeRTOS exception.
+  12:lib/freertos/src/port.c **** 
+  13:lib/freertos/src/port.c ****     ***************************************************************************
+  14:lib/freertos/src/port.c ****     >>!   NOTE: The modification to the GPL is included to allow you to     !<<
+  15:lib/freertos/src/port.c ****     >>!   distribute a combined work that includes FreeRTOS without being   !<<
+  16:lib/freertos/src/port.c ****     >>!   obliged to provide the source code for proprietary components     !<<
+  17:lib/freertos/src/port.c ****     >>!   outside of the FreeRTOS kernel.                                   !<<
+  18:lib/freertos/src/port.c ****     ***************************************************************************
+  19:lib/freertos/src/port.c **** 
+  20:lib/freertos/src/port.c ****     FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
+  21:lib/freertos/src/port.c ****     WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  22:lib/freertos/src/port.c ****     FOR A PARTICULAR PURPOSE.  Full license text is available on the following
+  23:lib/freertos/src/port.c ****     link: http://www.freertos.org/a00114.html
+  24:lib/freertos/src/port.c **** 
+  25:lib/freertos/src/port.c ****     ***************************************************************************
+  26:lib/freertos/src/port.c ****      *                                                                       *
+  27:lib/freertos/src/port.c ****      *    FreeRTOS provides completely free yet professionally developed,    *
+  28:lib/freertos/src/port.c ****      *    robust, strictly quality controlled, supported, and cross          *
+  29:lib/freertos/src/port.c ****      *    platform software that is more than just the market leader, it     *
+  30:lib/freertos/src/port.c ****      *    is the industry's de facto standard.                               *
+  31:lib/freertos/src/port.c ****      *                                                                       *
+  32:lib/freertos/src/port.c ****      *    Help yourself get started quickly while simultaneously helping     *
+  33:lib/freertos/src/port.c ****      *    to support the FreeRTOS project by purchasing a FreeRTOS           *
+  34:lib/freertos/src/port.c ****      *    tutorial book, reference manual, or both:                          *
+  35:lib/freertos/src/port.c ****      *    http://www.FreeRTOS.org/Documentation                              *
+  36:lib/freertos/src/port.c ****      *                                                                       *
+  37:lib/freertos/src/port.c ****     ***************************************************************************
+  38:lib/freertos/src/port.c **** 
+  39:lib/freertos/src/port.c ****     http://www.FreeRTOS.org/FAQHelp.html - Having a problem?  Start by reading
+  40:lib/freertos/src/port.c ****     the FAQ page "My application does not run, what could be wrong?".  Have you
+  41:lib/freertos/src/port.c ****     defined configASSERT()?
+  42:lib/freertos/src/port.c **** 
+  43:lib/freertos/src/port.c ****     http://www.FreeRTOS.org/support - In return for receiving this top quality
+  44:lib/freertos/src/port.c ****     embedded software for free we request you assist our global community by
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 2
+
+
+  45:lib/freertos/src/port.c ****     participating in the support forum.
+  46:lib/freertos/src/port.c **** 
+  47:lib/freertos/src/port.c ****     http://www.FreeRTOS.org/training - Investing in training allows your team to
+  48:lib/freertos/src/port.c ****     be as productive as possible as early as possible.  Now you can receive
+  49:lib/freertos/src/port.c ****     FreeRTOS training directly from Richard Barry, CEO of Real Time Engineers
+  50:lib/freertos/src/port.c ****     Ltd, and the world's leading authority on the world's leading RTOS.
+  51:lib/freertos/src/port.c **** 
+  52:lib/freertos/src/port.c ****     http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
+  53:lib/freertos/src/port.c ****     including FreeRTOS+Trace - an indispensable productivity tool, a DOS
+  54:lib/freertos/src/port.c ****     compatible FAT file system, and our tiny thread aware UDP/IP stack.
+  55:lib/freertos/src/port.c **** 
+  56:lib/freertos/src/port.c ****     http://www.FreeRTOS.org/labs - Where new FreeRTOS products go to incubate.
+  57:lib/freertos/src/port.c ****     Come and try FreeRTOS+TCP, our new open source TCP/IP stack for FreeRTOS.
+  58:lib/freertos/src/port.c **** 
+  59:lib/freertos/src/port.c ****     http://www.OpenRTOS.com - Real Time Engineers ltd. license FreeRTOS to High
+  60:lib/freertos/src/port.c ****     Integrity Systems ltd. to sell under the OpenRTOS brand.  Low cost OpenRTOS
+  61:lib/freertos/src/port.c ****     licenses offer ticketed support, indemnification and commercial middleware.
+  62:lib/freertos/src/port.c **** 
+  63:lib/freertos/src/port.c ****     http://www.SafeRTOS.com - High Integrity Systems also provide a safety
+  64:lib/freertos/src/port.c ****     engineered and independently SIL3 certified version for use in safety and
+  65:lib/freertos/src/port.c ****     mission critical applications that require provable dependability.
+  66:lib/freertos/src/port.c **** 
+  67:lib/freertos/src/port.c ****     1 tab == 4 spaces!
+  68:lib/freertos/src/port.c **** */
+  69:lib/freertos/src/port.c **** 
+  70:lib/freertos/src/port.c **** /*-----------------------------------------------------------
+  71:lib/freertos/src/port.c ****  * Implementation of functions defined in portable.h for the ARM CM3 port.
+  72:lib/freertos/src/port.c ****  *----------------------------------------------------------*/
+  73:lib/freertos/src/port.c **** 
+  74:lib/freertos/src/port.c **** /* Scheduler includes. */
+  75:lib/freertos/src/port.c **** #include "FreeRTOS.h"
+  76:lib/freertos/src/port.c **** #include "task.h"
+  77:lib/freertos/src/port.c **** #include "portmacro.h"
+  78:lib/freertos/src/port.c **** 
+  79:lib/freertos/src/port.c **** 
+  80:lib/freertos/src/port.c **** 
+  81:lib/freertos/src/port.c **** #include <stdio.h>
+  82:lib/freertos/src/port.c **** 
+  83:lib/freertos/src/port.c **** #include "n200_func.h"
+  84:lib/freertos/src/port.c **** 
+  85:lib/freertos/src/port.c **** #include "riscv_encoding.h"
+  86:lib/freertos/src/port.c **** #include "n200_timer.h"
+  87:lib/freertos/src/port.c **** #include "n200_eclic.h"
+  88:lib/freertos/src/port.c **** 
+  89:lib/freertos/src/port.c **** /* Standard Includes */
+  90:lib/freertos/src/port.c **** #include <stdlib.h>
+  91:lib/freertos/src/port.c **** #include <unistd.h>
+  92:lib/freertos/src/port.c **** 
+  93:lib/freertos/src/port.c **** #define ECLIC_INT_MSIP          3
+  94:lib/freertos/src/port.c **** #define ECLIC_INT_MTIP          7
+  95:lib/freertos/src/port.c **** #define ECLIC_INT_MEIP          11
+  96:lib/freertos/src/port.c **** 
+  97:lib/freertos/src/port.c **** /* Each task maintains its own interrupt status in the critical nesting
+  98:lib/freertos/src/port.c **** variable. */
+  99:lib/freertos/src/port.c **** UBaseType_t uxCriticalNesting = 0xaaaaaaaa;
+ 100:lib/freertos/src/port.c **** 
+ 101:lib/freertos/src/port.c **** #if USER_MODE_TASKS
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 3
+
+
+ 102:lib/freertos/src/port.c **** 	unsigned long MSTATUS_INIT = (MSTATUS_MPIE);
+ 103:lib/freertos/src/port.c **** #else
+ 104:lib/freertos/src/port.c **** 	unsigned long MSTATUS_INIT = (MSTATUS_MPP | MSTATUS_MPIE);
+ 105:lib/freertos/src/port.c **** #endif
+ 106:lib/freertos/src/port.c **** 
+ 107:lib/freertos/src/port.c **** 
+ 108:lib/freertos/src/port.c **** /*
+ 109:lib/freertos/src/port.c ****  * Used to catch tasks that attempt to return from their implementing function.
+ 110:lib/freertos/src/port.c ****  */
+ 111:lib/freertos/src/port.c **** static void prvTaskExitError( void );
+ 112:lib/freertos/src/port.c **** 
+ 113:lib/freertos/src/port.c **** 
+ 114:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 115:lib/freertos/src/port.c **** 
+ 116:lib/freertos/src/port.c **** /* System Call Trap */
+ 117:lib/freertos/src/port.c **** //ECALL macro stores argument in a2
+ 118:lib/freertos/src/port.c **** unsigned long ulSynchTrap(unsigned long mcause, unsigned long sp, unsigned long arg1)	{
+ 119:lib/freertos/src/port.c **** 	
+ 120:lib/freertos/src/port.c **** 	switch(mcause&0X00000fff)	{
+ 121:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
+ 122:lib/freertos/src/port.c **** 		case 8:
+ 123:lib/freertos/src/port.c **** 		case 11:
+ 124:lib/freertos/src/port.c **** 			if(arg1==IRQ_DISABLE)	{
+ 125:lib/freertos/src/port.c **** 				//zero out mstatus.mpie
+ 126:lib/freertos/src/port.c **** 				clear_csr(mstatus,MSTATUS_MPIE);
+ 127:lib/freertos/src/port.c ****       
+ 128:lib/freertos/src/port.c **** 			} else if(arg1==IRQ_ENABLE)	{
+ 129:lib/freertos/src/port.c **** 				//set mstatus.mpie
+ 130:lib/freertos/src/port.c **** 				set_csr(mstatus,MSTATUS_MPIE);
+ 131:lib/freertos/src/port.c **** 
+ 132:lib/freertos/src/port.c **** 			} else if(arg1==PORT_YIELD)		{
+ 133:lib/freertos/src/port.c **** 				//always yield from machine mode
+ 134:lib/freertos/src/port.c **** 				//fix up mepc on sync trap
+ 135:lib/freertos/src/port.c **** 				unsigned long epc = read_csr(mepc);
+ 136:lib/freertos/src/port.c **** 				vPortYield(sp,epc+4); //never returns
+ 137:lib/freertos/src/port.c **** 				
+ 138:lib/freertos/src/port.c **** 			} else if(arg1==PORT_YIELD_TO_RA)	{
+ 139:lib/freertos/src/port.c **** 			
+ 140:lib/freertos/src/port.c **** 				vPortYield(sp,(*(unsigned long*)(sp+1*sizeof(sp)))); //never returns
+ 141:lib/freertos/src/port.c **** 			}
+ 142:lib/freertos/src/port.c **** 			
+ 143:lib/freertos/src/port.c **** 			break;
+ 144:lib/freertos/src/port.c **** 		default:
+ 145:lib/freertos/src/port.c **** 			write(1, "trap\n", 5);
+ 146:lib/freertos/src/port.c ****             
+ 147:lib/freertos/src/port.c ****                 printf("In trap handler, the mcause is %d\n",(mcause&0X00000fff) );
+ 148:lib/freertos/src/port.c ****                 printf("In trap handler, the mepc is 0x%x\n", read_csr(mepc));
+ 149:lib/freertos/src/port.c ****                 printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+ 150:lib/freertos/src/port.c ****               
+ 151:lib/freertos/src/port.c **** 			_exit(mcause);
+ 152:lib/freertos/src/port.c **** 	}
+ 153:lib/freertos/src/port.c **** 
+ 154:lib/freertos/src/port.c **** 	//fix mepc and return 
+ 155:lib/freertos/src/port.c **** 	unsigned long epc = read_csr(mepc);
+ 156:lib/freertos/src/port.c **** 
+ 157:lib/freertos/src/port.c **** 	write_csr(mepc,epc+4);
+ 158:lib/freertos/src/port.c **** 	return sp;
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 4
+
+
+ 159:lib/freertos/src/port.c **** }
+ 160:lib/freertos/src/port.c **** 
+ 161:lib/freertos/src/port.c **** 
+ 162:lib/freertos/src/port.c **** void vPortEnterCritical( void )
+ 163:lib/freertos/src/port.c **** {
+ 164:lib/freertos/src/port.c **** 	//printf("vPortEnterCritical\n");
+ 165:lib/freertos/src/port.c **** 	#if USER_MODE_TASKS
+ 166:lib/freertos/src/port.c **** 		ECALL(IRQ_DISABLE);
+ 167:lib/freertos/src/port.c **** 	#else
+ 168:lib/freertos/src/port.c **** 	//	portDISABLE_INTERRUPTS();
+ 169:lib/freertos/src/port.c **** 		eclic_set_mth ((configMAX_SYSCALL_INTERRUPT_PRIORITY)<<4);
+ 170:lib/freertos/src/port.c **** 	#endif
+ 171:lib/freertos/src/port.c **** 
+ 172:lib/freertos/src/port.c **** 	uxCriticalNesting++;
+ 173:lib/freertos/src/port.c **** }
+ 174:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 175:lib/freertos/src/port.c **** 
+ 176:lib/freertos/src/port.c **** void vPortExitCritical( void )
+ 177:lib/freertos/src/port.c **** {
+ 178:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting );
+ 179:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 180:lib/freertos/src/port.c **** 	if( uxCriticalNesting == 0 )
+ 181:lib/freertos/src/port.c **** 	{
+ 182:lib/freertos/src/port.c **** 		#if USER_MODE_TASKS
+ 183:lib/freertos/src/port.c **** 			ECALL(IRQ_ENABLE);
+ 184:lib/freertos/src/port.c **** 		#else
+ 185:lib/freertos/src/port.c **** 			eclic_set_mth (0); 
+ 186:lib/freertos/src/port.c **** 	//	portENABLE_INTERRUPTS()	;
+ 187:lib/freertos/src/port.c **** 		#endif
+ 188:lib/freertos/src/port.c **** 	}
+ 189:lib/freertos/src/port.c **** 	return;
+ 190:lib/freertos/src/port.c **** }
+ 191:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 192:lib/freertos/src/port.c **** 
+ 193:lib/freertos/src/port.c **** 
+ 194:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 195:lib/freertos/src/port.c **** 
+ 196:lib/freertos/src/port.c **** /* Clear current interrupt mask and set given mask */
+ 197:lib/freertos/src/port.c **** void vPortClearInterruptMask(int int_mask)
+ 198:lib/freertos/src/port.c **** {
+ 199:lib/freertos/src/port.c **** 	eclic_set_mth (int_mask); 
+ 200:lib/freertos/src/port.c **** 
+ 201:lib/freertos/src/port.c **** 	
+ 202:lib/freertos/src/port.c **** }
+ 203:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 204:lib/freertos/src/port.c **** 
+ 205:lib/freertos/src/port.c **** /* Set interrupt mask and return current interrupt enable register */
+ 206:lib/freertos/src/port.c **** int xPortSetInterruptMask()
+ 207:lib/freertos/src/port.c **** {
+ 208:lib/freertos/src/port.c **** 	int int_mask=0;
+ 209:lib/freertos/src/port.c **** 	int_mask=eclic_get_mth();
+ 210:lib/freertos/src/port.c **** 	
+ 211:lib/freertos/src/port.c **** 	eclic_set_mth ((configMAX_SYSCALL_INTERRUPT_PRIORITY)<<4);
+ 212:lib/freertos/src/port.c **** 	return int_mask;
+ 213:lib/freertos/src/port.c **** }
+ 214:lib/freertos/src/port.c **** 
+ 215:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 5
+
+
+ 216:lib/freertos/src/port.c **** /*
+ 217:lib/freertos/src/port.c ****  * See header file for description.
+ 218:lib/freertos/src/port.c ****  */
+ 219:lib/freertos/src/port.c **** StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParam
+ 220:lib/freertos/src/port.c **** {
+ 221:lib/freertos/src/port.c **** 	/* Simulate the stack frame as it would be created by a context switch
+ 222:lib/freertos/src/port.c **** 	interrupt. */
+ 223:lib/freertos/src/port.c **** 
+ 224:lib/freertos/src/port.c **** 	register int *tp asm("x3");
+ 225:lib/freertos/src/port.c **** 	pxTopOfStack--;
+ 226:lib/freertos/src/port.c **** 	*pxTopOfStack = (portSTACK_TYPE)pxCode;			/* Start address */
+ 227:lib/freertos/src/port.c **** 
+ 228:lib/freertos/src/port.c **** 	//set the initial mstatus value
+ 229:lib/freertos/src/port.c **** 	pxTopOfStack--;
+ 230:lib/freertos/src/port.c **** 	*pxTopOfStack = MSTATUS_INIT;
+ 231:lib/freertos/src/port.c **** 
+ 232:lib/freertos/src/port.c **** 	pxTopOfStack -= 22;
+ 233:lib/freertos/src/port.c **** 	*pxTopOfStack = (portSTACK_TYPE)pvParameters;	/* Register a0 */
+ 234:lib/freertos/src/port.c **** 	//pxTopOfStack -= 7;
+ 235:lib/freertos/src/port.c **** 	//*pxTopOfStack = (portSTACK_TYPE)tp; /* Register thread pointer */
+ 236:lib/freertos/src/port.c **** 	//pxTopOfStack -= 2;
+ 237:lib/freertos/src/port.c **** 	pxTopOfStack -=9;
+ 238:lib/freertos/src/port.c **** 	*pxTopOfStack = (portSTACK_TYPE)prvTaskExitError; /* Register ra */
+ 239:lib/freertos/src/port.c **** 	pxTopOfStack--;
+ 240:lib/freertos/src/port.c **** 
+ 241:lib/freertos/src/port.c **** 	return pxTopOfStack;
+ 242:lib/freertos/src/port.c **** }
+ 243:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 244:lib/freertos/src/port.c **** 
+ 245:lib/freertos/src/port.c **** 
+ 246:lib/freertos/src/port.c **** void prvTaskExitError( void )
+ 247:lib/freertos/src/port.c **** {
+  15              		.loc 1 247 1
+  16              		.cfi_startproc
+ 248:lib/freertos/src/port.c **** 	/* A function that implements a task must not exit or attempt to return to
+ 249:lib/freertos/src/port.c **** 	its caller as there is nothing to return to.  If a task wants to exit it
+ 250:lib/freertos/src/port.c **** 	should instead call vTaskDelete( NULL ).
+ 251:lib/freertos/src/port.c **** 	Artificially force an assert() to be triggered if configASSERT() is
+ 252:lib/freertos/src/port.c **** 	defined, then stop here so application writers can catch the error. */
+ 253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
+  17              		.loc 1 253 2
+  18 0000 B7070000 		lui	a5,%hi(.LANCHOR0)
+  19 0004 03A70700 		lw	a4,%lo(.LANCHOR0)(a5)
+  20 0008 FD57     		li	a5,-1
+  21 000a 6305F700 		beq	a4,a5,.L2
+  22              		.loc 1 253 2 discriminator 3
+  23              	.LBB2:
+  24              		.loc 1 253 2 discriminator 3
+  25              		.loc 1 253 2 discriminator 3
+  26              		.loc 1 253 2 discriminator 3
+  27              	 #APP
+  28              	# 253 "lib/freertos/src/port.c" 1
+ 254              		portDISABLE_INTERRUPTS();
+  29              		csrrc a5, mstatus, 8
+  30              	# 0 "" 2
+  31              	.LVL0:
+ 253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 6
+
+
+  32              		.loc 1 253 2 discriminator 3
+  33              	 #NO_APP
+  34              	.L3:
+  35              	.LBE2:
+ 253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
+  36              		.loc 1 253 2 discriminator 1
+ 253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
+  37              		.loc 1 253 2 discriminator 1
+ 253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
+  38              		.loc 1 253 2 discriminator 1
+  39 0012 01A0     		j	.L3
+  40              	.L2:
+ 253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
+  41              		.loc 1 253 43 discriminator 1
+  42              		.loc 1 254 2 discriminator 1
+  43              	.LBB3:
+  44              		.loc 1 254 2 discriminator 1
+  45              		.loc 1 254 2 discriminator 1
+  46              		.loc 1 254 2 discriminator 1
+  47              	 #APP
+  48              	# 254 "lib/freertos/src/port.c" 1
+ 255              	//	printf ("prvTaskExitError\n");
+  49              		csrrc a5, mstatus, 8
+  50              	# 0 "" 2
+  51              	.LVL1:
+ 254:lib/freertos/src/port.c **** //	printf ("prvTaskExitError\n");
+  52              		.loc 1 254 2 discriminator 1
+  53              	 #NO_APP
+  54              	.L4:
+  55              	.LBE3:
+ 254:lib/freertos/src/port.c **** //	printf ("prvTaskExitError\n");
+  56              		.loc 1 254 26 discriminator 2
+ 256:lib/freertos/src/port.c **** 	for( ;; );
+  57              		.loc 1 256 2 discriminator 2
+  58              		.loc 1 256 11 discriminator 2
+  59 0018 01A0     		j	.L4
+  60              		.cfi_endproc
+  61              	.LFE11:
+  63              		.section	.text.ulSynchTrap,"ax",@progbits
+  64              		.align	1
+  65              		.globl	ulSynchTrap
+  67              	ulSynchTrap:
+  68              	.LFB5:
+ 118:lib/freertos/src/port.c **** 	
+  69              		.loc 1 118 87
+  70              		.cfi_startproc
+  71              	.LVL2:
+ 120:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
+  72              		.loc 1 120 2
+ 118:lib/freertos/src/port.c **** 	
+  73              		.loc 1 118 87 is_stmt 0
+  74 0000 4111     		addi	sp,sp,-16
+  75              	.LCFI0:
+  76              		.cfi_def_cfa_offset 16
+  77 0002 22C4     		sw	s0,8(sp)
+  78              		.cfi_offset 8, -8
+ 120:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 7
+
+
+  79              		.loc 1 120 15
+  80 0004 13144501 		slli	s0,a0,20
+ 118:lib/freertos/src/port.c **** 	
+  81              		.loc 1 118 87
+  82 0008 26C2     		sw	s1,4(sp)
+  83 000a 06C6     		sw	ra,12(sp)
+  84 000c 4AC0     		sw	s2,0(sp)
+  85              		.cfi_offset 9, -12
+  86              		.cfi_offset 1, -4
+  87              		.cfi_offset 18, -16
+ 120:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
+  88              		.loc 1 120 15
+  89 000e 5180     		srli	s0,s0,20
+ 120:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
+  90              		.loc 1 120 2
+  91 0010 A147     		li	a5,8
+ 118:lib/freertos/src/port.c **** 	
+  92              		.loc 1 118 87
+  93 0012 AE84     		mv	s1,a1
+ 120:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
+  94              		.loc 1 120 2
+  95 0014 6305F400 		beq	s0,a5,.L6
+  96 0018 AD47     		li	a5,11
+  97 001a 6310F406 		bne	s0,a5,.L7
+  98              	.L6:
+ 124:lib/freertos/src/port.c **** 				//zero out mstatus.mpie
+  99              		.loc 1 124 4 is_stmt 1
+ 124:lib/freertos/src/port.c **** 				//zero out mstatus.mpie
+ 100              		.loc 1 124 6 is_stmt 0
+ 101 001e D147     		li	a5,20
+ 102 0020 6312F602 		bne	a2,a5,.L8
+ 126:lib/freertos/src/port.c ****       
+ 103              		.loc 1 126 5 is_stmt 1 discriminator 2
+ 104              	.LBB4:
+ 126:lib/freertos/src/port.c ****       
+ 105              		.loc 1 126 5 discriminator 2
+ 126:lib/freertos/src/port.c ****       
+ 106              		.loc 1 126 5 discriminator 2
+ 126:lib/freertos/src/port.c ****       
+ 107              		.loc 1 126 5 discriminator 2
+ 108 0024 93070008 		li	a5,128
+ 109              	 #APP
+ 110              	# 126 "lib/freertos/src/port.c" 1
+ 111              		csrrc a5, mstatus, a5
+ 112              	# 0 "" 2
+ 113              	.LVL3:
+ 126:lib/freertos/src/port.c ****       
+ 114              		.loc 1 126 5 discriminator 2
+ 115              	 #NO_APP
+ 116              	.L9:
+ 117              	.LBE4:
+ 143:lib/freertos/src/port.c **** 		default:
+ 118              		.loc 1 143 4
+ 155:lib/freertos/src/port.c **** 
+ 119              		.loc 1 155 2
+ 120              	.LBB5:
+ 155:lib/freertos/src/port.c **** 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 8
+
+
+ 121              		.loc 1 155 22
+ 155:lib/freertos/src/port.c **** 
+ 122              		.loc 1 155 22
+ 123              	 #APP
+ 124              	# 155 "lib/freertos/src/port.c" 1
+ 125              		csrr a5, mepc
+ 126              	# 0 "" 2
+ 127              	.LVL4:
+ 155:lib/freertos/src/port.c **** 
+ 128              		.loc 1 155 22
+ 129              	 #NO_APP
+ 130              	.LBE5:
+ 157:lib/freertos/src/port.c **** 	return sp;
+ 131              		.loc 1 157 2
+ 157:lib/freertos/src/port.c **** 	return sp;
+ 132              		.loc 1 157 2
+ 133 0030 9107     		addi	a5,a5,4
+ 134              	.LVL5:
+ 135              	 #APP
+ 136              	# 157 "lib/freertos/src/port.c" 1
+ 158:lib/freertos/src/port.c **** }
+ 137              		csrw mepc, a5
+ 138              	# 0 "" 2
+ 139              		.loc 1 158 2
+ 159:lib/freertos/src/port.c **** 
+ 140              		.loc 1 159 1 is_stmt 0
+ 141              	 #NO_APP
+ 142 0036 B240     		lw	ra,12(sp)
+ 143              		.cfi_remember_state
+ 144              		.cfi_restore 1
+ 145 0038 2244     		lw	s0,8(sp)
+ 146              		.cfi_restore 8
+ 147 003a 2685     		mv	a0,s1
+ 148 003c 0249     		lw	s2,0(sp)
+ 149              		.cfi_restore 18
+ 150 003e 9244     		lw	s1,4(sp)
+ 151              		.cfi_restore 9
+ 152              	.LVL6:
+ 153 0040 4101     		addi	sp,sp,16
+ 154              	.LCFI1:
+ 155              		.cfi_def_cfa_offset 0
+ 156 0042 8280     		jr	ra
+ 157              	.LVL7:
+ 158              	.L8:
+ 159              	.LCFI2:
+ 160              		.cfi_restore_state
+ 128:lib/freertos/src/port.c **** 				//set mstatus.mpie
+ 161              		.loc 1 128 11 is_stmt 1
+ 128:lib/freertos/src/port.c **** 				//set mstatus.mpie
+ 162              		.loc 1 128 13 is_stmt 0
+ 163 0044 F947     		li	a5,30
+ 164 0046 6317F600 		bne	a2,a5,.L10
+ 130:lib/freertos/src/port.c **** 
+ 165              		.loc 1 130 5 is_stmt 1 discriminator 2
+ 166              	.LBB6:
+ 130:lib/freertos/src/port.c **** 
+ 167              		.loc 1 130 5 discriminator 2
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 9
+
+
+ 130:lib/freertos/src/port.c **** 
+ 168              		.loc 1 130 5 discriminator 2
+ 130:lib/freertos/src/port.c **** 
+ 169              		.loc 1 130 5 discriminator 2
+ 170 004a 93070008 		li	a5,128
+ 171              	 #APP
+ 172              	# 130 "lib/freertos/src/port.c" 1
+ 173              		csrrs a5, mstatus, a5
+ 174              	# 0 "" 2
+ 175              	.LVL8:
+ 130:lib/freertos/src/port.c **** 
+ 176              		.loc 1 130 5 discriminator 2
+ 177              	 #NO_APP
+ 178              	.LBE6:
+ 179 0052 E9BF     		j	.L9
+ 180              	.L10:
+ 132:lib/freertos/src/port.c **** 				//always yield from machine mode
+ 181              		.loc 1 132 11
+ 132:lib/freertos/src/port.c **** 				//always yield from machine mode
+ 182              		.loc 1 132 13 is_stmt 0
+ 183 0054 93078002 		li	a5,40
+ 184 0058 631BF600 		bne	a2,a5,.L11
+ 185              	.LBB7:
+ 135:lib/freertos/src/port.c **** 				vPortYield(sp,epc+4); //never returns
+ 186              		.loc 1 135 5 is_stmt 1
+ 187              	.LBB8:
+ 135:lib/freertos/src/port.c **** 				vPortYield(sp,epc+4); //never returns
+ 188              		.loc 1 135 25
+ 135:lib/freertos/src/port.c **** 				vPortYield(sp,epc+4); //never returns
+ 189              		.loc 1 135 25
+ 190              	 #APP
+ 191              	# 135 "lib/freertos/src/port.c" 1
+ 192              		csrr a1, mepc
+ 193              	# 0 "" 2
+ 194              	.LVL9:
+ 135:lib/freertos/src/port.c **** 				vPortYield(sp,epc+4); //never returns
+ 195              		.loc 1 135 25
+ 196              	 #NO_APP
+ 197              	.LBE8:
+ 136:lib/freertos/src/port.c **** 				
+ 198              		.loc 1 136 5
+ 199 0060 9105     		addi	a1,a1,4
+ 200              	.LVL10:
+ 201              	.L13:
+ 202              	.LBE7:
+ 140:lib/freertos/src/port.c **** 			}
+ 203              		.loc 1 140 5 is_stmt 0
+ 204 0062 2685     		mv	a0,s1
+ 205              	.LVL11:
+ 206 0064 97000000 		call	vPortYield
+ 206      E7800000 
+ 207              	.LVL12:
+ 208 006c C1B7     		j	.L9
+ 209              	.LVL13:
+ 210              	.L11:
+ 138:lib/freertos/src/port.c **** 			
+ 211              		.loc 1 138 11 is_stmt 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 10
+
+
+ 138:lib/freertos/src/port.c **** 			
+ 212              		.loc 1 138 13 is_stmt 0
+ 213 006e 93072003 		li	a5,50
+ 214 0072 E31DF6FA 		bne	a2,a5,.L9
+ 140:lib/freertos/src/port.c **** 			}
+ 215              		.loc 1 140 5 is_stmt 1
+ 216 0076 CC40     		lw	a1,4(s1)
+ 217 0078 EDB7     		j	.L13
+ 218              	.L7:
+ 145:lib/freertos/src/port.c ****             
+ 219              		.loc 1 145 4 is_stmt 0
+ 220 007a B7050000 		lui	a1,%hi(.LC0)
+ 221 007e 1546     		li	a2,5
+ 222              	.LVL14:
+ 223 0080 2A89     		mv	s2,a0
+ 145:lib/freertos/src/port.c ****             
+ 224              		.loc 1 145 4 is_stmt 1
+ 225 0082 93850500 		addi	a1,a1,%lo(.LC0)
+ 226 0086 0545     		li	a0,1
+ 227              	.LVL15:
+ 228 0088 97000000 		call	write
+ 228      E7800000 
+ 229              	.LVL16:
+ 147:lib/freertos/src/port.c ****                 printf("In trap handler, the mepc is 0x%x\n", read_csr(mepc));
+ 230              		.loc 1 147 17
+ 231 0090 37050000 		lui	a0,%hi(.LC1)
+ 232 0094 A285     		mv	a1,s0
+ 233 0096 13050500 		addi	a0,a0,%lo(.LC1)
+ 234 009a 97000000 		call	printf
+ 234      E7800000 
+ 235              	.LVL17:
+ 148:lib/freertos/src/port.c ****                 printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+ 236              		.loc 1 148 17
+ 237              	.LBB9:
+ 148:lib/freertos/src/port.c ****                 printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+ 238              		.loc 1 148 63
+ 148:lib/freertos/src/port.c ****                 printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+ 239              		.loc 1 148 63
+ 240              	 #APP
+ 241              	# 148 "lib/freertos/src/port.c" 1
+ 242              		csrr a1, mepc
+ 243              	# 0 "" 2
+ 244              	.LVL18:
+ 148:lib/freertos/src/port.c ****                 printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+ 245              		.loc 1 148 63
+ 246              	 #NO_APP
+ 247              	.LBE9:
+ 148:lib/freertos/src/port.c ****                 printf("In trap handler, the mtval is 0x%x\n", read_csr(mbadaddr));
+ 248              		.loc 1 148 17 is_stmt 0
+ 249 00a6 37050000 		lui	a0,%hi(.LC2)
+ 250 00aa 13050500 		addi	a0,a0,%lo(.LC2)
+ 251 00ae 97000000 		call	printf
+ 251      E7800000 
+ 252              	.LVL19:
+ 149:lib/freertos/src/port.c ****               
+ 253              		.loc 1 149 17 is_stmt 1
+ 254              	.LBB10:
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 11
+
+
+ 149:lib/freertos/src/port.c ****               
+ 255              		.loc 1 149 64
+ 149:lib/freertos/src/port.c ****               
+ 256              		.loc 1 149 64
+ 257              	 #APP
+ 258              	# 149 "lib/freertos/src/port.c" 1
+ 259              		csrr a1, mbadaddr
+ 260              	# 0 "" 2
+ 261              	.LVL20:
+ 149:lib/freertos/src/port.c ****               
+ 262              		.loc 1 149 64
+ 263              	 #NO_APP
+ 264              	.LBE10:
+ 149:lib/freertos/src/port.c ****               
+ 265              		.loc 1 149 17 is_stmt 0
+ 266 00ba 37050000 		lui	a0,%hi(.LC3)
+ 267 00be 13050500 		addi	a0,a0,%lo(.LC3)
+ 268 00c2 97000000 		call	printf
+ 268      E7800000 
+ 269              	.LVL21:
+ 151:lib/freertos/src/port.c **** 	}
+ 270              		.loc 1 151 4 is_stmt 1
+ 271 00ca 4A85     		mv	a0,s2
+ 272 00cc 97000000 		call	_exit
+ 272      E7800000 
+ 273              	.LVL22:
+ 274              		.cfi_endproc
+ 275              	.LFE5:
+ 277              		.section	.text.vPortEnterCritical,"ax",@progbits
+ 278              		.align	1
+ 279              		.globl	vPortEnterCritical
+ 281              	vPortEnterCritical:
+ 282              	.LFB6:
+ 163:lib/freertos/src/port.c **** 	//printf("vPortEnterCritical\n");
+ 283              		.loc 1 163 1
+ 284              		.cfi_startproc
+ 169:lib/freertos/src/port.c **** 	#endif
+ 285              		.loc 1 169 3
+ 163:lib/freertos/src/port.c **** 	//printf("vPortEnterCritical\n");
+ 286              		.loc 1 163 1 is_stmt 0
+ 287 0000 4111     		addi	sp,sp,-16
+ 288              	.LCFI3:
+ 289              		.cfi_def_cfa_offset 16
+ 169:lib/freertos/src/port.c **** 	#endif
+ 290              		.loc 1 169 3
+ 291 0002 0145     		li	a0,0
+ 163:lib/freertos/src/port.c **** 	//printf("vPortEnterCritical\n");
+ 292              		.loc 1 163 1
+ 293 0004 06C6     		sw	ra,12(sp)
+ 294              		.cfi_offset 1, -4
+ 169:lib/freertos/src/port.c **** 	#endif
+ 295              		.loc 1 169 3
+ 296 0006 97000000 		call	eclic_set_mth
+ 296      E7800000 
+ 297              	.LVL23:
+ 172:lib/freertos/src/port.c **** }
+ 298              		.loc 1 172 2 is_stmt 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 12
+
+
+ 172:lib/freertos/src/port.c **** }
+ 299              		.loc 1 172 19 is_stmt 0
+ 300 000e B7070000 		lui	a5,%hi(.LANCHOR0)
+ 301 0012 93870700 		addi	a5,a5,%lo(.LANCHOR0)
+ 302 0016 9843     		lw	a4,0(a5)
+ 173:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 303              		.loc 1 173 1
+ 304 0018 B240     		lw	ra,12(sp)
+ 305              		.cfi_restore 1
+ 172:lib/freertos/src/port.c **** }
+ 306              		.loc 1 172 19
+ 307 001a 0507     		addi	a4,a4,1
+ 308 001c 98C3     		sw	a4,0(a5)
+ 173:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 309              		.loc 1 173 1
+ 310 001e 4101     		addi	sp,sp,16
+ 311              	.LCFI4:
+ 312              		.cfi_def_cfa_offset 0
+ 313 0020 8280     		jr	ra
+ 314              		.cfi_endproc
+ 315              	.LFE6:
+ 317              		.section	.text.vPortExitCritical,"ax",@progbits
+ 318              		.align	1
+ 319              		.globl	vPortExitCritical
+ 321              	vPortExitCritical:
+ 322              	.LFB7:
+ 177:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting );
+ 323              		.loc 1 177 1 is_stmt 1
+ 324              		.cfi_startproc
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 325              		.loc 1 178 2
+ 326 0000 37070000 		lui	a4,%hi(.LANCHOR0)
+ 327 0004 13070700 		addi	a4,a4,%lo(.LANCHOR0)
+ 328 0008 1C43     		lw	a5,0(a4)
+ 329 000a 81E7     		bne	a5,zero,.L17
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 330              		.loc 1 178 2 discriminator 3
+ 331              	.LBB11:
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 332              		.loc 1 178 2 discriminator 3
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 333              		.loc 1 178 2 discriminator 3
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 334              		.loc 1 178 2 discriminator 3
+ 335              	 #APP
+ 336              	# 178 "lib/freertos/src/port.c" 1
+ 337              		csrrc a5, mstatus, 8
+ 338              	# 0 "" 2
+ 339              	.LVL24:
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 340              		.loc 1 178 2 discriminator 3
+ 341              	 #NO_APP
+ 342              	.L18:
+ 343              	.LBE11:
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 344              		.loc 1 178 2 discriminator 1
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 13
+
+
+ 345              		.loc 1 178 2 discriminator 1
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 346              		.loc 1 178 2 discriminator 1
+ 347 0010 01A0     		j	.L18
+ 348              	.L17:
+ 178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
+ 349              		.loc 1 178 35 discriminator 2
+ 179:lib/freertos/src/port.c **** 	if( uxCriticalNesting == 0 )
+ 350              		.loc 1 179 2 discriminator 2
+ 179:lib/freertos/src/port.c **** 	if( uxCriticalNesting == 0 )
+ 351              		.loc 1 179 19 is_stmt 0 discriminator 2
+ 352 0012 FD17     		addi	a5,a5,-1
+ 353 0014 1CC3     		sw	a5,0(a4)
+ 180:lib/freertos/src/port.c **** 	{
+ 354              		.loc 1 180 2 is_stmt 1 discriminator 2
+ 180:lib/freertos/src/port.c **** 	{
+ 355              		.loc 1 180 4 is_stmt 0 discriminator 2
+ 356 0016 91E7     		bne	a5,zero,.L16
+ 185:lib/freertos/src/port.c **** 	//	portENABLE_INTERRUPTS()	;
+ 357              		.loc 1 185 4 is_stmt 1
+ 358 0018 0145     		li	a0,0
+ 359 001a 17030000 		tail	eclic_set_mth
+ 359      67000300 
+ 360              	.LVL25:
+ 361              	.L16:
+ 190:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 362              		.loc 1 190 1 is_stmt 0
+ 363 0022 8280     		ret
+ 364              		.cfi_endproc
+ 365              	.LFE7:
+ 367              		.section	.text.vPortClearInterruptMask,"ax",@progbits
+ 368              		.align	1
+ 369              		.globl	vPortClearInterruptMask
+ 371              	vPortClearInterruptMask:
+ 372              	.LFB8:
+ 198:lib/freertos/src/port.c **** 	eclic_set_mth (int_mask); 
+ 373              		.loc 1 198 1 is_stmt 1
+ 374              		.cfi_startproc
+ 375              	.LVL26:
+ 199:lib/freertos/src/port.c **** 
+ 376              		.loc 1 199 2
+ 377 0000 1375F50F 		andi	a0,a0,0xff
+ 378              	.LVL27:
+ 379 0004 17030000 		tail	eclic_set_mth
+ 379      67000300 
+ 380              	.LVL28:
+ 381              		.cfi_endproc
+ 382              	.LFE8:
+ 384              		.section	.text.xPortSetInterruptMask,"ax",@progbits
+ 385              		.align	1
+ 386              		.globl	xPortSetInterruptMask
+ 388              	xPortSetInterruptMask:
+ 389              	.LFB9:
+ 207:lib/freertos/src/port.c **** 	int int_mask=0;
+ 390              		.loc 1 207 1
+ 391              		.cfi_startproc
+ 208:lib/freertos/src/port.c **** 	int_mask=eclic_get_mth();
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 14
+
+
+ 392              		.loc 1 208 2
+ 393              	.LVL29:
+ 209:lib/freertos/src/port.c **** 	
+ 394              		.loc 1 209 2
+ 207:lib/freertos/src/port.c **** 	int int_mask=0;
+ 395              		.loc 1 207 1 is_stmt 0
+ 396 0000 4111     		addi	sp,sp,-16
+ 397              	.LCFI5:
+ 398              		.cfi_def_cfa_offset 16
+ 399 0002 06C6     		sw	ra,12(sp)
+ 400 0004 22C4     		sw	s0,8(sp)
+ 401              		.cfi_offset 1, -4
+ 402              		.cfi_offset 8, -8
+ 209:lib/freertos/src/port.c **** 	
+ 403              		.loc 1 209 11
+ 404 0006 97000000 		call	eclic_get_mth
+ 404      E7800000 
+ 405              	.LVL30:
+ 406 000e 2A84     		mv	s0,a0
+ 407              	.LVL31:
+ 211:lib/freertos/src/port.c **** 	return int_mask;
+ 408              		.loc 1 211 2 is_stmt 1
+ 409 0010 0145     		li	a0,0
+ 410 0012 97000000 		call	eclic_set_mth
+ 410      E7800000 
+ 411              	.LVL32:
+ 212:lib/freertos/src/port.c **** }
+ 412              		.loc 1 212 2
+ 213:lib/freertos/src/port.c **** 
+ 413              		.loc 1 213 1 is_stmt 0
+ 414 001a 2285     		mv	a0,s0
+ 415 001c B240     		lw	ra,12(sp)
+ 416              		.cfi_restore 1
+ 417 001e 2244     		lw	s0,8(sp)
+ 418              		.cfi_restore 8
+ 419              	.LVL33:
+ 420 0020 4101     		addi	sp,sp,16
+ 421              	.LCFI6:
+ 422              		.cfi_def_cfa_offset 0
+ 423 0022 8280     		jr	ra
+ 424              		.cfi_endproc
+ 425              	.LFE9:
+ 427              		.section	.text.pxPortInitialiseStack,"ax",@progbits
+ 428              		.align	1
+ 429              		.globl	pxPortInitialiseStack
+ 431              	pxPortInitialiseStack:
+ 432              	.LFB10:
+ 220:lib/freertos/src/port.c **** 	/* Simulate the stack frame as it would be created by a context switch
+ 433              		.loc 1 220 1 is_stmt 1
+ 434              		.cfi_startproc
+ 435              	.LVL34:
+ 224:lib/freertos/src/port.c **** 	pxTopOfStack--;
+ 436              		.loc 1 224 2
+ 225:lib/freertos/src/port.c **** 	*pxTopOfStack = (portSTACK_TYPE)pxCode;			/* Start address */
+ 437              		.loc 1 225 2
+ 226:lib/freertos/src/port.c **** 
+ 438              		.loc 1 226 2
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 15
+
+
+ 226:lib/freertos/src/port.c **** 
+ 439              		.loc 1 226 16 is_stmt 0
+ 440 0000 232EB5FE 		sw	a1,-4(a0)
+ 229:lib/freertos/src/port.c **** 	*pxTopOfStack = MSTATUS_INIT;
+ 441              		.loc 1 229 2 is_stmt 1
+ 442              	.LVL35:
+ 230:lib/freertos/src/port.c **** 
+ 443              		.loc 1 230 2
+ 230:lib/freertos/src/port.c **** 
+ 444              		.loc 1 230 16 is_stmt 0
+ 445 0004 B7070000 		lui	a5,%hi(.LANCHOR1)
+ 446 0008 83A70700 		lw	a5,%lo(.LANCHOR1)(a5)
+ 242:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 447              		.loc 1 242 1
+ 448 000c 130585F7 		addi	a0,a0,-136
+ 449              	.LVL36:
+ 233:lib/freertos/src/port.c **** 	//pxTopOfStack -= 7;
+ 450              		.loc 1 233 16
+ 451 0010 10D5     		sw	a2,40(a0)
+ 230:lib/freertos/src/port.c **** 
+ 452              		.loc 1 230 16
+ 453 0012 2320F508 		sw	a5,128(a0)
+ 232:lib/freertos/src/port.c **** 	*pxTopOfStack = (portSTACK_TYPE)pvParameters;	/* Register a0 */
+ 454              		.loc 1 232 2 is_stmt 1
+ 455              	.LVL37:
+ 233:lib/freertos/src/port.c **** 	//pxTopOfStack -= 7;
+ 456              		.loc 1 233 2
+ 237:lib/freertos/src/port.c **** 	*pxTopOfStack = (portSTACK_TYPE)prvTaskExitError; /* Register ra */
+ 457              		.loc 1 237 2
+ 238:lib/freertos/src/port.c **** 	pxTopOfStack--;
+ 458              		.loc 1 238 2
+ 238:lib/freertos/src/port.c **** 	pxTopOfStack--;
+ 459              		.loc 1 238 16 is_stmt 0
+ 460 0016 B7070000 		lui	a5,%hi(prvTaskExitError)
+ 461 001a 93870700 		addi	a5,a5,%lo(prvTaskExitError)
+ 462 001e 5CC1     		sw	a5,4(a0)
+ 239:lib/freertos/src/port.c **** 
+ 463              		.loc 1 239 2 is_stmt 1
+ 241:lib/freertos/src/port.c **** }
+ 464              		.loc 1 241 2
+ 242:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 465              		.loc 1 242 1 is_stmt 0
+ 466 0020 8280     		ret
+ 467              		.cfi_endproc
+ 468              	.LFE10:
+ 470              		.section	.text.vPortSysTickHandler,"ax",@progbits
+ 471              		.align	1
+ 472              		.globl	vPortSysTickHandler
+ 474              	vPortSysTickHandler:
+ 475              	.LFB12:
+ 257:lib/freertos/src/port.c **** }
+ 258:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 259:lib/freertos/src/port.c **** 
+ 260:lib/freertos/src/port.c **** 
+ 261:lib/freertos/src/port.c **** 
+ 262:lib/freertos/src/port.c **** /*Entry Point for Machine Timer Interrupt Handler*/
+ 263:lib/freertos/src/port.c **** //Bob: add the function argument int_num
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 16
+
+
+ 264:lib/freertos/src/port.c **** 
+ 265:lib/freertos/src/port.c **** uint32_t vPortSysTickHandler(){
+ 476              		.loc 1 265 31 is_stmt 1
+ 477              		.cfi_startproc
+ 266:lib/freertos/src/port.c **** 	static uint64_t then = 0;
+ 478              		.loc 1 266 2
+ 267:lib/freertos/src/port.c **** 	
+ 268:lib/freertos/src/port.c ****   //eclic_disable_interrupt(CLIC_INT_TMR);
+ 269:lib/freertos/src/port.c **** 	
+ 270:lib/freertos/src/port.c **** 
+ 271:lib/freertos/src/port.c ****     volatile uint64_t * mtime       = (uint64_t*) (TIMER_CTRL_ADDR + TIMER_MTIME);
+ 479              		.loc 1 271 5
+ 480              	.LVL38:
+ 272:lib/freertos/src/port.c ****     volatile uint64_t * mtimecmp    = (uint64_t*) (TIMER_CTRL_ADDR + TIMER_MTIMECMP);
+ 481              		.loc 1 272 5
+ 273:lib/freertos/src/port.c **** 	
+ 274:lib/freertos/src/port.c **** 	if(then != 0)  {
+ 482              		.loc 1 274 2
+ 483              		.loc 1 274 10 is_stmt 0
+ 484 0000 B7060000 		lui	a3,%hi(.LANCHOR2)
+ 485 0004 93870600 		addi	a5,a3,%lo(.LANCHOR2)
+ 486 0008 9843     		lw	a4,0(a5)
+ 487 000a C843     		lw	a0,4(a5)
+ 488 000c B7070000 		lui	a5,%hi(SystemCoreClock)
+ 489 0010 83A70700 		lw	a5,%lo(SystemCoreClock)(a5)
+ 490 0014 1306007D 		li	a2,2000
+ 265:lib/freertos/src/port.c **** 	static uint64_t then = 0;
+ 491              		.loc 1 265 31
+ 492 0018 4111     		addi	sp,sp,-16
+ 493              	.LCFI7:
+ 494              		.cfi_def_cfa_offset 16
+ 495 001a B3D7C702 		divu	a5,a5,a2
+ 496 001e 06C6     		sw	ra,12(sp)
+ 497              		.cfi_offset 1, -4
+ 498              		.loc 1 274 4
+ 499 0020 3366A700 		or	a2,a4,a0
+ 500 0024 93850600 		addi	a1,a3,%lo(.LANCHOR2)
+ 501 0028 0DCA     		beq	a2,zero,.L25
+ 275:lib/freertos/src/port.c **** 		//next timer irq is 1 second from previous
+ 276:lib/freertos/src/port.c **** 		then += (configRTC_CLOCK_HZ / configTICK_RATE_HZ);
+ 502              		.loc 1 276 3 is_stmt 1
+ 503              		.loc 1 276 8 is_stmt 0
+ 504 002a BA97     		add	a5,a4,a5
+ 505 002c 33B7E700 		sltu	a4,a5,a4
+ 506 0030 3E86     		mv	a2,a5
+ 507 0032 B306A700 		add	a3,a4,a0
+ 508              	.L27:
+ 509 0036 90C1     		sw	a2,0(a1)
+ 510 0038 D4C1     		sw	a3,4(a1)
+ 277:lib/freertos/src/port.c **** 	} else{ //first time setting the timer
+ 278:lib/freertos/src/port.c **** 		uint64_t now = *mtime;
+ 279:lib/freertos/src/port.c **** 		then = now + (configRTC_CLOCK_HZ / configTICK_RATE_HZ);
+ 280:lib/freertos/src/port.c **** 	}
+ 281:lib/freertos/src/port.c **** 	*mtimecmp = then;
+ 511              		.loc 1 281 2 is_stmt 1
+ 512              		.loc 1 281 12 is_stmt 0
+ 513 003a B70700D1 		li	a5,-788529152
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 17
+
+
+ 514 003e 90C7     		sw	a2,8(a5)
+ 515 0040 D4C7     		sw	a3,12(a5)
+ 282:lib/freertos/src/port.c **** 
+ 283:lib/freertos/src/port.c **** 	/* Increment the RTOS tick. */
+ 284:lib/freertos/src/port.c **** 	if( xTaskIncrementTick() != pdFALSE )
+ 516              		.loc 1 284 2 is_stmt 1
+ 517              		.loc 1 284 6 is_stmt 0
+ 518 0042 97000000 		call	xTaskIncrementTick
+ 518      E7800000 
+ 519              	.LVL39:
+ 520              		.loc 1 284 4
+ 521 004a 09C5     		beq	a0,zero,.L28
+ 285:lib/freertos/src/port.c **** 	{
+ 286:lib/freertos/src/port.c **** 		portYIELD();
+ 522              		.loc 1 286 3 is_stmt 1
+ 523              	.LBB12:
+ 524              		.loc 1 286 3
+ 525 004c 13068002 		li	a2,40
+ 526              		.loc 1 286 3
+ 527              	 #APP
+ 528              	# 286 "lib/freertos/src/port.c" 1
+ 287              			//vTaskSwitchContext();
+ 286:lib/freertos/src/port.c **** 		portYIELD();
+ 529              		ecall
+ 530              	# 0 "" 2
+ 531              		.loc 1 286 3
+ 532              	 #NO_APP
+ 533              	.L28:
+ 534              	.LBE12:
+ 286:lib/freertos/src/port.c **** 		portYIELD();
+ 535              		.loc 1 286 14 discriminator 1
+ 288:lib/freertos/src/port.c **** 	}
+ 289:lib/freertos/src/port.c **** 	
+ 290:lib/freertos/src/port.c **** }
+ 536              		.loc 1 290 1 is_stmt 0 discriminator 1
+ 537 0054 B240     		lw	ra,12(sp)
+ 538              		.cfi_remember_state
+ 539              		.cfi_restore 1
+ 540 0056 4101     		addi	sp,sp,16
+ 541              	.LCFI8:
+ 542              		.cfi_def_cfa_offset 0
+ 543 0058 8280     		jr	ra
+ 544              	.L25:
+ 545              	.LCFI9:
+ 546              		.cfi_restore_state
+ 547              	.LBB13:
+ 278:lib/freertos/src/port.c **** 		then = now + (configRTC_CLOCK_HZ / configTICK_RATE_HZ);
+ 548              		.loc 1 278 3 is_stmt 1
+ 278:lib/freertos/src/port.c **** 		then = now + (configRTC_CLOCK_HZ / configTICK_RATE_HZ);
+ 549              		.loc 1 278 12 is_stmt 0
+ 550 005a 370700D1 		li	a4,-788529152
+ 551 005e 03280700 		lw	a6,0(a4)
+ 552 0062 83284700 		lw	a7,4(a4)
+ 553              	.LVL40:
+ 279:lib/freertos/src/port.c **** 	}
+ 554              		.loc 1 279 3 is_stmt 1
+ 279:lib/freertos/src/port.c **** 	}
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 18
+
+
+ 555              		.loc 1 279 14 is_stmt 0
+ 556 0066 C297     		add	a5,a6,a5
+ 557 0068 33B70701 		sltu	a4,a5,a6
+ 558 006c 3E86     		mv	a2,a5
+ 559 006e B3061701 		add	a3,a4,a7
+ 560 0072 D1B7     		j	.L27
+ 561              	.LBE13:
+ 562              		.cfi_endproc
+ 563              	.LFE12:
+ 565              		.section	.text.vPortSetupTimer,"ax",@progbits
+ 566              		.align	1
+ 567              		.globl	vPortSetupTimer
+ 569              	vPortSetupTimer:
+ 570              	.LFB13:
+ 291:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 292:lib/freertos/src/port.c **** 
+ 293:lib/freertos/src/port.c **** 
+ 294:lib/freertos/src/port.c **** void vPortSetupTimer()	{
+ 571              		.loc 1 294 24 is_stmt 1
+ 572              		.cfi_startproc
+ 295:lib/freertos/src/port.c ****     uint8_t mtime_intattr;
+ 573              		.loc 1 295 5
+ 296:lib/freertos/src/port.c ****     // Set the machine timer
+ 297:lib/freertos/src/port.c ****     //Bob: update it to TMR
+ 298:lib/freertos/src/port.c ****     //volatile uint64_t * mtime       = (uint64_t*) (CLINT_CTRL_ADDR + CLINT_MTIME);
+ 299:lib/freertos/src/port.c ****     //volatile uint64_t * mtimecmp    = (uint64_t*) (CLINT_CTRL_ADDR + CLINT_MTIMECMP);
+ 300:lib/freertos/src/port.c ****     volatile uint64_t * mtime       = (uint64_t*) (TIMER_CTRL_ADDR + TIMER_MTIME);
+ 574              		.loc 1 300 5
+ 575              	.LVL41:
+ 301:lib/freertos/src/port.c ****     volatile uint64_t * mtimecmp    = (uint64_t*) (TIMER_CTRL_ADDR + TIMER_MTIMECMP);
+ 576              		.loc 1 301 5
+ 302:lib/freertos/src/port.c ****     uint64_t now = *mtime;
+ 577              		.loc 1 302 5
+ 303:lib/freertos/src/port.c ****     uint64_t then = now + (configRTC_CLOCK_HZ / configTICK_RATE_HZ);
+ 578              		.loc 1 303 28 is_stmt 0
+ 579 0000 B7070000 		lui	a5,%hi(SystemCoreClock)
+ 580              		.loc 1 303 47
+ 581 0004 83A70700 		lw	a5,%lo(SystemCoreClock)(a5)
+ 582 0008 9306007D 		li	a3,2000
+ 302:lib/freertos/src/port.c ****     uint64_t now = *mtime;
+ 583              		.loc 1 302 14
+ 584 000c 370700D1 		li	a4,-788529152
+ 585              		.loc 1 303 47
+ 586 0010 B3D7D702 		divu	a5,a5,a3
+ 302:lib/freertos/src/port.c ****     uint64_t now = *mtime;
+ 587              		.loc 1 302 14
+ 588 0014 03280700 		lw	a6,0(a4)
+ 589 0018 83284700 		lw	a7,4(a4)
+ 590              	.LVL42:
+ 591              		.loc 1 303 5 is_stmt 1
+ 294:lib/freertos/src/port.c ****     uint8_t mtime_intattr;
+ 592              		.loc 1 294 24 is_stmt 0
+ 593 001c 4111     		addi	sp,sp,-16
+ 594              	.LCFI10:
+ 595              		.cfi_def_cfa_offset 16
+ 596 001e 06C6     		sw	ra,12(sp)
+ 597              		.cfi_offset 1, -4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 19
+
+
+ 598              		.loc 1 303 14
+ 599 0020 33850701 		add	a0,a5,a6
+ 600 0024 B337F500 		sltu	a5,a0,a5
+ 304:lib/freertos/src/port.c ****     *mtimecmp = then;
+ 601              		.loc 1 304 15
+ 602 0028 08C7     		sw	a0,8(a4)
+ 303:lib/freertos/src/port.c ****     uint64_t then = now + (configRTC_CLOCK_HZ / configTICK_RATE_HZ);
+ 603              		.loc 1 303 14
+ 604 002a B3861701 		add	a3,a5,a7
+ 605              		.loc 1 304 5 is_stmt 1
+ 606              		.loc 1 304 15 is_stmt 0
+ 607 002e 54C7     		sw	a3,12(a4)
+ 305:lib/freertos/src/port.c **** 
+ 306:lib/freertos/src/port.c ****     mtime_intattr=eclic_get_intattr (ECLIC_INT_MTIP);
+ 608              		.loc 1 306 5 is_stmt 1
+ 609              		.loc 1 306 19 is_stmt 0
+ 610 0030 1D45     		li	a0,7
+ 611 0032 97000000 		call	eclic_get_intattr
+ 611      E7800000 
+ 612              	.LVL43:
+ 307:lib/freertos/src/port.c ****     mtime_intattr|=ECLIC_INT_ATTR_SHV;
+ 613              		.loc 1 307 5 is_stmt 1
+ 308:lib/freertos/src/port.c ****     eclic_set_intattr(ECLIC_INT_MTIP,mtime_intattr);
+ 614              		.loc 1 308 5
+ 307:lib/freertos/src/port.c ****     mtime_intattr|=ECLIC_INT_ATTR_SHV;
+ 615              		.loc 1 307 18 is_stmt 0
+ 616 003a 93651500 		ori	a1,a0,1
+ 617              		.loc 1 308 5
+ 618 003e 93F5F50F 		andi	a1,a1,0xff
+ 619 0042 1D45     		li	a0,7
+ 620              	.LVL44:
+ 621 0044 97000000 		call	eclic_set_intattr
+ 621      E7800000 
+ 622              	.LVL45:
+ 309:lib/freertos/src/port.c ****     eclic_enable_interrupt (ECLIC_INT_MTIP);
+ 623              		.loc 1 309 5 is_stmt 1
+ 624 004c 1D45     		li	a0,7
+ 625 004e 97000000 		call	eclic_enable_interrupt
+ 625      E7800000 
+ 626              	.LVL46:
+ 310:lib/freertos/src/port.c **** 		
+ 311:lib/freertos/src/port.c ****     //eclic_set_nlbits(4);
+ 312:lib/freertos/src/port.c ****     eclic_set_irq_lvl_abs(ECLIC_INT_MTIP,1);
+ 627              		.loc 1 312 5
+ 313:lib/freertos/src/port.c ****     //set_csr(mstatus, MSTATUS_MIE);
+ 314:lib/freertos/src/port.c **** }
+ 628              		.loc 1 314 1 is_stmt 0
+ 629 0056 B240     		lw	ra,12(sp)
+ 630              		.cfi_restore 1
+ 312:lib/freertos/src/port.c ****     //set_csr(mstatus, MSTATUS_MIE);
+ 631              		.loc 1 312 5
+ 632 0058 8545     		li	a1,1
+ 633              		.loc 1 314 1
+ 312:lib/freertos/src/port.c ****     //set_csr(mstatus, MSTATUS_MIE);
+ 634              		.loc 1 312 5
+ 635 005a 1D45     		li	a0,7
+ 636              		.loc 1 314 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 20
+
+
+ 637 005c 4101     		addi	sp,sp,16
+ 638              	.LCFI11:
+ 639              		.cfi_def_cfa_offset 0
+ 312:lib/freertos/src/port.c ****     //set_csr(mstatus, MSTATUS_MIE);
+ 640              		.loc 1 312 5
+ 641 005e 17030000 		tail	eclic_set_irq_lvl_abs
+ 641      67000300 
+ 642              	.LVL47:
+ 643              		.cfi_endproc
+ 644              	.LFE13:
+ 646              		.section	.text.vPortSetup,"ax",@progbits
+ 647              		.align	1
+ 648              		.globl	vPortSetup
+ 650              	vPortSetup:
+ 651              	.LFB14:
+ 315:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
+ 316:lib/freertos/src/port.c **** 
+ 317:lib/freertos/src/port.c **** 
+ 318:lib/freertos/src/port.c **** void vPortSetup()	{
+ 652              		.loc 1 318 19 is_stmt 1
+ 653              		.cfi_startproc
+ 319:lib/freertos/src/port.c **** 
+ 320:lib/freertos/src/port.c **** 	vPortSetupTimer();
+ 654              		.loc 1 320 2
+ 318:lib/freertos/src/port.c **** 
+ 655              		.loc 1 318 19 is_stmt 0
+ 656 0000 4111     		addi	sp,sp,-16
+ 657              	.LCFI12:
+ 658              		.cfi_def_cfa_offset 16
+ 659 0002 06C6     		sw	ra,12(sp)
+ 660              		.cfi_offset 1, -4
+ 661              		.loc 1 320 2
+ 662 0004 97000000 		call	vPortSetupTimer
+ 662      E7800000 
+ 663              	.LVL48:
+ 321:lib/freertos/src/port.c **** 	uxCriticalNesting = 0;
+ 664              		.loc 1 321 2 is_stmt 1
+ 322:lib/freertos/src/port.c **** }
+ 665              		.loc 1 322 1 is_stmt 0
+ 666 000c B240     		lw	ra,12(sp)
+ 667              		.cfi_restore 1
+ 321:lib/freertos/src/port.c **** 	uxCriticalNesting = 0;
+ 668              		.loc 1 321 20
+ 669 000e B7070000 		lui	a5,%hi(.LANCHOR0)
+ 670 0012 23A00700 		sw	zero,%lo(.LANCHOR0)(a5)
+ 671              		.loc 1 322 1
+ 672 0016 4101     		addi	sp,sp,16
+ 673              	.LCFI13:
+ 674              		.cfi_def_cfa_offset 0
+ 675 0018 8280     		jr	ra
+ 676              		.cfi_endproc
+ 677              	.LFE14:
+ 679              		.globl	MSTATUS_INIT
+ 680              		.globl	uxCriticalNesting
+ 681              		.section	.rodata.ulSynchTrap.str1.4,"aMS",@progbits,1
+ 682              		.align	2
+ 683              	.LC0:
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 21
+
+
+ 684 0000 74726170 		.string	"trap\n"
+ 684      0A00
+ 685 0006 0000     		.zero	2
+ 686              	.LC1:
+ 687 0008 496E2074 		.string	"In trap handler, the mcause is %d\n"
+ 687      72617020 
+ 687      68616E64 
+ 687      6C65722C 
+ 687      20746865 
+ 688 002b 00       		.zero	1
+ 689              	.LC2:
+ 690 002c 496E2074 		.string	"In trap handler, the mepc is 0x%x\n"
+ 690      72617020 
+ 690      68616E64 
+ 690      6C65722C 
+ 690      20746865 
+ 691 004f 00       		.zero	1
+ 692              	.LC3:
+ 693 0050 496E2074 		.string	"In trap handler, the mtval is 0x%x\n"
+ 693      72617020 
+ 693      68616E64 
+ 693      6C65722C 
+ 693      20746865 
+ 694              		.section	.sbss.then.5588,"aw",@nobits
+ 695              		.align	3
+ 696              		.set	.LANCHOR2,. + 0
+ 699              	then.5588:
+ 700 0000 00000000 		.zero	8
+ 700      00000000 
+ 701              		.section	.sdata.MSTATUS_INIT,"aw"
+ 702              		.align	2
+ 703              		.set	.LANCHOR1,. + 0
+ 706              	MSTATUS_INIT:
+ 707 0000 80180000 		.word	6272
+ 708              		.section	.sdata.uxCriticalNesting,"aw"
+ 709              		.align	2
+ 710              		.set	.LANCHOR0,. + 0
+ 713              	uxCriticalNesting:
+ 714 0000 AAAAAAAA 		.word	-1431655766
+ 715              		.text
+ 716              	.Letext0:
+ 717              		.file 2 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 718              		.file 3 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 719              		.file 4 "lib/freertos/include/projdefs.h"
+ 720              		.file 5 "lib/freertos/include/portmacro.h"
+ 721              		.file 6 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\lib\\gcc\\riscv64-unk
+ 722              		.file 7 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 723              		.file 8 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 724              		.file 9 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 725              		.file 10 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+ 726              		.file 11 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\
+ 727              		.file 12 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\
+ 728              		.file 13 "./../../firmware/RISCV/drivers/n200_func.h"
+ 729              		.file 14 "lib/freertos/include/task.h"
+ 730              		.file 15 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 22
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 port.c
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:12     .text.prvTaskExitError:0000000000000000 prvTaskExitError
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:16     .text.prvTaskExitError:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:17     .text.prvTaskExitError:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:18     .text.prvTaskExitError:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:24     .text.prvTaskExitError:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:25     .text.prvTaskExitError:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:26     .text.prvTaskExitError:000000000000000e .L0 
+lib/freertos/src/port.c:253    .text.prvTaskExitError:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:36     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:37     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:38     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:39     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:42     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:44     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:45     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:46     .text.prvTaskExitError:0000000000000014 .L0 
+lib/freertos/src/port.c:254    .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:56     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:57     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:58     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:59     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:60     .text.prvTaskExitError:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:67     .text.ulSynchTrap:0000000000000000 ulSynchTrap
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:70     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:72     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:73     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:74     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:76     .text.ulSynchTrap:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:78     .text.ulSynchTrap:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:80     .text.ulSynchTrap:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:82     .text.ulSynchTrap:0000000000000008 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:85     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:86     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:87     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:89     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:91     .text.ulSynchTrap:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:93     .text.ulSynchTrap:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:95     .text.ulSynchTrap:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:100    .text.ulSynchTrap:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:101    .text.ulSynchTrap:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:105    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:106    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:107    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:108    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:118    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:119    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:121    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:122    .text.ulSynchTrap:000000000000002c .L0 
+lib/freertos/src/port.c:155    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:131    .text.ulSynchTrap:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:132    .text.ulSynchTrap:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:133    .text.ulSynchTrap:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:140    .text.ulSynchTrap:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:142    .text.ulSynchTrap:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:143    .text.ulSynchTrap:0000000000000038 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 23
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:144    .text.ulSynchTrap:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:146    .text.ulSynchTrap:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:149    .text.ulSynchTrap:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:151    .text.ulSynchTrap:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:155    .text.ulSynchTrap:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:160    .text.ulSynchTrap:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:162    .text.ulSynchTrap:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:163    .text.ulSynchTrap:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:167    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:168    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:169    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:170    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:179    .text.ulSynchTrap:0000000000000052 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:182    .text.ulSynchTrap:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:183    .text.ulSynchTrap:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:188    .text.ulSynchTrap:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:189    .text.ulSynchTrap:000000000000005c .L0 
+lib/freertos/src/port.c:135    .text.ulSynchTrap:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:198    .text.ulSynchTrap:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:199    .text.ulSynchTrap:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:204    .text.ulSynchTrap:0000000000000062 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:212    .text.ulSynchTrap:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:213    .text.ulSynchTrap:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:216    .text.ulSynchTrap:0000000000000076 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:220    .text.ulSynchTrap:000000000000007a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:225    .text.ulSynchTrap:0000000000000082 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:231    .text.ulSynchTrap:0000000000000090 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:238    .text.ulSynchTrap:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:239    .text.ulSynchTrap:00000000000000a2 .L0 
+lib/freertos/src/port.c:148    .text.ulSynchTrap:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:248    .text.ulSynchTrap:00000000000000a6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:249    .text.ulSynchTrap:00000000000000a6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:255    .text.ulSynchTrap:00000000000000b6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:256    .text.ulSynchTrap:00000000000000b6 .L0 
+lib/freertos/src/port.c:149    .text.ulSynchTrap:00000000000000b6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:265    .text.ulSynchTrap:00000000000000ba .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:266    .text.ulSynchTrap:00000000000000ba .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:271    .text.ulSynchTrap:00000000000000ca .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:274    .text.ulSynchTrap:00000000000000d4 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:281    .text.vPortEnterCritical:0000000000000000 vPortEnterCritical
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:284    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:285    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:286    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:287    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:289    .text.vPortEnterCritical:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:291    .text.vPortEnterCritical:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:293    .text.vPortEnterCritical:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:294    .text.vPortEnterCritical:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:296    .text.vPortEnterCritical:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:299    .text.vPortEnterCritical:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:300    .text.vPortEnterCritical:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:304    .text.vPortEnterCritical:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:305    .text.vPortEnterCritical:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:307    .text.vPortEnterCritical:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:310    .text.vPortEnterCritical:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:312    .text.vPortEnterCritical:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:314    .text.vPortEnterCritical:0000000000000022 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 24
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:321    .text.vPortExitCritical:0000000000000000 vPortExitCritical
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:324    .text.vPortExitCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:325    .text.vPortExitCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:326    .text.vPortExitCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:332    .text.vPortExitCritical:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:333    .text.vPortExitCritical:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:334    .text.vPortExitCritical:000000000000000c .L0 
+lib/freertos/src/port.c:178    .text.vPortExitCritical:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:344    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:345    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:346    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:347    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:350    .text.vPortExitCritical:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:351    .text.vPortExitCritical:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:352    .text.vPortExitCritical:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:355    .text.vPortExitCritical:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:356    .text.vPortExitCritical:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:358    .text.vPortExitCritical:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:363    .text.vPortExitCritical:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:364    .text.vPortExitCritical:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:371    .text.vPortClearInterruptMask:0000000000000000 vPortClearInterruptMask
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:374    .text.vPortClearInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:376    .text.vPortClearInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:377    .text.vPortClearInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:381    .text.vPortClearInterruptMask:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:388    .text.xPortSetInterruptMask:0000000000000000 xPortSetInterruptMask
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:391    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:392    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:394    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:395    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:396    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:398    .text.xPortSetInterruptMask:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:401    .text.xPortSetInterruptMask:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:402    .text.xPortSetInterruptMask:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:404    .text.xPortSetInterruptMask:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:409    .text.xPortSetInterruptMask:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:413    .text.xPortSetInterruptMask:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:414    .text.xPortSetInterruptMask:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:416    .text.xPortSetInterruptMask:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:418    .text.xPortSetInterruptMask:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:422    .text.xPortSetInterruptMask:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:424    .text.xPortSetInterruptMask:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:431    .text.pxPortInitialiseStack:0000000000000000 pxPortInitialiseStack
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:434    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:436    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:437    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:438    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:439    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:440    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:443    .text.pxPortInitialiseStack:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:444    .text.pxPortInitialiseStack:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:445    .text.pxPortInitialiseStack:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:448    .text.pxPortInitialiseStack:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:451    .text.pxPortInitialiseStack:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:453    .text.pxPortInitialiseStack:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:456    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:457    .text.pxPortInitialiseStack:0000000000000016 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 25
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:458    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:459    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:460    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:464    .text.pxPortInitialiseStack:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:465    .text.pxPortInitialiseStack:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:466    .text.pxPortInitialiseStack:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:467    .text.pxPortInitialiseStack:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:474    .text.vPortSysTickHandler:0000000000000000 vPortSysTickHandler
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:477    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:478    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:479    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:481    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:482    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:483    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:484    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:492    .text.vPortSysTickHandler:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:494    .text.vPortSysTickHandler:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:497    .text.vPortSysTickHandler:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:499    .text.vPortSysTickHandler:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:503    .text.vPortSysTickHandler:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:504    .text.vPortSysTickHandler:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:512    .text.vPortSysTickHandler:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:513    .text.vPortSysTickHandler:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:517    .text.vPortSysTickHandler:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:518    .text.vPortSysTickHandler:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:521    .text.vPortSysTickHandler:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:524    .text.vPortSysTickHandler:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:525    .text.vPortSysTickHandler:000000000000004c .L0 
+lib/freertos/src/port.c:286    .text.vPortSysTickHandler:0000000000000050 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:535    .text.vPortSysTickHandler:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:536    .text.vPortSysTickHandler:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:537    .text.vPortSysTickHandler:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:538    .text.vPortSysTickHandler:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:539    .text.vPortSysTickHandler:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:542    .text.vPortSysTickHandler:0000000000000058 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:546    .text.vPortSysTickHandler:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:549    .text.vPortSysTickHandler:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:550    .text.vPortSysTickHandler:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:555    .text.vPortSysTickHandler:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:556    .text.vPortSysTickHandler:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:562    .text.vPortSysTickHandler:0000000000000074 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:569    .text.vPortSetupTimer:0000000000000000 vPortSetupTimer
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:572    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:573    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:574    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:576    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:577    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:578    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:579    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:581    .text.vPortSetupTimer:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:584    .text.vPortSetupTimer:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:586    .text.vPortSetupTimer:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:588    .text.vPortSetupTimer:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:592    .text.vPortSetupTimer:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:593    .text.vPortSetupTimer:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:595    .text.vPortSetupTimer:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:597    .text.vPortSetupTimer:0000000000000020 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 26
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:599    .text.vPortSetupTimer:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:602    .text.vPortSetupTimer:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:604    .text.vPortSetupTimer:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:606    .text.vPortSetupTimer:000000000000002e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:607    .text.vPortSetupTimer:000000000000002e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:609    .text.vPortSetupTimer:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:610    .text.vPortSetupTimer:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:614    .text.vPortSetupTimer:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:615    .text.vPortSetupTimer:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:616    .text.vPortSetupTimer:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:618    .text.vPortSetupTimer:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:624    .text.vPortSetupTimer:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:628    .text.vPortSetupTimer:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:629    .text.vPortSetupTimer:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:630    .text.vPortSetupTimer:0000000000000058 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:632    .text.vPortSetupTimer:0000000000000058 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:634    .text.vPortSetupTimer:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:635    .text.vPortSetupTimer:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:637    .text.vPortSetupTimer:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:639    .text.vPortSetupTimer:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:641    .text.vPortSetupTimer:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:643    .text.vPortSetupTimer:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:650    .text.vPortSetup:0000000000000000 vPortSetup
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:653    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:654    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:655    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:656    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:658    .text.vPortSetup:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:660    .text.vPortSetup:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:662    .text.vPortSetup:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:665    .text.vPortSetup:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:666    .text.vPortSetup:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:667    .text.vPortSetup:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:669    .text.vPortSetup:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:672    .text.vPortSetup:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:674    .text.vPortSetup:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:676    .text.vPortSetup:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:706    .sdata.MSTATUS_INIT:0000000000000000 MSTATUS_INIT
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:713    .sdata.uxCriticalNesting:0000000000000000 uxCriticalNesting
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:696    .sbss.then.5588:0000000000000000 .LANCHOR2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:699    .sbss.then.5588:0000000000000000 then.5588
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:703    .sdata.MSTATUS_INIT:0000000000000000 .LANCHOR1
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:710    .sdata.uxCriticalNesting:0000000000000000 .LANCHOR0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:63     .text.prvTaskExitError:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:277    .text.ulSynchTrap:00000000000000d4 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:317    .text.vPortEnterCritical:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:367    .text.vPortExitCritical:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:384    .text.vPortClearInterruptMask:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:427    .text.xPortSetInterruptMask:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:470    .text.pxPortInitialiseStack:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:565    .text.vPortSysTickHandler:0000000000000074 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:646    .text.vPortSetupTimer:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:681    .text.vPortSetup:000000000000001a .L0 
+                     .debug_frame:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:40     .text.prvTaskExitError:0000000000000014 .L2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:34     .text.prvTaskExitError:0000000000000012 .L3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:54     .text.prvTaskExitError:0000000000000018 .L4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 27
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:683    .rodata.ulSynchTrap.str1.4:0000000000000000 .LC0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:686    .rodata.ulSynchTrap.str1.4:0000000000000008 .LC1
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:689    .rodata.ulSynchTrap.str1.4:000000000000002c .LC2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:692    .rodata.ulSynchTrap.str1.4:0000000000000050 .LC3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:98     .text.ulSynchTrap:000000000000001e .L6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:218    .text.ulSynchTrap:000000000000007a .L7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:158    .text.ulSynchTrap:0000000000000044 .L8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:180    .text.ulSynchTrap:0000000000000054 .L10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:116    .text.ulSynchTrap:000000000000002c .L9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:210    .text.ulSynchTrap:000000000000006e .L11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:201    .text.ulSynchTrap:0000000000000062 .L13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:348    .text.vPortExitCritical:0000000000000012 .L17
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:342    .text.vPortExitCritical:0000000000000010 .L18
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:361    .text.vPortExitCritical:0000000000000022 .L16
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:544    .text.vPortSysTickHandler:000000000000005a .L25
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:533    .text.vPortSysTickHandler:0000000000000054 .L28
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:508    .text.vPortSysTickHandler:0000000000000036 .L27
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:2984   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4607   .debug_str:0000000000000617 .LASF174
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4645   .debug_str:0000000000000765 .LASF175
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4433   .debug_str:0000000000000247 .LASF176
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4291   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4315   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4595   .debug_str:00000000000005d6 .LASF0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4611   .debug_str:00000000000006a8 .LASF1
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4389   .debug_str:000000000000016a .LASF2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4581   .debug_str:0000000000000593 .LASF3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4361   .debug_str:00000000000000f5 .LASF4
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4335   .debug_str:000000000000005c .LASF8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4519   .debug_str:0000000000000459 .LASF5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4319   .debug_str:0000000000000007 .LASF6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4377   .debug_str:000000000000013a .LASF7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4403   .debug_str:00000000000001b7 .LASF9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4429   .debug_str:000000000000022f .LASF10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4505   .debug_str:00000000000003e9 .LASF11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4343   .debug_str:000000000000008f .LASF12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4579   .debug_str:0000000000000587 .LASF13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4597   .debug_str:00000000000005e3 .LASF14
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4629   .debug_str:0000000000000714 .LASF15
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4331   .debug_str:000000000000004d .LASF16
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4327   .debug_str:000000000000002c .LASF17
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4423   .debug_str:000000000000020f .LASF131
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4543   .debug_str:00000000000004c8 .LASF18
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4447   .debug_str:00000000000002c5 .LASF19
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4391   .debug_str:0000000000000178 .LASF20
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4671   .debug_str:00000000000007e9 .LASF21
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4487   .debug_str:000000000000038f .LASF22
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4587   .debug_str:00000000000005b0 .LASF23
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4503   .debug_str:00000000000003e2 .LASF24
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4357   .debug_str:00000000000000e7 .LASF25
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4321   .debug_str:0000000000000011 .LASF26
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4641   .debug_str:0000000000000752 .LASF27
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4457   .debug_str:0000000000000304 .LASF28
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4421   .debug_str:0000000000000208 .LASF29
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4565   .debug_str:0000000000000533 .LASF30
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4567   .debug_str:000000000000053b .LASF31
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4535   .debug_str:00000000000004a1 .LASF32
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 28
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4617   .debug_str:00000000000006c5 .LASF33
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4513   .debug_str:0000000000000428 .LASF34
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4525   .debug_str:0000000000000476 .LASF35
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4415   .debug_str:00000000000001f5 .LASF40
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4601   .debug_str:00000000000005f6 .LASF36
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4557   .debug_str:0000000000000516 .LASF37
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4405   .debug_str:00000000000001c2 .LASF38
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4635   .debug_str:0000000000000740 .LASF39
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4419   .debug_str:0000000000000203 .LASF41
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4355   .debug_str:00000000000000de .LASF42
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4659   .debug_str:00000000000007b9 .LASF43
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4367   .debug_str:000000000000010d .LASF44
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4653   .debug_str:0000000000000795 .LASF45
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4491   .debug_str:00000000000003a1 .LASF46
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4583   .debug_str:000000000000059f .LASF47
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4573   .debug_str:0000000000000561 .LASF48
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4527   .debug_str:000000000000047f .LASF49
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4655   .debug_str:000000000000079f .LASF50
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4371   .debug_str:000000000000011c .LASF51
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4325   .debug_str:0000000000000024 .LASF52
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4459   .debug_str:000000000000030a .LASF53
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4609   .debug_str:000000000000069f .LASF54
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4381   .debug_str:000000000000014a .LASF55
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4493   .debug_str:00000000000003aa .LASF56
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4549   .debug_str:00000000000004e9 .LASF57
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4401   .debug_str:00000000000001b2 .LASF58
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4529   .debug_str:0000000000000489 .LASF59
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4365   .debug_str:0000000000000107 .LASF60
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4593   .debug_str:00000000000005d0 .LASF61
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4537   .debug_str:00000000000004ac .LASF62
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4379   .debug_str:0000000000000143 .LASF63
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4431   .debug_str:0000000000000241 .LASF64
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4345   .debug_str:00000000000000a6 .LASF65
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4373   .debug_str:000000000000012a .LASF66
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4417   .debug_str:00000000000001fd .LASF67
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4475   .debug_str:0000000000000351 .LASF68
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4571   .debug_str:000000000000055b .LASF69
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4359   .debug_str:00000000000000ee .LASF70
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4363   .debug_str:0000000000000101 .LASF71
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4649   .debug_str:0000000000000787 .LASF72
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4589   .debug_str:00000000000005b5 .LASF73
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4395   .debug_str:000000000000018b .LASF74
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4439   .debug_str:00000000000002a5 .LASF75
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4465   .debug_str:0000000000000323 .LASF76
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4539   .debug_str:00000000000004b4 .LASF77
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4531   .debug_str:0000000000000490 .LASF78
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4559   .debug_str:000000000000051e .LASF79
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4585   .debug_str:00000000000005a9 .LASF80
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4383   .debug_str:0000000000000152 .LASF81
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4425   .debug_str:000000000000021f .LASF82
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4413   .debug_str:00000000000001ed .LASF83
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4547   .debug_str:00000000000004e4 .LASF84
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4599   .debug_str:00000000000005eb .LASF85
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4555   .debug_str:00000000000004fd .LASF86
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4669   .debug_str:00000000000007e1 .LASF87
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4497   .debug_str:00000000000003bc .LASF88
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4553   .debug_str:00000000000004f3 .LASF89
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 29
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4455   .debug_str:00000000000002fc .LASF90
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4387   .debug_str:0000000000000160 .LASF91
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4667   .debug_str:00000000000007dc .LASF92
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4509   .debug_str:0000000000000408 .LASF93
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4427   .debug_str:0000000000000227 .LASF94
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4393   .debug_str:0000000000000183 .LASF95
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4463   .debug_str:000000000000031e .LASF96
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4337   .debug_str:0000000000000066 .LASF97
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4647   .debug_str:000000000000077d .LASF98
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4375   .debug_str:0000000000000132 .LASF99
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4369   .debug_str:0000000000000117 .LASF100
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4385   .debug_str:0000000000000159 .LASF101
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4637   .debug_str:0000000000000745 .LASF102
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4441   .debug_str:00000000000002ab .LASF103
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4521   .debug_str:0000000000000467 .LASF104
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4561   .debug_str:0000000000000525 .LASF105
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4563   .debug_str:000000000000052d .LASF106
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4467   .debug_str:0000000000000329 .LASF107
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4613   .debug_str:00000000000006bb .LASF108
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4631   .debug_str:000000000000071d .LASF109
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4605   .debug_str:000000000000060a .LASF110
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4453   .debug_str:00000000000002ef .LASF111
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4657   .debug_str:00000000000007aa .LASF112
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4499   .debug_str:00000000000003c7 .LASF113
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4541   .debug_str:00000000000004bd .LASF114
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4661   .debug_str:00000000000007c2 .LASF115
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4545   .debug_str:00000000000004d7 .LASF116
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4665   .debug_str:00000000000007ce .LASF117
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4353   .debug_str:00000000000000d0 .LASF118
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4643   .debug_str:000000000000075b .LASF119
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4451   .debug_str:00000000000002e3 .LASF120
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4621   .debug_str:00000000000006e0 .LASF121
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4399   .debug_str:00000000000001a4 .LASF122
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4349   .debug_str:00000000000000ba .LASF123
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4397   .debug_str:0000000000000193 .LASF124
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4339   .debug_str:000000000000006f .LASF125
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4341   .debug_str:000000000000007e .LASF126
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4523   .debug_str:000000000000046d .LASF127
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4489   .debug_str:000000000000039a .LASF128
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4479   .debug_str:000000000000036a .LASF129
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4651   .debug_str:000000000000078d .LASF130
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4347   .debug_str:00000000000000af .LASF177
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4411   .debug_str:00000000000001e1 .LASF132
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4627   .debug_str:0000000000000701 .LASF133
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4495   .debug_str:00000000000003b2 .LASF134
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4461   .debug_str:0000000000000316 .LASF135
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4481   .debug_str:0000000000000373 .LASF136
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4485   .debug_str:0000000000000388 .LASF137
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4351   .debug_str:00000000000000c9 .LASF138
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4663   .debug_str:00000000000007c7 .LASF139
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4473   .debug_str:0000000000000348 .LASF140
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4477   .debug_str:0000000000000358 .LASF141
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4443   .debug_str:00000000000002b2 .LASF142
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4323   .debug_str:0000000000000019 .LASF143
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:651    .text.vPortSetup:0000000000000000 .LFB14
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:677    .text.vPortSetup:000000000000001a .LFE14
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3941   .debug_loc:0000000000000000 .LLST19
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 30
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:663    .text.vPortSetup:000000000000000c .LVL48
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4673   .debug_str:00000000000007f5 .LASF144
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:570    .text.vPortSetupTimer:0000000000000000 .LFB13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:644    .text.vPortSetupTimer:0000000000000066 .LFE13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3959   .debug_loc:000000000000002c .LLST16
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4483   .debug_str:000000000000037a .LASF145
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3977   .debug_loc:0000000000000058 .LLST17
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4577   .debug_str:0000000000000581 .LASF146
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4533   .debug_str:0000000000000498 .LASF147
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3988   .debug_loc:000000000000006f .LLST18
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4551   .debug_str:00000000000004ee .LASF148
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:612    .text.vPortSetupTimer:000000000000003a .LVL43
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:622    .text.vPortSetupTimer:000000000000004c .LVL45
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:626    .text.vPortSetupTimer:0000000000000056 .LVL46
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:642    .text.vPortSetupTimer:0000000000000066 .LVL47
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4507   .debug_str:00000000000003f4 .LASF153
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:475    .text.vPortSysTickHandler:0000000000000000 .LFB12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:563    .text.vPortSysTickHandler:0000000000000074 .LFE12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4000   .debug_loc:0000000000000087 .LLST15
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:547    .text.vPortSysTickHandler:000000000000005a .LBB13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:561    .text.vPortSysTickHandler:0000000000000074 .LBE13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:523    .text.vPortSysTickHandler:000000000000004c .LBB12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:534    .text.vPortSysTickHandler:0000000000000054 .LBE12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:519    .text.vPortSysTickHandler:000000000000004a .LVL39
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4517   .debug_str:0000000000000448 .LASF178
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:13     .text.prvTaskExitError:0000000000000000 .LFB11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:61     .text.prvTaskExitError:000000000000001a .LFE11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:23     .text.prvTaskExitError:000000000000000e .LBB2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:35     .text.prvTaskExitError:0000000000000012 .LBE2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4409   .debug_str:00000000000001db .LASF149
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:43     .text.prvTaskExitError:0000000000000014 .LBB3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:55     .text.prvTaskExitError:0000000000000018 .LBE3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4633   .debug_str:000000000000072a .LASF159
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:432    .text.pxPortInitialiseStack:0000000000000000 .LFB10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:468    .text.pxPortInitialiseStack:0000000000000022 .LFE10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4435   .debug_str:000000000000028b .LASF150
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4023   .debug_loc:00000000000000bf .LLST14
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4639   .debug_str:000000000000074b .LASF151
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4437   .debug_str:0000000000000298 .LASF152
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4511   .debug_str:0000000000000412 .LASF154
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:389    .text.xPortSetInterruptMask:0000000000000000 .LFB9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:425    .text.xPortSetInterruptMask:0000000000000024 .LFE9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4048   .debug_loc:00000000000000fa .LLST12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4623   .debug_str:00000000000006ed .LASF155
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4066   .debug_loc:0000000000000126 .LLST13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:405    .text.xPortSetInterruptMask:000000000000000e .LVL30
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:411    .text.xPortSetInterruptMask:000000000000001a .LVL32
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4569   .debug_str:0000000000000543 .LASF156
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:372    .text.vPortClearInterruptMask:0000000000000000 .LFB8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:382    .text.vPortClearInterruptMask:000000000000000c .LFE8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4083   .debug_loc:000000000000014a .LLST11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:380    .text.vPortClearInterruptMask:000000000000000c .LVL28
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4591   .debug_str:00000000000005be .LASF157
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:322    .text.vPortExitCritical:0000000000000000 .LFB7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:365    .text.vPortExitCritical:0000000000000024 .LFE7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:331    .text.vPortExitCritical:000000000000000c .LBB11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:343    .text.vPortExitCritical:0000000000000010 .LBE11
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 31
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:360    .text.vPortExitCritical:0000000000000022 .LVL25
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4619   .debug_str:00000000000006cd .LASF158
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:282    .text.vPortEnterCritical:0000000000000000 .LFB6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:315    .text.vPortEnterCritical:0000000000000022 .LFE6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4097   .debug_loc:000000000000016b .LLST10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:297    .text.vPortEnterCritical:000000000000000e .LVL23
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4501   .debug_str:00000000000003d6 .LASF160
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:68     .text.ulSynchTrap:0000000000000000 .LFB5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:275    .text.ulSynchTrap:00000000000000d4 .LFE5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4115   .debug_loc:0000000000000197 .LLST0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4471   .debug_str:0000000000000341 .LASF161
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4138   .debug_loc:00000000000001cf .LLST1
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4171   .debug_loc:000000000000021f .LLST2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4615   .debug_str:00000000000006c0 .LASF162
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4190   .debug_loc:0000000000000253 .LLST3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4226   .debug_loc:00000000000002a6 .LLST4
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:104    .text.ulSynchTrap:0000000000000024 .LBB4
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:117    .text.ulSynchTrap:000000000000002c .LBE4
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:166    .text.ulSynchTrap:000000000000004a .LBB6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:178    .text.ulSynchTrap:0000000000000052 .LBE6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:185    .text.ulSynchTrap:000000000000005c .LBB7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:202    .text.ulSynchTrap:0000000000000062 .LBE7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4239   .debug_loc:00000000000002c6 .LLST6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:187    .text.ulSynchTrap:000000000000005c .LBB8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:197    .text.ulSynchTrap:0000000000000060 .LBE8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:237    .text.ulSynchTrap:00000000000000a2 .LBB9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:247    .text.ulSynchTrap:00000000000000a6 .LBE9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4246   .debug_loc:00000000000002d9 .LLST8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:254    .text.ulSynchTrap:00000000000000b6 .LBB10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:264    .text.ulSynchTrap:00000000000000ba .LBE10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4253   .debug_loc:00000000000002ec .LLST9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:120    .text.ulSynchTrap:000000000000002c .LBB5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:130    .text.ulSynchTrap:0000000000000030 .LBE5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:207    .text.ulSynchTrap:000000000000006c .LVL12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:229    .text.ulSynchTrap:0000000000000090 .LVL16
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:235    .text.ulSynchTrap:00000000000000a2 .LVL17
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:252    .text.ulSynchTrap:00000000000000b6 .LVL19
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:269    .text.ulSynchTrap:00000000000000ca .LVL21
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:273    .text.ulSynchTrap:00000000000000d4 .LVL22
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4469   .debug_str:000000000000032f .LASF163
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4449   .debug_str:00000000000002d1 .LASF164
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4329   .debug_str:0000000000000036 .LASF165
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4575   .debug_str:000000000000056b .LASF166
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4407   .debug_str:00000000000001c8 .LASF167
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4515   .debug_str:000000000000043a .LASF168
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4603   .debug_str:00000000000005fc .LASF169
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4625   .debug_str:00000000000006f6 .LASF170
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4333   .debug_str:0000000000000056 .LASF171
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4317   .debug_str:0000000000000000 .LASF172
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4445   .debug_str:00000000000002bf .LASF173
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:657    .text.vPortSetup:0000000000000002 .LCFI12
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:673    .text.vPortSetup:0000000000000018 .LCFI13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:594    .text.vPortSetupTimer:000000000000001e .LCFI10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:638    .text.vPortSetupTimer:000000000000005e .LCFI11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:620    .text.vPortSetupTimer:0000000000000044 .LVL44
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:590    .text.vPortSetupTimer:000000000000001c .LVL42
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:493    .text.vPortSysTickHandler:000000000000001a .LCFI7
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 32
+
+
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:541    .text.vPortSysTickHandler:0000000000000058 .LCFI8
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:545    .text.vPortSysTickHandler:000000000000005a .LCFI9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:435    .text.pxPortInitialiseStack:0000000000000000 .LVL34
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:442    .text.pxPortInitialiseStack:0000000000000004 .LVL35
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:449    .text.pxPortInitialiseStack:0000000000000010 .LVL36
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:455    .text.pxPortInitialiseStack:0000000000000016 .LVL37
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:397    .text.xPortSetInterruptMask:0000000000000002 .LCFI5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:421    .text.xPortSetInterruptMask:0000000000000022 .LCFI6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:393    .text.xPortSetInterruptMask:0000000000000000 .LVL29
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:407    .text.xPortSetInterruptMask:0000000000000010 .LVL31
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:419    .text.xPortSetInterruptMask:0000000000000020 .LVL33
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:375    .text.vPortClearInterruptMask:0000000000000000 .LVL26
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:378    .text.vPortClearInterruptMask:0000000000000004 .LVL27
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:288    .text.vPortEnterCritical:0000000000000002 .LCFI3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:311    .text.vPortEnterCritical:0000000000000020 .LCFI4
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:75     .text.ulSynchTrap:0000000000000002 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:154    .text.ulSynchTrap:0000000000000042 .LCFI1
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:159    .text.ulSynchTrap:0000000000000044 .LCFI2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:71     .text.ulSynchTrap:0000000000000000 .LVL2
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:113    .text.ulSynchTrap:000000000000002c .LVL3
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:157    .text.ulSynchTrap:0000000000000044 .LVL7
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:205    .text.ulSynchTrap:0000000000000064 .LVL11
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:209    .text.ulSynchTrap:000000000000006e .LVL13
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:227    .text.ulSynchTrap:0000000000000088 .LVL15
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:152    .text.ulSynchTrap:0000000000000040 .LVL6
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:222    .text.ulSynchTrap:0000000000000080 .LVL14
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:127    .text.ulSynchTrap:0000000000000030 .LVL4
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:134    .text.ulSynchTrap:0000000000000032 .LVL5
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:194    .text.ulSynchTrap:0000000000000060 .LVL9
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:200    .text.ulSynchTrap:0000000000000062 .LVL10
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:244    .text.ulSynchTrap:00000000000000a6 .LVL18
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:261    .text.ulSynchTrap:00000000000000ba .LVL20
+C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:732    .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+vPortYield
+write
+printf
+_exit
+eclic_set_mth
+eclic_get_mth
+SystemCoreClock
+xTaskIncrementTick
+eclic_get_intattr
+eclic_set_intattr
+eclic_enable_interrupt
+eclic_set_irq_lvl_abs

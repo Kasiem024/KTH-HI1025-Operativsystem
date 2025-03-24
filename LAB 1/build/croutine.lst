@@ -1,0 +1,42 @@
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s 			page 1
+
+
+   1              		.file	"croutine.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              	.Letext0:
+  10              		.file 1 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+  11              		.file 2 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+  12              		.file 3 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 croutine.c
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:95     .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:203    .debug_str:00000000000000a0 .LASF13
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:193    .debug_str:000000000000005d .LASF14
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:213    .debug_str:000000000000015d .LASF15
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:179    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:183    .debug_str:000000000000000e .LASF0
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:205    .debug_str:0000000000000128 .LASF1
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:181    .debug_str:0000000000000000 .LASF2
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:209    .debug_str:0000000000000147 .LASF3
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:207    .debug_str:000000000000013b .LASF4
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:185    .debug_str:000000000000001b .LASF5
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:211    .debug_str:0000000000000153 .LASF6
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:201    .debug_str:0000000000000097 .LASF7
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:187    .debug_str:0000000000000029 .LASF10
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:189    .debug_str:0000000000000034 .LASF8
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:191    .debug_str:0000000000000046 .LASF9
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:197    .debug_str:000000000000007e .LASF11
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:199    .debug_str:0000000000000087 .LASF16
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:195    .debug_str:0000000000000079 .LASF12
+C:\Users\kasie\AppData\Local\Temp\ccmXaF1c.s:14     .debug_info:0000000000000000 .Ldebug_info0
+
+NO UNDEFINED SYMBOLS
