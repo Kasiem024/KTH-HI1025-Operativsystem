@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 1
 
 
    1              		.file	"port.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
   42:lib/freertos/src/port.c **** 
   43:lib/freertos/src/port.c ****     http://www.FreeRTOS.org/support - In return for receiving this top quality
   44:lib/freertos/src/port.c ****     embedded software for free we request you assist our global community by
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 2
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 2
 
 
   45:lib/freertos/src/port.c ****     participating in the support forum.
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
   99:lib/freertos/src/port.c **** UBaseType_t uxCriticalNesting = 0xaaaaaaaa;
  100:lib/freertos/src/port.c **** 
  101:lib/freertos/src/port.c **** #if USER_MODE_TASKS
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 3
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 3
 
 
  102:lib/freertos/src/port.c **** 	unsigned long MSTATUS_INIT = (MSTATUS_MPIE);
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  156:lib/freertos/src/port.c **** 
  157:lib/freertos/src/port.c **** 	write_csr(mepc,epc+4);
  158:lib/freertos/src/port.c **** 	return sp;
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 4
 
 
  159:lib/freertos/src/port.c **** }
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  213:lib/freertos/src/port.c **** }
  214:lib/freertos/src/port.c **** 
  215:lib/freertos/src/port.c **** /*-----------------------------------------------------------*/
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 5
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 5
 
 
  216:lib/freertos/src/port.c **** /*
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
   30              	# 0 "" 2
   31              	.LVL0:
  253:lib/freertos/src/port.c **** 	configASSERT( uxCriticalNesting == ~0UL );
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 6
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 6
 
 
   32              		.loc 1 253 2 discriminator 3
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
   77 0002 22C4     		sw	s0,8(sp)
   78              		.cfi_offset 8, -8
  120:lib/freertos/src/port.c **** 		//on User and Machine ECALL, handler the request
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 7
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 7
 
 
   79              		.loc 1 120 15
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  119              		.loc 1 155 2
  120              	.LBB5:
  155:lib/freertos/src/port.c **** 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 8
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 8
 
 
  121              		.loc 1 155 22
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  166              	.LBB6:
  130:lib/freertos/src/port.c **** 
  167              		.loc 1 130 5 discriminator 2
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 9
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 9
 
 
  130:lib/freertos/src/port.c **** 
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  210              	.L11:
  138:lib/freertos/src/port.c **** 			
  211              		.loc 1 138 11 is_stmt 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 10
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 10
 
 
  138:lib/freertos/src/port.c **** 			
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  149:lib/freertos/src/port.c ****               
  253              		.loc 1 149 17 is_stmt 1
  254              	.LBB10:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 11
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 11
 
 
  149:lib/freertos/src/port.c ****               
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  297              	.LVL23:
  172:lib/freertos/src/port.c **** }
  298              		.loc 1 172 2 is_stmt 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 12
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 12
 
 
  172:lib/freertos/src/port.c **** }
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
  344              		.loc 1 178 2 discriminator 1
  178:lib/freertos/src/port.c **** 	uxCriticalNesting--;
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 13
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 13
 
 
  345              		.loc 1 178 2 discriminator 1
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  390              		.loc 1 207 1
  391              		.cfi_startproc
  208:lib/freertos/src/port.c **** 	int_mask=eclic_get_mth();
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 14
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 14
 
 
  392              		.loc 1 208 2
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  437              		.loc 1 225 2
  226:lib/freertos/src/port.c **** 
  438              		.loc 1 226 2
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 15
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 15
 
 
  226:lib/freertos/src/port.c **** 
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  261:lib/freertos/src/port.c **** 
  262:lib/freertos/src/port.c **** /*Entry Point for Machine Timer Interrupt Handler*/
  263:lib/freertos/src/port.c **** //Bob: add the function argument int_num
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 16
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 16
 
 
  264:lib/freertos/src/port.c **** 
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  511              		.loc 1 281 2 is_stmt 1
  512              		.loc 1 281 12 is_stmt 0
  513 003a B70700D1 		li	a5,-788529152
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 17
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 17
 
 
  514 003e 90C7     		sw	a2,8(a5)
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  279:lib/freertos/src/port.c **** 	}
  554              		.loc 1 279 3 is_stmt 1
  279:lib/freertos/src/port.c **** 	}
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 18
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 18
 
 
  555              		.loc 1 279 14 is_stmt 0
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  595              		.cfi_def_cfa_offset 16
  596 001e 06C6     		sw	ra,12(sp)
  597              		.cfi_offset 1, -4
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 19
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 19
 
 
  598              		.loc 1 303 14
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  634              		.loc 1 312 5
  635 005a 1D45     		li	a0,7
  636              		.loc 1 314 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 20
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 20
 
 
  637 005c 4101     		addi	sp,sp,16
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  681              		.section	.rodata.ulSynchTrap.str1.4,"aMS",@progbits,1
  682              		.align	2
  683              	.LC0:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 21
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 21
 
 
  684 0000 74726170 		.string	"trap\n"
@@ -1256,642 +1256,642 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 1
  728              		.file 13 "./../../firmware/RISCV/drivers/n200_func.h"
  729              		.file 14 "lib/freertos/include/task.h"
  730              		.file 15 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 22
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 port.c
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:12     .text.prvTaskExitError:0000000000000000 prvTaskExitError
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:16     .text.prvTaskExitError:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:17     .text.prvTaskExitError:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:18     .text.prvTaskExitError:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:24     .text.prvTaskExitError:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:25     .text.prvTaskExitError:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:26     .text.prvTaskExitError:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:12     .text.prvTaskExitError:0000000000000000 prvTaskExitError
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:16     .text.prvTaskExitError:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:17     .text.prvTaskExitError:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:18     .text.prvTaskExitError:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:24     .text.prvTaskExitError:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:25     .text.prvTaskExitError:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:26     .text.prvTaskExitError:000000000000000e .L0 
 lib/freertos/src/port.c:253    .text.prvTaskExitError:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:36     .text.prvTaskExitError:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:37     .text.prvTaskExitError:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:38     .text.prvTaskExitError:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:39     .text.prvTaskExitError:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:42     .text.prvTaskExitError:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:44     .text.prvTaskExitError:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:45     .text.prvTaskExitError:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:46     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:36     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:37     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:38     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:39     .text.prvTaskExitError:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:42     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:44     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:45     .text.prvTaskExitError:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:46     .text.prvTaskExitError:0000000000000014 .L0 
 lib/freertos/src/port.c:254    .text.prvTaskExitError:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:56     .text.prvTaskExitError:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:57     .text.prvTaskExitError:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:58     .text.prvTaskExitError:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:59     .text.prvTaskExitError:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:60     .text.prvTaskExitError:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:67     .text.ulSynchTrap:0000000000000000 ulSynchTrap
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:70     .text.ulSynchTrap:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:72     .text.ulSynchTrap:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:73     .text.ulSynchTrap:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:74     .text.ulSynchTrap:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:76     .text.ulSynchTrap:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:78     .text.ulSynchTrap:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:80     .text.ulSynchTrap:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:82     .text.ulSynchTrap:0000000000000008 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:85     .text.ulSynchTrap:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:86     .text.ulSynchTrap:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:87     .text.ulSynchTrap:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:89     .text.ulSynchTrap:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:91     .text.ulSynchTrap:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:93     .text.ulSynchTrap:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:95     .text.ulSynchTrap:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:100    .text.ulSynchTrap:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:101    .text.ulSynchTrap:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:105    .text.ulSynchTrap:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:106    .text.ulSynchTrap:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:107    .text.ulSynchTrap:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:108    .text.ulSynchTrap:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:118    .text.ulSynchTrap:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:119    .text.ulSynchTrap:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:121    .text.ulSynchTrap:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:122    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:56     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:57     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:58     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:59     .text.prvTaskExitError:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:60     .text.prvTaskExitError:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:67     .text.ulSynchTrap:0000000000000000 ulSynchTrap
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:70     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:72     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:73     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:74     .text.ulSynchTrap:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:76     .text.ulSynchTrap:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:78     .text.ulSynchTrap:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:80     .text.ulSynchTrap:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:82     .text.ulSynchTrap:0000000000000008 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:85     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:86     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:87     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:89     .text.ulSynchTrap:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:91     .text.ulSynchTrap:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:93     .text.ulSynchTrap:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:95     .text.ulSynchTrap:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:100    .text.ulSynchTrap:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:101    .text.ulSynchTrap:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:105    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:106    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:107    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:108    .text.ulSynchTrap:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:118    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:119    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:121    .text.ulSynchTrap:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:122    .text.ulSynchTrap:000000000000002c .L0 
 lib/freertos/src/port.c:155    .text.ulSynchTrap:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:131    .text.ulSynchTrap:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:132    .text.ulSynchTrap:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:133    .text.ulSynchTrap:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:140    .text.ulSynchTrap:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:142    .text.ulSynchTrap:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:143    .text.ulSynchTrap:0000000000000038 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 23
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:131    .text.ulSynchTrap:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:132    .text.ulSynchTrap:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:133    .text.ulSynchTrap:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:140    .text.ulSynchTrap:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:142    .text.ulSynchTrap:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:143    .text.ulSynchTrap:0000000000000038 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 23
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:144    .text.ulSynchTrap:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:146    .text.ulSynchTrap:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:149    .text.ulSynchTrap:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:151    .text.ulSynchTrap:0000000000000040 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:155    .text.ulSynchTrap:0000000000000042 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:160    .text.ulSynchTrap:0000000000000044 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:162    .text.ulSynchTrap:0000000000000044 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:163    .text.ulSynchTrap:0000000000000044 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:167    .text.ulSynchTrap:000000000000004a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:168    .text.ulSynchTrap:000000000000004a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:169    .text.ulSynchTrap:000000000000004a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:170    .text.ulSynchTrap:000000000000004a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:179    .text.ulSynchTrap:0000000000000052 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:182    .text.ulSynchTrap:0000000000000054 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:183    .text.ulSynchTrap:0000000000000054 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:188    .text.ulSynchTrap:000000000000005c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:189    .text.ulSynchTrap:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:144    .text.ulSynchTrap:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:146    .text.ulSynchTrap:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:149    .text.ulSynchTrap:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:151    .text.ulSynchTrap:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:155    .text.ulSynchTrap:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:160    .text.ulSynchTrap:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:162    .text.ulSynchTrap:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:163    .text.ulSynchTrap:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:167    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:168    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:169    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:170    .text.ulSynchTrap:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:179    .text.ulSynchTrap:0000000000000052 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:182    .text.ulSynchTrap:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:183    .text.ulSynchTrap:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:188    .text.ulSynchTrap:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:189    .text.ulSynchTrap:000000000000005c .L0 
 lib/freertos/src/port.c:135    .text.ulSynchTrap:000000000000005c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:198    .text.ulSynchTrap:0000000000000060 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:199    .text.ulSynchTrap:0000000000000060 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:204    .text.ulSynchTrap:0000000000000062 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:212    .text.ulSynchTrap:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:213    .text.ulSynchTrap:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:216    .text.ulSynchTrap:0000000000000076 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:220    .text.ulSynchTrap:000000000000007a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:225    .text.ulSynchTrap:0000000000000082 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:231    .text.ulSynchTrap:0000000000000090 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:238    .text.ulSynchTrap:00000000000000a2 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:239    .text.ulSynchTrap:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:198    .text.ulSynchTrap:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:199    .text.ulSynchTrap:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:204    .text.ulSynchTrap:0000000000000062 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:212    .text.ulSynchTrap:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:213    .text.ulSynchTrap:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:216    .text.ulSynchTrap:0000000000000076 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:220    .text.ulSynchTrap:000000000000007a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:225    .text.ulSynchTrap:0000000000000082 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:231    .text.ulSynchTrap:0000000000000090 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:238    .text.ulSynchTrap:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:239    .text.ulSynchTrap:00000000000000a2 .L0 
 lib/freertos/src/port.c:148    .text.ulSynchTrap:00000000000000a2 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:248    .text.ulSynchTrap:00000000000000a6 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:249    .text.ulSynchTrap:00000000000000a6 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:255    .text.ulSynchTrap:00000000000000b6 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:256    .text.ulSynchTrap:00000000000000b6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:248    .text.ulSynchTrap:00000000000000a6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:249    .text.ulSynchTrap:00000000000000a6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:255    .text.ulSynchTrap:00000000000000b6 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:256    .text.ulSynchTrap:00000000000000b6 .L0 
 lib/freertos/src/port.c:149    .text.ulSynchTrap:00000000000000b6 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:265    .text.ulSynchTrap:00000000000000ba .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:266    .text.ulSynchTrap:00000000000000ba .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:271    .text.ulSynchTrap:00000000000000ca .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:274    .text.ulSynchTrap:00000000000000d4 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:281    .text.vPortEnterCritical:0000000000000000 vPortEnterCritical
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:284    .text.vPortEnterCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:285    .text.vPortEnterCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:286    .text.vPortEnterCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:287    .text.vPortEnterCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:289    .text.vPortEnterCritical:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:291    .text.vPortEnterCritical:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:293    .text.vPortEnterCritical:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:294    .text.vPortEnterCritical:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:296    .text.vPortEnterCritical:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:299    .text.vPortEnterCritical:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:300    .text.vPortEnterCritical:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:304    .text.vPortEnterCritical:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:305    .text.vPortEnterCritical:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:307    .text.vPortEnterCritical:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:310    .text.vPortEnterCritical:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:312    .text.vPortEnterCritical:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:314    .text.vPortEnterCritical:0000000000000022 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 24
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:265    .text.ulSynchTrap:00000000000000ba .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:266    .text.ulSynchTrap:00000000000000ba .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:271    .text.ulSynchTrap:00000000000000ca .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:274    .text.ulSynchTrap:00000000000000d4 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:281    .text.vPortEnterCritical:0000000000000000 vPortEnterCritical
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:284    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:285    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:286    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:287    .text.vPortEnterCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:289    .text.vPortEnterCritical:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:291    .text.vPortEnterCritical:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:293    .text.vPortEnterCritical:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:294    .text.vPortEnterCritical:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:296    .text.vPortEnterCritical:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:299    .text.vPortEnterCritical:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:300    .text.vPortEnterCritical:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:304    .text.vPortEnterCritical:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:305    .text.vPortEnterCritical:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:307    .text.vPortEnterCritical:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:310    .text.vPortEnterCritical:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:312    .text.vPortEnterCritical:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:314    .text.vPortEnterCritical:0000000000000022 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 24
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:321    .text.vPortExitCritical:0000000000000000 vPortExitCritical
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:324    .text.vPortExitCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:325    .text.vPortExitCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:326    .text.vPortExitCritical:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:332    .text.vPortExitCritical:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:333    .text.vPortExitCritical:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:334    .text.vPortExitCritical:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:321    .text.vPortExitCritical:0000000000000000 vPortExitCritical
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:324    .text.vPortExitCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:325    .text.vPortExitCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:326    .text.vPortExitCritical:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:332    .text.vPortExitCritical:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:333    .text.vPortExitCritical:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:334    .text.vPortExitCritical:000000000000000c .L0 
 lib/freertos/src/port.c:178    .text.vPortExitCritical:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:344    .text.vPortExitCritical:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:345    .text.vPortExitCritical:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:346    .text.vPortExitCritical:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:347    .text.vPortExitCritical:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:350    .text.vPortExitCritical:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:351    .text.vPortExitCritical:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:352    .text.vPortExitCritical:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:355    .text.vPortExitCritical:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:356    .text.vPortExitCritical:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:358    .text.vPortExitCritical:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:363    .text.vPortExitCritical:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:364    .text.vPortExitCritical:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:371    .text.vPortClearInterruptMask:0000000000000000 vPortClearInterruptMask
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:374    .text.vPortClearInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:376    .text.vPortClearInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:377    .text.vPortClearInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:381    .text.vPortClearInterruptMask:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:388    .text.xPortSetInterruptMask:0000000000000000 xPortSetInterruptMask
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:391    .text.xPortSetInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:392    .text.xPortSetInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:394    .text.xPortSetInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:395    .text.xPortSetInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:396    .text.xPortSetInterruptMask:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:398    .text.xPortSetInterruptMask:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:401    .text.xPortSetInterruptMask:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:402    .text.xPortSetInterruptMask:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:404    .text.xPortSetInterruptMask:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:409    .text.xPortSetInterruptMask:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:413    .text.xPortSetInterruptMask:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:414    .text.xPortSetInterruptMask:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:416    .text.xPortSetInterruptMask:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:418    .text.xPortSetInterruptMask:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:422    .text.xPortSetInterruptMask:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:424    .text.xPortSetInterruptMask:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:431    .text.pxPortInitialiseStack:0000000000000000 pxPortInitialiseStack
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:434    .text.pxPortInitialiseStack:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:436    .text.pxPortInitialiseStack:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:437    .text.pxPortInitialiseStack:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:438    .text.pxPortInitialiseStack:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:439    .text.pxPortInitialiseStack:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:440    .text.pxPortInitialiseStack:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:443    .text.pxPortInitialiseStack:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:444    .text.pxPortInitialiseStack:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:445    .text.pxPortInitialiseStack:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:448    .text.pxPortInitialiseStack:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:451    .text.pxPortInitialiseStack:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:453    .text.pxPortInitialiseStack:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:456    .text.pxPortInitialiseStack:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:457    .text.pxPortInitialiseStack:0000000000000016 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 25
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:344    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:345    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:346    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:347    .text.vPortExitCritical:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:350    .text.vPortExitCritical:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:351    .text.vPortExitCritical:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:352    .text.vPortExitCritical:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:355    .text.vPortExitCritical:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:356    .text.vPortExitCritical:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:358    .text.vPortExitCritical:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:363    .text.vPortExitCritical:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:364    .text.vPortExitCritical:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:371    .text.vPortClearInterruptMask:0000000000000000 vPortClearInterruptMask
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:374    .text.vPortClearInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:376    .text.vPortClearInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:377    .text.vPortClearInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:381    .text.vPortClearInterruptMask:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:388    .text.xPortSetInterruptMask:0000000000000000 xPortSetInterruptMask
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:391    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:392    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:394    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:395    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:396    .text.xPortSetInterruptMask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:398    .text.xPortSetInterruptMask:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:401    .text.xPortSetInterruptMask:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:402    .text.xPortSetInterruptMask:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:404    .text.xPortSetInterruptMask:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:409    .text.xPortSetInterruptMask:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:413    .text.xPortSetInterruptMask:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:414    .text.xPortSetInterruptMask:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:416    .text.xPortSetInterruptMask:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:418    .text.xPortSetInterruptMask:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:422    .text.xPortSetInterruptMask:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:424    .text.xPortSetInterruptMask:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:431    .text.pxPortInitialiseStack:0000000000000000 pxPortInitialiseStack
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:434    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:436    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:437    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:438    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:439    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:440    .text.pxPortInitialiseStack:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:443    .text.pxPortInitialiseStack:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:444    .text.pxPortInitialiseStack:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:445    .text.pxPortInitialiseStack:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:448    .text.pxPortInitialiseStack:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:451    .text.pxPortInitialiseStack:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:453    .text.pxPortInitialiseStack:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:456    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:457    .text.pxPortInitialiseStack:0000000000000016 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 25
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:458    .text.pxPortInitialiseStack:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:459    .text.pxPortInitialiseStack:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:460    .text.pxPortInitialiseStack:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:464    .text.pxPortInitialiseStack:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:465    .text.pxPortInitialiseStack:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:466    .text.pxPortInitialiseStack:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:467    .text.pxPortInitialiseStack:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:474    .text.vPortSysTickHandler:0000000000000000 vPortSysTickHandler
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:477    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:478    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:479    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:481    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:482    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:483    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:484    .text.vPortSysTickHandler:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:492    .text.vPortSysTickHandler:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:494    .text.vPortSysTickHandler:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:497    .text.vPortSysTickHandler:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:499    .text.vPortSysTickHandler:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:503    .text.vPortSysTickHandler:000000000000002a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:504    .text.vPortSysTickHandler:000000000000002a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:512    .text.vPortSysTickHandler:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:513    .text.vPortSysTickHandler:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:517    .text.vPortSysTickHandler:0000000000000042 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:518    .text.vPortSysTickHandler:0000000000000042 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:521    .text.vPortSysTickHandler:000000000000004a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:524    .text.vPortSysTickHandler:000000000000004c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:525    .text.vPortSysTickHandler:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:458    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:459    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:460    .text.pxPortInitialiseStack:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:464    .text.pxPortInitialiseStack:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:465    .text.pxPortInitialiseStack:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:466    .text.pxPortInitialiseStack:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:467    .text.pxPortInitialiseStack:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:474    .text.vPortSysTickHandler:0000000000000000 vPortSysTickHandler
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:477    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:478    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:479    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:481    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:482    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:483    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:484    .text.vPortSysTickHandler:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:492    .text.vPortSysTickHandler:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:494    .text.vPortSysTickHandler:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:497    .text.vPortSysTickHandler:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:499    .text.vPortSysTickHandler:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:503    .text.vPortSysTickHandler:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:504    .text.vPortSysTickHandler:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:512    .text.vPortSysTickHandler:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:513    .text.vPortSysTickHandler:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:517    .text.vPortSysTickHandler:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:518    .text.vPortSysTickHandler:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:521    .text.vPortSysTickHandler:000000000000004a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:524    .text.vPortSysTickHandler:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:525    .text.vPortSysTickHandler:000000000000004c .L0 
 lib/freertos/src/port.c:286    .text.vPortSysTickHandler:0000000000000050 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:535    .text.vPortSysTickHandler:0000000000000054 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:536    .text.vPortSysTickHandler:0000000000000054 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:537    .text.vPortSysTickHandler:0000000000000054 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:538    .text.vPortSysTickHandler:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:539    .text.vPortSysTickHandler:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:542    .text.vPortSysTickHandler:0000000000000058 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:546    .text.vPortSysTickHandler:000000000000005a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:549    .text.vPortSysTickHandler:000000000000005a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:550    .text.vPortSysTickHandler:000000000000005a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:555    .text.vPortSysTickHandler:0000000000000066 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:556    .text.vPortSysTickHandler:0000000000000066 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:562    .text.vPortSysTickHandler:0000000000000074 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:569    .text.vPortSetupTimer:0000000000000000 vPortSetupTimer
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:572    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:573    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:574    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:576    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:577    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:578    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:579    .text.vPortSetupTimer:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:581    .text.vPortSetupTimer:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:584    .text.vPortSetupTimer:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:586    .text.vPortSetupTimer:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:588    .text.vPortSetupTimer:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:592    .text.vPortSetupTimer:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:593    .text.vPortSetupTimer:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:595    .text.vPortSetupTimer:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:597    .text.vPortSetupTimer:0000000000000020 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 26
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:535    .text.vPortSysTickHandler:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:536    .text.vPortSysTickHandler:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:537    .text.vPortSysTickHandler:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:538    .text.vPortSysTickHandler:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:539    .text.vPortSysTickHandler:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:542    .text.vPortSysTickHandler:0000000000000058 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:546    .text.vPortSysTickHandler:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:549    .text.vPortSysTickHandler:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:550    .text.vPortSysTickHandler:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:555    .text.vPortSysTickHandler:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:556    .text.vPortSysTickHandler:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:562    .text.vPortSysTickHandler:0000000000000074 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:569    .text.vPortSetupTimer:0000000000000000 vPortSetupTimer
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:572    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:573    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:574    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:576    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:577    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:578    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:579    .text.vPortSetupTimer:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:581    .text.vPortSetupTimer:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:584    .text.vPortSetupTimer:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:586    .text.vPortSetupTimer:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:588    .text.vPortSetupTimer:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:592    .text.vPortSetupTimer:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:593    .text.vPortSetupTimer:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:595    .text.vPortSetupTimer:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:597    .text.vPortSetupTimer:0000000000000020 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 26
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:599    .text.vPortSetupTimer:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:602    .text.vPortSetupTimer:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:604    .text.vPortSetupTimer:000000000000002a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:606    .text.vPortSetupTimer:000000000000002e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:607    .text.vPortSetupTimer:000000000000002e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:609    .text.vPortSetupTimer:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:610    .text.vPortSetupTimer:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:614    .text.vPortSetupTimer:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:615    .text.vPortSetupTimer:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:616    .text.vPortSetupTimer:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:618    .text.vPortSetupTimer:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:624    .text.vPortSetupTimer:000000000000004c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:628    .text.vPortSetupTimer:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:629    .text.vPortSetupTimer:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:630    .text.vPortSetupTimer:0000000000000058 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:632    .text.vPortSetupTimer:0000000000000058 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:634    .text.vPortSetupTimer:000000000000005a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:635    .text.vPortSetupTimer:000000000000005a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:637    .text.vPortSetupTimer:000000000000005c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:639    .text.vPortSetupTimer:000000000000005e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:641    .text.vPortSetupTimer:000000000000005e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:643    .text.vPortSetupTimer:0000000000000066 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:650    .text.vPortSetup:0000000000000000 vPortSetup
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:653    .text.vPortSetup:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:654    .text.vPortSetup:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:655    .text.vPortSetup:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:656    .text.vPortSetup:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:658    .text.vPortSetup:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:660    .text.vPortSetup:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:662    .text.vPortSetup:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:665    .text.vPortSetup:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:666    .text.vPortSetup:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:667    .text.vPortSetup:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:669    .text.vPortSetup:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:672    .text.vPortSetup:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:674    .text.vPortSetup:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:676    .text.vPortSetup:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:706    .sdata.MSTATUS_INIT:0000000000000000 MSTATUS_INIT
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:713    .sdata.uxCriticalNesting:0000000000000000 uxCriticalNesting
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:696    .sbss.then.5588:0000000000000000 .LANCHOR2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:699    .sbss.then.5588:0000000000000000 then.5588
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:703    .sdata.MSTATUS_INIT:0000000000000000 .LANCHOR1
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:710    .sdata.uxCriticalNesting:0000000000000000 .LANCHOR0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:63     .text.prvTaskExitError:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:277    .text.ulSynchTrap:00000000000000d4 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:317    .text.vPortEnterCritical:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:367    .text.vPortExitCritical:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:384    .text.vPortClearInterruptMask:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:427    .text.xPortSetInterruptMask:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:470    .text.pxPortInitialiseStack:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:565    .text.vPortSysTickHandler:0000000000000074 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:646    .text.vPortSetupTimer:0000000000000066 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:681    .text.vPortSetup:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:599    .text.vPortSetupTimer:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:602    .text.vPortSetupTimer:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:604    .text.vPortSetupTimer:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:606    .text.vPortSetupTimer:000000000000002e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:607    .text.vPortSetupTimer:000000000000002e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:609    .text.vPortSetupTimer:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:610    .text.vPortSetupTimer:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:614    .text.vPortSetupTimer:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:615    .text.vPortSetupTimer:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:616    .text.vPortSetupTimer:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:618    .text.vPortSetupTimer:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:624    .text.vPortSetupTimer:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:628    .text.vPortSetupTimer:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:629    .text.vPortSetupTimer:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:630    .text.vPortSetupTimer:0000000000000058 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:632    .text.vPortSetupTimer:0000000000000058 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:634    .text.vPortSetupTimer:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:635    .text.vPortSetupTimer:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:637    .text.vPortSetupTimer:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:639    .text.vPortSetupTimer:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:641    .text.vPortSetupTimer:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:643    .text.vPortSetupTimer:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:650    .text.vPortSetup:0000000000000000 vPortSetup
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:653    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:654    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:655    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:656    .text.vPortSetup:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:658    .text.vPortSetup:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:660    .text.vPortSetup:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:662    .text.vPortSetup:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:665    .text.vPortSetup:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:666    .text.vPortSetup:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:667    .text.vPortSetup:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:669    .text.vPortSetup:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:672    .text.vPortSetup:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:674    .text.vPortSetup:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:676    .text.vPortSetup:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:706    .sdata.MSTATUS_INIT:0000000000000000 MSTATUS_INIT
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:713    .sdata.uxCriticalNesting:0000000000000000 uxCriticalNesting
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:696    .sbss.then.5588:0000000000000000 .LANCHOR2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:699    .sbss.then.5588:0000000000000000 then.5588
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:703    .sdata.MSTATUS_INIT:0000000000000000 .LANCHOR1
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:710    .sdata.uxCriticalNesting:0000000000000000 .LANCHOR0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:63     .text.prvTaskExitError:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:277    .text.ulSynchTrap:00000000000000d4 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:317    .text.vPortEnterCritical:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:367    .text.vPortExitCritical:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:384    .text.vPortClearInterruptMask:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:427    .text.xPortSetInterruptMask:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:470    .text.pxPortInitialiseStack:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:565    .text.vPortSysTickHandler:0000000000000074 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:646    .text.vPortSetupTimer:0000000000000066 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:681    .text.vPortSetup:000000000000001a .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:40     .text.prvTaskExitError:0000000000000014 .L2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:34     .text.prvTaskExitError:0000000000000012 .L3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:54     .text.prvTaskExitError:0000000000000018 .L4
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 27
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:40     .text.prvTaskExitError:0000000000000014 .L2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:34     .text.prvTaskExitError:0000000000000012 .L3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:54     .text.prvTaskExitError:0000000000000018 .L4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 27
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:683    .rodata.ulSynchTrap.str1.4:0000000000000000 .LC0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:686    .rodata.ulSynchTrap.str1.4:0000000000000008 .LC1
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:689    .rodata.ulSynchTrap.str1.4:000000000000002c .LC2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:692    .rodata.ulSynchTrap.str1.4:0000000000000050 .LC3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:98     .text.ulSynchTrap:000000000000001e .L6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:218    .text.ulSynchTrap:000000000000007a .L7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:158    .text.ulSynchTrap:0000000000000044 .L8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:180    .text.ulSynchTrap:0000000000000054 .L10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:116    .text.ulSynchTrap:000000000000002c .L9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:210    .text.ulSynchTrap:000000000000006e .L11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:201    .text.ulSynchTrap:0000000000000062 .L13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:348    .text.vPortExitCritical:0000000000000012 .L17
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:342    .text.vPortExitCritical:0000000000000010 .L18
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:361    .text.vPortExitCritical:0000000000000022 .L16
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:544    .text.vPortSysTickHandler:000000000000005a .L25
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:533    .text.vPortSysTickHandler:0000000000000054 .L28
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:508    .text.vPortSysTickHandler:0000000000000036 .L27
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:2984   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4607   .debug_str:0000000000000617 .LASF174
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4645   .debug_str:0000000000000765 .LASF175
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4433   .debug_str:0000000000000247 .LASF176
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4291   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4315   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4595   .debug_str:00000000000005d6 .LASF0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4611   .debug_str:00000000000006a8 .LASF1
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4389   .debug_str:000000000000016a .LASF2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4581   .debug_str:0000000000000593 .LASF3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4361   .debug_str:00000000000000f5 .LASF4
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4335   .debug_str:000000000000005c .LASF8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4519   .debug_str:0000000000000459 .LASF5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4319   .debug_str:0000000000000007 .LASF6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4377   .debug_str:000000000000013a .LASF7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4403   .debug_str:00000000000001b7 .LASF9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4429   .debug_str:000000000000022f .LASF10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4505   .debug_str:00000000000003e9 .LASF11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4343   .debug_str:000000000000008f .LASF12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4579   .debug_str:0000000000000587 .LASF13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4597   .debug_str:00000000000005e3 .LASF14
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4629   .debug_str:0000000000000714 .LASF15
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4331   .debug_str:000000000000004d .LASF16
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4327   .debug_str:000000000000002c .LASF17
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4423   .debug_str:000000000000020f .LASF131
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4543   .debug_str:00000000000004c8 .LASF18
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4447   .debug_str:00000000000002c5 .LASF19
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4391   .debug_str:0000000000000178 .LASF20
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4671   .debug_str:00000000000007e9 .LASF21
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4487   .debug_str:000000000000038f .LASF22
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4587   .debug_str:00000000000005b0 .LASF23
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4503   .debug_str:00000000000003e2 .LASF24
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4357   .debug_str:00000000000000e7 .LASF25
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4321   .debug_str:0000000000000011 .LASF26
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4641   .debug_str:0000000000000752 .LASF27
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4457   .debug_str:0000000000000304 .LASF28
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4421   .debug_str:0000000000000208 .LASF29
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4565   .debug_str:0000000000000533 .LASF30
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4567   .debug_str:000000000000053b .LASF31
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4535   .debug_str:00000000000004a1 .LASF32
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 28
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:683    .rodata.ulSynchTrap.str1.4:0000000000000000 .LC0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:686    .rodata.ulSynchTrap.str1.4:0000000000000008 .LC1
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:689    .rodata.ulSynchTrap.str1.4:000000000000002c .LC2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:692    .rodata.ulSynchTrap.str1.4:0000000000000050 .LC3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:98     .text.ulSynchTrap:000000000000001e .L6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:218    .text.ulSynchTrap:000000000000007a .L7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:158    .text.ulSynchTrap:0000000000000044 .L8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:180    .text.ulSynchTrap:0000000000000054 .L10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:116    .text.ulSynchTrap:000000000000002c .L9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:210    .text.ulSynchTrap:000000000000006e .L11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:201    .text.ulSynchTrap:0000000000000062 .L13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:348    .text.vPortExitCritical:0000000000000012 .L17
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:342    .text.vPortExitCritical:0000000000000010 .L18
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:361    .text.vPortExitCritical:0000000000000022 .L16
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:544    .text.vPortSysTickHandler:000000000000005a .L25
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:533    .text.vPortSysTickHandler:0000000000000054 .L28
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:508    .text.vPortSysTickHandler:0000000000000036 .L27
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:2984   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4607   .debug_str:0000000000000617 .LASF174
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4645   .debug_str:0000000000000765 .LASF175
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4433   .debug_str:0000000000000247 .LASF176
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4291   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4315   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4595   .debug_str:00000000000005d6 .LASF0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4611   .debug_str:00000000000006a8 .LASF1
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4389   .debug_str:000000000000016a .LASF2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4581   .debug_str:0000000000000593 .LASF3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4361   .debug_str:00000000000000f5 .LASF4
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4335   .debug_str:000000000000005c .LASF8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4519   .debug_str:0000000000000459 .LASF5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4319   .debug_str:0000000000000007 .LASF6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4377   .debug_str:000000000000013a .LASF7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4403   .debug_str:00000000000001b7 .LASF9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4429   .debug_str:000000000000022f .LASF10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4505   .debug_str:00000000000003e9 .LASF11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4343   .debug_str:000000000000008f .LASF12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4579   .debug_str:0000000000000587 .LASF13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4597   .debug_str:00000000000005e3 .LASF14
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4629   .debug_str:0000000000000714 .LASF15
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4331   .debug_str:000000000000004d .LASF16
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4327   .debug_str:000000000000002c .LASF17
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4423   .debug_str:000000000000020f .LASF131
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4543   .debug_str:00000000000004c8 .LASF18
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4447   .debug_str:00000000000002c5 .LASF19
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4391   .debug_str:0000000000000178 .LASF20
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4671   .debug_str:00000000000007e9 .LASF21
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4487   .debug_str:000000000000038f .LASF22
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4587   .debug_str:00000000000005b0 .LASF23
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4503   .debug_str:00000000000003e2 .LASF24
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4357   .debug_str:00000000000000e7 .LASF25
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4321   .debug_str:0000000000000011 .LASF26
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4641   .debug_str:0000000000000752 .LASF27
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4457   .debug_str:0000000000000304 .LASF28
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4421   .debug_str:0000000000000208 .LASF29
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4565   .debug_str:0000000000000533 .LASF30
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4567   .debug_str:000000000000053b .LASF31
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4535   .debug_str:00000000000004a1 .LASF32
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 28
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4617   .debug_str:00000000000006c5 .LASF33
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4513   .debug_str:0000000000000428 .LASF34
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4525   .debug_str:0000000000000476 .LASF35
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4415   .debug_str:00000000000001f5 .LASF40
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4601   .debug_str:00000000000005f6 .LASF36
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4557   .debug_str:0000000000000516 .LASF37
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4405   .debug_str:00000000000001c2 .LASF38
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4635   .debug_str:0000000000000740 .LASF39
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4419   .debug_str:0000000000000203 .LASF41
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4355   .debug_str:00000000000000de .LASF42
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4659   .debug_str:00000000000007b9 .LASF43
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4367   .debug_str:000000000000010d .LASF44
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4653   .debug_str:0000000000000795 .LASF45
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4491   .debug_str:00000000000003a1 .LASF46
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4583   .debug_str:000000000000059f .LASF47
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4573   .debug_str:0000000000000561 .LASF48
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4527   .debug_str:000000000000047f .LASF49
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4655   .debug_str:000000000000079f .LASF50
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4371   .debug_str:000000000000011c .LASF51
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4325   .debug_str:0000000000000024 .LASF52
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4459   .debug_str:000000000000030a .LASF53
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4609   .debug_str:000000000000069f .LASF54
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4381   .debug_str:000000000000014a .LASF55
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4493   .debug_str:00000000000003aa .LASF56
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4549   .debug_str:00000000000004e9 .LASF57
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4401   .debug_str:00000000000001b2 .LASF58
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4529   .debug_str:0000000000000489 .LASF59
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4365   .debug_str:0000000000000107 .LASF60
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4593   .debug_str:00000000000005d0 .LASF61
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4537   .debug_str:00000000000004ac .LASF62
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4379   .debug_str:0000000000000143 .LASF63
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4431   .debug_str:0000000000000241 .LASF64
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4345   .debug_str:00000000000000a6 .LASF65
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4373   .debug_str:000000000000012a .LASF66
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4417   .debug_str:00000000000001fd .LASF67
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4475   .debug_str:0000000000000351 .LASF68
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4571   .debug_str:000000000000055b .LASF69
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4359   .debug_str:00000000000000ee .LASF70
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4363   .debug_str:0000000000000101 .LASF71
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4649   .debug_str:0000000000000787 .LASF72
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4589   .debug_str:00000000000005b5 .LASF73
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4395   .debug_str:000000000000018b .LASF74
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4439   .debug_str:00000000000002a5 .LASF75
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4465   .debug_str:0000000000000323 .LASF76
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4539   .debug_str:00000000000004b4 .LASF77
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4531   .debug_str:0000000000000490 .LASF78
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4559   .debug_str:000000000000051e .LASF79
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4585   .debug_str:00000000000005a9 .LASF80
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4383   .debug_str:0000000000000152 .LASF81
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4425   .debug_str:000000000000021f .LASF82
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4413   .debug_str:00000000000001ed .LASF83
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4547   .debug_str:00000000000004e4 .LASF84
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4599   .debug_str:00000000000005eb .LASF85
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4555   .debug_str:00000000000004fd .LASF86
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4669   .debug_str:00000000000007e1 .LASF87
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4497   .debug_str:00000000000003bc .LASF88
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4553   .debug_str:00000000000004f3 .LASF89
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 29
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4617   .debug_str:00000000000006c5 .LASF33
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4513   .debug_str:0000000000000428 .LASF34
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4525   .debug_str:0000000000000476 .LASF35
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4415   .debug_str:00000000000001f5 .LASF40
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4601   .debug_str:00000000000005f6 .LASF36
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4557   .debug_str:0000000000000516 .LASF37
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4405   .debug_str:00000000000001c2 .LASF38
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4635   .debug_str:0000000000000740 .LASF39
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4419   .debug_str:0000000000000203 .LASF41
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4355   .debug_str:00000000000000de .LASF42
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4659   .debug_str:00000000000007b9 .LASF43
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4367   .debug_str:000000000000010d .LASF44
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4653   .debug_str:0000000000000795 .LASF45
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4491   .debug_str:00000000000003a1 .LASF46
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4583   .debug_str:000000000000059f .LASF47
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4573   .debug_str:0000000000000561 .LASF48
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4527   .debug_str:000000000000047f .LASF49
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4655   .debug_str:000000000000079f .LASF50
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4371   .debug_str:000000000000011c .LASF51
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4325   .debug_str:0000000000000024 .LASF52
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4459   .debug_str:000000000000030a .LASF53
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4609   .debug_str:000000000000069f .LASF54
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4381   .debug_str:000000000000014a .LASF55
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4493   .debug_str:00000000000003aa .LASF56
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4549   .debug_str:00000000000004e9 .LASF57
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4401   .debug_str:00000000000001b2 .LASF58
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4529   .debug_str:0000000000000489 .LASF59
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4365   .debug_str:0000000000000107 .LASF60
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4593   .debug_str:00000000000005d0 .LASF61
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4537   .debug_str:00000000000004ac .LASF62
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4379   .debug_str:0000000000000143 .LASF63
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4431   .debug_str:0000000000000241 .LASF64
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4345   .debug_str:00000000000000a6 .LASF65
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4373   .debug_str:000000000000012a .LASF66
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4417   .debug_str:00000000000001fd .LASF67
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4475   .debug_str:0000000000000351 .LASF68
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4571   .debug_str:000000000000055b .LASF69
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4359   .debug_str:00000000000000ee .LASF70
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4363   .debug_str:0000000000000101 .LASF71
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4649   .debug_str:0000000000000787 .LASF72
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4589   .debug_str:00000000000005b5 .LASF73
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4395   .debug_str:000000000000018b .LASF74
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4439   .debug_str:00000000000002a5 .LASF75
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4465   .debug_str:0000000000000323 .LASF76
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4539   .debug_str:00000000000004b4 .LASF77
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4531   .debug_str:0000000000000490 .LASF78
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4559   .debug_str:000000000000051e .LASF79
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4585   .debug_str:00000000000005a9 .LASF80
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4383   .debug_str:0000000000000152 .LASF81
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4425   .debug_str:000000000000021f .LASF82
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4413   .debug_str:00000000000001ed .LASF83
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4547   .debug_str:00000000000004e4 .LASF84
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4599   .debug_str:00000000000005eb .LASF85
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4555   .debug_str:00000000000004fd .LASF86
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4669   .debug_str:00000000000007e1 .LASF87
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4497   .debug_str:00000000000003bc .LASF88
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4553   .debug_str:00000000000004f3 .LASF89
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 29
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4455   .debug_str:00000000000002fc .LASF90
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4387   .debug_str:0000000000000160 .LASF91
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4667   .debug_str:00000000000007dc .LASF92
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4509   .debug_str:0000000000000408 .LASF93
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4427   .debug_str:0000000000000227 .LASF94
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4393   .debug_str:0000000000000183 .LASF95
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4463   .debug_str:000000000000031e .LASF96
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4337   .debug_str:0000000000000066 .LASF97
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4647   .debug_str:000000000000077d .LASF98
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4375   .debug_str:0000000000000132 .LASF99
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4369   .debug_str:0000000000000117 .LASF100
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4385   .debug_str:0000000000000159 .LASF101
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4637   .debug_str:0000000000000745 .LASF102
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4441   .debug_str:00000000000002ab .LASF103
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4521   .debug_str:0000000000000467 .LASF104
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4561   .debug_str:0000000000000525 .LASF105
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4563   .debug_str:000000000000052d .LASF106
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4467   .debug_str:0000000000000329 .LASF107
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4613   .debug_str:00000000000006bb .LASF108
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4631   .debug_str:000000000000071d .LASF109
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4605   .debug_str:000000000000060a .LASF110
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4453   .debug_str:00000000000002ef .LASF111
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4657   .debug_str:00000000000007aa .LASF112
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4499   .debug_str:00000000000003c7 .LASF113
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4541   .debug_str:00000000000004bd .LASF114
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4661   .debug_str:00000000000007c2 .LASF115
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4545   .debug_str:00000000000004d7 .LASF116
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4665   .debug_str:00000000000007ce .LASF117
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4353   .debug_str:00000000000000d0 .LASF118
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4643   .debug_str:000000000000075b .LASF119
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4451   .debug_str:00000000000002e3 .LASF120
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4621   .debug_str:00000000000006e0 .LASF121
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4399   .debug_str:00000000000001a4 .LASF122
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4349   .debug_str:00000000000000ba .LASF123
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4397   .debug_str:0000000000000193 .LASF124
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4339   .debug_str:000000000000006f .LASF125
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4341   .debug_str:000000000000007e .LASF126
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4523   .debug_str:000000000000046d .LASF127
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4489   .debug_str:000000000000039a .LASF128
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4479   .debug_str:000000000000036a .LASF129
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4651   .debug_str:000000000000078d .LASF130
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4347   .debug_str:00000000000000af .LASF177
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4411   .debug_str:00000000000001e1 .LASF132
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4627   .debug_str:0000000000000701 .LASF133
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4495   .debug_str:00000000000003b2 .LASF134
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4461   .debug_str:0000000000000316 .LASF135
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4481   .debug_str:0000000000000373 .LASF136
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4485   .debug_str:0000000000000388 .LASF137
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4351   .debug_str:00000000000000c9 .LASF138
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4663   .debug_str:00000000000007c7 .LASF139
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4473   .debug_str:0000000000000348 .LASF140
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4477   .debug_str:0000000000000358 .LASF141
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4443   .debug_str:00000000000002b2 .LASF142
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4323   .debug_str:0000000000000019 .LASF143
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:651    .text.vPortSetup:0000000000000000 .LFB14
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:677    .text.vPortSetup:000000000000001a .LFE14
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3941   .debug_loc:0000000000000000 .LLST19
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 30
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4455   .debug_str:00000000000002fc .LASF90
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4387   .debug_str:0000000000000160 .LASF91
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4667   .debug_str:00000000000007dc .LASF92
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4509   .debug_str:0000000000000408 .LASF93
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4427   .debug_str:0000000000000227 .LASF94
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4393   .debug_str:0000000000000183 .LASF95
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4463   .debug_str:000000000000031e .LASF96
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4337   .debug_str:0000000000000066 .LASF97
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4647   .debug_str:000000000000077d .LASF98
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4375   .debug_str:0000000000000132 .LASF99
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4369   .debug_str:0000000000000117 .LASF100
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4385   .debug_str:0000000000000159 .LASF101
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4637   .debug_str:0000000000000745 .LASF102
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4441   .debug_str:00000000000002ab .LASF103
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4521   .debug_str:0000000000000467 .LASF104
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4561   .debug_str:0000000000000525 .LASF105
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4563   .debug_str:000000000000052d .LASF106
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4467   .debug_str:0000000000000329 .LASF107
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4613   .debug_str:00000000000006bb .LASF108
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4631   .debug_str:000000000000071d .LASF109
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4605   .debug_str:000000000000060a .LASF110
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4453   .debug_str:00000000000002ef .LASF111
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4657   .debug_str:00000000000007aa .LASF112
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4499   .debug_str:00000000000003c7 .LASF113
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4541   .debug_str:00000000000004bd .LASF114
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4661   .debug_str:00000000000007c2 .LASF115
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4545   .debug_str:00000000000004d7 .LASF116
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4665   .debug_str:00000000000007ce .LASF117
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4353   .debug_str:00000000000000d0 .LASF118
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4643   .debug_str:000000000000075b .LASF119
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4451   .debug_str:00000000000002e3 .LASF120
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4621   .debug_str:00000000000006e0 .LASF121
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4399   .debug_str:00000000000001a4 .LASF122
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4349   .debug_str:00000000000000ba .LASF123
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4397   .debug_str:0000000000000193 .LASF124
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4339   .debug_str:000000000000006f .LASF125
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4341   .debug_str:000000000000007e .LASF126
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4523   .debug_str:000000000000046d .LASF127
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4489   .debug_str:000000000000039a .LASF128
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4479   .debug_str:000000000000036a .LASF129
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4651   .debug_str:000000000000078d .LASF130
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4347   .debug_str:00000000000000af .LASF177
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4411   .debug_str:00000000000001e1 .LASF132
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4627   .debug_str:0000000000000701 .LASF133
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4495   .debug_str:00000000000003b2 .LASF134
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4461   .debug_str:0000000000000316 .LASF135
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4481   .debug_str:0000000000000373 .LASF136
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4485   .debug_str:0000000000000388 .LASF137
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4351   .debug_str:00000000000000c9 .LASF138
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4663   .debug_str:00000000000007c7 .LASF139
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4473   .debug_str:0000000000000348 .LASF140
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4477   .debug_str:0000000000000358 .LASF141
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4443   .debug_str:00000000000002b2 .LASF142
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4323   .debug_str:0000000000000019 .LASF143
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:651    .text.vPortSetup:0000000000000000 .LFB14
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:677    .text.vPortSetup:000000000000001a .LFE14
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:3941   .debug_loc:0000000000000000 .LLST19
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 30
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:663    .text.vPortSetup:000000000000000c .LVL48
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4673   .debug_str:00000000000007f5 .LASF144
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:570    .text.vPortSetupTimer:0000000000000000 .LFB13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:644    .text.vPortSetupTimer:0000000000000066 .LFE13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3959   .debug_loc:000000000000002c .LLST16
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4483   .debug_str:000000000000037a .LASF145
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3977   .debug_loc:0000000000000058 .LLST17
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4577   .debug_str:0000000000000581 .LASF146
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4533   .debug_str:0000000000000498 .LASF147
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:3988   .debug_loc:000000000000006f .LLST18
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4551   .debug_str:00000000000004ee .LASF148
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:612    .text.vPortSetupTimer:000000000000003a .LVL43
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:622    .text.vPortSetupTimer:000000000000004c .LVL45
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:626    .text.vPortSetupTimer:0000000000000056 .LVL46
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:642    .text.vPortSetupTimer:0000000000000066 .LVL47
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4507   .debug_str:00000000000003f4 .LASF153
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:475    .text.vPortSysTickHandler:0000000000000000 .LFB12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:563    .text.vPortSysTickHandler:0000000000000074 .LFE12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4000   .debug_loc:0000000000000087 .LLST15
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:547    .text.vPortSysTickHandler:000000000000005a .LBB13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:561    .text.vPortSysTickHandler:0000000000000074 .LBE13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:523    .text.vPortSysTickHandler:000000000000004c .LBB12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:534    .text.vPortSysTickHandler:0000000000000054 .LBE12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:519    .text.vPortSysTickHandler:000000000000004a .LVL39
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4517   .debug_str:0000000000000448 .LASF178
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:13     .text.prvTaskExitError:0000000000000000 .LFB11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:61     .text.prvTaskExitError:000000000000001a .LFE11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:23     .text.prvTaskExitError:000000000000000e .LBB2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:35     .text.prvTaskExitError:0000000000000012 .LBE2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4409   .debug_str:00000000000001db .LASF149
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:43     .text.prvTaskExitError:0000000000000014 .LBB3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:55     .text.prvTaskExitError:0000000000000018 .LBE3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4633   .debug_str:000000000000072a .LASF159
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:432    .text.pxPortInitialiseStack:0000000000000000 .LFB10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:468    .text.pxPortInitialiseStack:0000000000000022 .LFE10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4435   .debug_str:000000000000028b .LASF150
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4023   .debug_loc:00000000000000bf .LLST14
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4639   .debug_str:000000000000074b .LASF151
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4437   .debug_str:0000000000000298 .LASF152
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4511   .debug_str:0000000000000412 .LASF154
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:389    .text.xPortSetInterruptMask:0000000000000000 .LFB9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:425    .text.xPortSetInterruptMask:0000000000000024 .LFE9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4048   .debug_loc:00000000000000fa .LLST12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4623   .debug_str:00000000000006ed .LASF155
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4066   .debug_loc:0000000000000126 .LLST13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:405    .text.xPortSetInterruptMask:000000000000000e .LVL30
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:411    .text.xPortSetInterruptMask:000000000000001a .LVL32
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4569   .debug_str:0000000000000543 .LASF156
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:372    .text.vPortClearInterruptMask:0000000000000000 .LFB8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:382    .text.vPortClearInterruptMask:000000000000000c .LFE8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4083   .debug_loc:000000000000014a .LLST11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:380    .text.vPortClearInterruptMask:000000000000000c .LVL28
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4591   .debug_str:00000000000005be .LASF157
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:322    .text.vPortExitCritical:0000000000000000 .LFB7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:365    .text.vPortExitCritical:0000000000000024 .LFE7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:331    .text.vPortExitCritical:000000000000000c .LBB11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:343    .text.vPortExitCritical:0000000000000010 .LBE11
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 31
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:663    .text.vPortSetup:000000000000000c .LVL48
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4673   .debug_str:00000000000007f5 .LASF144
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:570    .text.vPortSetupTimer:0000000000000000 .LFB13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:644    .text.vPortSetupTimer:0000000000000066 .LFE13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:3959   .debug_loc:000000000000002c .LLST16
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4483   .debug_str:000000000000037a .LASF145
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:3977   .debug_loc:0000000000000058 .LLST17
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4577   .debug_str:0000000000000581 .LASF146
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4533   .debug_str:0000000000000498 .LASF147
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:3988   .debug_loc:000000000000006f .LLST18
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4551   .debug_str:00000000000004ee .LASF148
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:612    .text.vPortSetupTimer:000000000000003a .LVL43
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:622    .text.vPortSetupTimer:000000000000004c .LVL45
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:626    .text.vPortSetupTimer:0000000000000056 .LVL46
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:642    .text.vPortSetupTimer:0000000000000066 .LVL47
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4507   .debug_str:00000000000003f4 .LASF153
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:475    .text.vPortSysTickHandler:0000000000000000 .LFB12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:563    .text.vPortSysTickHandler:0000000000000074 .LFE12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4000   .debug_loc:0000000000000087 .LLST15
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:547    .text.vPortSysTickHandler:000000000000005a .LBB13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:561    .text.vPortSysTickHandler:0000000000000074 .LBE13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:523    .text.vPortSysTickHandler:000000000000004c .LBB12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:534    .text.vPortSysTickHandler:0000000000000054 .LBE12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:519    .text.vPortSysTickHandler:000000000000004a .LVL39
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4517   .debug_str:0000000000000448 .LASF178
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:13     .text.prvTaskExitError:0000000000000000 .LFB11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:61     .text.prvTaskExitError:000000000000001a .LFE11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:23     .text.prvTaskExitError:000000000000000e .LBB2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:35     .text.prvTaskExitError:0000000000000012 .LBE2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4409   .debug_str:00000000000001db .LASF149
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:43     .text.prvTaskExitError:0000000000000014 .LBB3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:55     .text.prvTaskExitError:0000000000000018 .LBE3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4633   .debug_str:000000000000072a .LASF159
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:432    .text.pxPortInitialiseStack:0000000000000000 .LFB10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:468    .text.pxPortInitialiseStack:0000000000000022 .LFE10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4435   .debug_str:000000000000028b .LASF150
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4023   .debug_loc:00000000000000bf .LLST14
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4639   .debug_str:000000000000074b .LASF151
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4437   .debug_str:0000000000000298 .LASF152
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4511   .debug_str:0000000000000412 .LASF154
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:389    .text.xPortSetInterruptMask:0000000000000000 .LFB9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:425    .text.xPortSetInterruptMask:0000000000000024 .LFE9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4048   .debug_loc:00000000000000fa .LLST12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4623   .debug_str:00000000000006ed .LASF155
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4066   .debug_loc:0000000000000126 .LLST13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:405    .text.xPortSetInterruptMask:000000000000000e .LVL30
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:411    .text.xPortSetInterruptMask:000000000000001a .LVL32
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4569   .debug_str:0000000000000543 .LASF156
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:372    .text.vPortClearInterruptMask:0000000000000000 .LFB8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:382    .text.vPortClearInterruptMask:000000000000000c .LFE8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4083   .debug_loc:000000000000014a .LLST11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:380    .text.vPortClearInterruptMask:000000000000000c .LVL28
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4591   .debug_str:00000000000005be .LASF157
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:322    .text.vPortExitCritical:0000000000000000 .LFB7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:365    .text.vPortExitCritical:0000000000000024 .LFE7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:331    .text.vPortExitCritical:000000000000000c .LBB11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:343    .text.vPortExitCritical:0000000000000010 .LBE11
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 31
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:360    .text.vPortExitCritical:0000000000000022 .LVL25
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4619   .debug_str:00000000000006cd .LASF158
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:282    .text.vPortEnterCritical:0000000000000000 .LFB6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:315    .text.vPortEnterCritical:0000000000000022 .LFE6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4097   .debug_loc:000000000000016b .LLST10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:297    .text.vPortEnterCritical:000000000000000e .LVL23
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4501   .debug_str:00000000000003d6 .LASF160
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:68     .text.ulSynchTrap:0000000000000000 .LFB5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:275    .text.ulSynchTrap:00000000000000d4 .LFE5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4115   .debug_loc:0000000000000197 .LLST0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4471   .debug_str:0000000000000341 .LASF161
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4138   .debug_loc:00000000000001cf .LLST1
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4171   .debug_loc:000000000000021f .LLST2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4615   .debug_str:00000000000006c0 .LASF162
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4190   .debug_loc:0000000000000253 .LLST3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4226   .debug_loc:00000000000002a6 .LLST4
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:104    .text.ulSynchTrap:0000000000000024 .LBB4
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:117    .text.ulSynchTrap:000000000000002c .LBE4
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:166    .text.ulSynchTrap:000000000000004a .LBB6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:178    .text.ulSynchTrap:0000000000000052 .LBE6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:185    .text.ulSynchTrap:000000000000005c .LBB7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:202    .text.ulSynchTrap:0000000000000062 .LBE7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4239   .debug_loc:00000000000002c6 .LLST6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:187    .text.ulSynchTrap:000000000000005c .LBB8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:197    .text.ulSynchTrap:0000000000000060 .LBE8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:237    .text.ulSynchTrap:00000000000000a2 .LBB9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:247    .text.ulSynchTrap:00000000000000a6 .LBE9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4246   .debug_loc:00000000000002d9 .LLST8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:254    .text.ulSynchTrap:00000000000000b6 .LBB10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:264    .text.ulSynchTrap:00000000000000ba .LBE10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4253   .debug_loc:00000000000002ec .LLST9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:120    .text.ulSynchTrap:000000000000002c .LBB5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:130    .text.ulSynchTrap:0000000000000030 .LBE5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:207    .text.ulSynchTrap:000000000000006c .LVL12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:229    .text.ulSynchTrap:0000000000000090 .LVL16
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:235    .text.ulSynchTrap:00000000000000a2 .LVL17
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:252    .text.ulSynchTrap:00000000000000b6 .LVL19
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:269    .text.ulSynchTrap:00000000000000ca .LVL21
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:273    .text.ulSynchTrap:00000000000000d4 .LVL22
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4469   .debug_str:000000000000032f .LASF163
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4449   .debug_str:00000000000002d1 .LASF164
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4329   .debug_str:0000000000000036 .LASF165
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4575   .debug_str:000000000000056b .LASF166
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4407   .debug_str:00000000000001c8 .LASF167
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4515   .debug_str:000000000000043a .LASF168
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4603   .debug_str:00000000000005fc .LASF169
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4625   .debug_str:00000000000006f6 .LASF170
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4333   .debug_str:0000000000000056 .LASF171
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4317   .debug_str:0000000000000000 .LASF172
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:4445   .debug_str:00000000000002bf .LASF173
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:657    .text.vPortSetup:0000000000000002 .LCFI12
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:673    .text.vPortSetup:0000000000000018 .LCFI13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:594    .text.vPortSetupTimer:000000000000001e .LCFI10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:638    .text.vPortSetupTimer:000000000000005e .LCFI11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:620    .text.vPortSetupTimer:0000000000000044 .LVL44
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:590    .text.vPortSetupTimer:000000000000001c .LVL42
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:493    .text.vPortSysTickHandler:000000000000001a .LCFI7
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s 			page 32
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:360    .text.vPortExitCritical:0000000000000022 .LVL25
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4619   .debug_str:00000000000006cd .LASF158
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:282    .text.vPortEnterCritical:0000000000000000 .LFB6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:315    .text.vPortEnterCritical:0000000000000022 .LFE6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4097   .debug_loc:000000000000016b .LLST10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:297    .text.vPortEnterCritical:000000000000000e .LVL23
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4501   .debug_str:00000000000003d6 .LASF160
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:68     .text.ulSynchTrap:0000000000000000 .LFB5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:275    .text.ulSynchTrap:00000000000000d4 .LFE5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4115   .debug_loc:0000000000000197 .LLST0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4471   .debug_str:0000000000000341 .LASF161
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4138   .debug_loc:00000000000001cf .LLST1
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4171   .debug_loc:000000000000021f .LLST2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4615   .debug_str:00000000000006c0 .LASF162
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4190   .debug_loc:0000000000000253 .LLST3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4226   .debug_loc:00000000000002a6 .LLST4
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:104    .text.ulSynchTrap:0000000000000024 .LBB4
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:117    .text.ulSynchTrap:000000000000002c .LBE4
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:166    .text.ulSynchTrap:000000000000004a .LBB6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:178    .text.ulSynchTrap:0000000000000052 .LBE6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:185    .text.ulSynchTrap:000000000000005c .LBB7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:202    .text.ulSynchTrap:0000000000000062 .LBE7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4239   .debug_loc:00000000000002c6 .LLST6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:187    .text.ulSynchTrap:000000000000005c .LBB8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:197    .text.ulSynchTrap:0000000000000060 .LBE8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:237    .text.ulSynchTrap:00000000000000a2 .LBB9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:247    .text.ulSynchTrap:00000000000000a6 .LBE9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4246   .debug_loc:00000000000002d9 .LLST8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:254    .text.ulSynchTrap:00000000000000b6 .LBB10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:264    .text.ulSynchTrap:00000000000000ba .LBE10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4253   .debug_loc:00000000000002ec .LLST9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:120    .text.ulSynchTrap:000000000000002c .LBB5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:130    .text.ulSynchTrap:0000000000000030 .LBE5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:207    .text.ulSynchTrap:000000000000006c .LVL12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:229    .text.ulSynchTrap:0000000000000090 .LVL16
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:235    .text.ulSynchTrap:00000000000000a2 .LVL17
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:252    .text.ulSynchTrap:00000000000000b6 .LVL19
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:269    .text.ulSynchTrap:00000000000000ca .LVL21
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:273    .text.ulSynchTrap:00000000000000d4 .LVL22
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4469   .debug_str:000000000000032f .LASF163
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4449   .debug_str:00000000000002d1 .LASF164
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4329   .debug_str:0000000000000036 .LASF165
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4575   .debug_str:000000000000056b .LASF166
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4407   .debug_str:00000000000001c8 .LASF167
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4515   .debug_str:000000000000043a .LASF168
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4603   .debug_str:00000000000005fc .LASF169
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4625   .debug_str:00000000000006f6 .LASF170
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4333   .debug_str:0000000000000056 .LASF171
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4317   .debug_str:0000000000000000 .LASF172
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:4445   .debug_str:00000000000002bf .LASF173
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:657    .text.vPortSetup:0000000000000002 .LCFI12
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:673    .text.vPortSetup:0000000000000018 .LCFI13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:594    .text.vPortSetupTimer:000000000000001e .LCFI10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:638    .text.vPortSetupTimer:000000000000005e .LCFI11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:620    .text.vPortSetupTimer:0000000000000044 .LVL44
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:590    .text.vPortSetupTimer:000000000000001c .LVL42
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:493    .text.vPortSysTickHandler:000000000000001a .LCFI7
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s 			page 32
 
 
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:541    .text.vPortSysTickHandler:0000000000000058 .LCFI8
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:545    .text.vPortSysTickHandler:000000000000005a .LCFI9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:435    .text.pxPortInitialiseStack:0000000000000000 .LVL34
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:442    .text.pxPortInitialiseStack:0000000000000004 .LVL35
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:449    .text.pxPortInitialiseStack:0000000000000010 .LVL36
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:455    .text.pxPortInitialiseStack:0000000000000016 .LVL37
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:397    .text.xPortSetInterruptMask:0000000000000002 .LCFI5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:421    .text.xPortSetInterruptMask:0000000000000022 .LCFI6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:393    .text.xPortSetInterruptMask:0000000000000000 .LVL29
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:407    .text.xPortSetInterruptMask:0000000000000010 .LVL31
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:419    .text.xPortSetInterruptMask:0000000000000020 .LVL33
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:375    .text.vPortClearInterruptMask:0000000000000000 .LVL26
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:378    .text.vPortClearInterruptMask:0000000000000004 .LVL27
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:288    .text.vPortEnterCritical:0000000000000002 .LCFI3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:311    .text.vPortEnterCritical:0000000000000020 .LCFI4
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:75     .text.ulSynchTrap:0000000000000002 .LCFI0
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:154    .text.ulSynchTrap:0000000000000042 .LCFI1
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:159    .text.ulSynchTrap:0000000000000044 .LCFI2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:71     .text.ulSynchTrap:0000000000000000 .LVL2
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:113    .text.ulSynchTrap:000000000000002c .LVL3
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:157    .text.ulSynchTrap:0000000000000044 .LVL7
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:205    .text.ulSynchTrap:0000000000000064 .LVL11
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:209    .text.ulSynchTrap:000000000000006e .LVL13
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:227    .text.ulSynchTrap:0000000000000088 .LVL15
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:152    .text.ulSynchTrap:0000000000000040 .LVL6
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:222    .text.ulSynchTrap:0000000000000080 .LVL14
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:127    .text.ulSynchTrap:0000000000000030 .LVL4
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:134    .text.ulSynchTrap:0000000000000032 .LVL5
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:194    .text.ulSynchTrap:0000000000000060 .LVL9
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:200    .text.ulSynchTrap:0000000000000062 .LVL10
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:244    .text.ulSynchTrap:00000000000000a6 .LVL18
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:261    .text.ulSynchTrap:00000000000000ba .LVL20
-C:\Users\kasie\AppData\Local\Temp\ccTFtpEf.s:732    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:541    .text.vPortSysTickHandler:0000000000000058 .LCFI8
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:545    .text.vPortSysTickHandler:000000000000005a .LCFI9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:435    .text.pxPortInitialiseStack:0000000000000000 .LVL34
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:442    .text.pxPortInitialiseStack:0000000000000004 .LVL35
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:449    .text.pxPortInitialiseStack:0000000000000010 .LVL36
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:455    .text.pxPortInitialiseStack:0000000000000016 .LVL37
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:397    .text.xPortSetInterruptMask:0000000000000002 .LCFI5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:421    .text.xPortSetInterruptMask:0000000000000022 .LCFI6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:393    .text.xPortSetInterruptMask:0000000000000000 .LVL29
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:407    .text.xPortSetInterruptMask:0000000000000010 .LVL31
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:419    .text.xPortSetInterruptMask:0000000000000020 .LVL33
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:375    .text.vPortClearInterruptMask:0000000000000000 .LVL26
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:378    .text.vPortClearInterruptMask:0000000000000004 .LVL27
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:288    .text.vPortEnterCritical:0000000000000002 .LCFI3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:311    .text.vPortEnterCritical:0000000000000020 .LCFI4
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:75     .text.ulSynchTrap:0000000000000002 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:154    .text.ulSynchTrap:0000000000000042 .LCFI1
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:159    .text.ulSynchTrap:0000000000000044 .LCFI2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:71     .text.ulSynchTrap:0000000000000000 .LVL2
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:113    .text.ulSynchTrap:000000000000002c .LVL3
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:157    .text.ulSynchTrap:0000000000000044 .LVL7
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:205    .text.ulSynchTrap:0000000000000064 .LVL11
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:209    .text.ulSynchTrap:000000000000006e .LVL13
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:227    .text.ulSynchTrap:0000000000000088 .LVL15
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:152    .text.ulSynchTrap:0000000000000040 .LVL6
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:222    .text.ulSynchTrap:0000000000000080 .LVL14
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:127    .text.ulSynchTrap:0000000000000030 .LVL4
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:134    .text.ulSynchTrap:0000000000000032 .LVL5
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:194    .text.ulSynchTrap:0000000000000060 .LVL9
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:200    .text.ulSynchTrap:0000000000000062 .LVL10
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:244    .text.ulSynchTrap:00000000000000a6 .LVL18
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:261    .text.ulSynchTrap:00000000000000ba .LVL20
+C:\Users\kasie\AppData\Local\Temp\ccDgmAqP.s:732    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 vPortYield

@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s 			page 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 1
 
 
    1              		.file	"main.c"
@@ -34,201 +34,433 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s 			page 1
   23              		.cfi_offset 1, -4
   24              	.LVL1:
   25              	.L2:
-  10:main.c        ****     while (1)
-  26              		.loc 1 10 5 discriminator 1
-  11:main.c        ****     {                     // Led Panel Super Loop...
-  12:main.c        ****         l88row(colset()); // ...show next row...
-  27              		.loc 1 12 9 discriminator 1
+  10:main.c        ****     // volatile char data[1800];
+  11:main.c        ****     while (1)
+  26              		.loc 1 11 5 discriminator 1
+  12:main.c        ****     {                     // Led Panel Super Loop...
+  13:main.c        ****         l88row(colset()); // ...show next row...
+  27              		.loc 1 13 9 discriminator 1
   28 0004 97000000 		call	colset
   28      E7800000 
   29              	.LVL2:
   30 000c 97000000 		call	l88row
   30      E7800000 
   31              	.LVL3:
-  13:main.c        ****         vTaskDelay(1);    // ...wait 2ms and repeat!
-  32              		.loc 1 13 9 discriminator 1
+  14:main.c        ****         vTaskDelay(1);    // ...wait 2ms and repeat!
+  32              		.loc 1 14 9 discriminator 1
   33 0014 0545     		li	a0,1
   34 0016 97000000 		call	vTaskDelay
   34      E7800000 
   35              	.LVL4:
-  36 001e DDB7     		j	.L2
-  37              		.cfi_endproc
-  38              	.LFE2:
-  40              		.section	.text.startup.main,"ax",@progbits
-  41              		.align	1
-  42              		.globl	main
-  44              	main:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s 			page 2
+  15:main.c        **** 
+  16:main.c        ****         l88mem(0, 0);
+  36              		.loc 1 16 9 discriminator 1
+  37 001e 8145     		li	a1,0
+  38 0020 0145     		li	a0,0
+  39 0022 97000000 		call	l88mem
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 2
 
 
-  45              	.LFB3:
-  14:main.c        ****     } // (Must not terminate)
-  15:main.c        **** }
-  16:main.c        **** 
-  17:main.c        **** int main(void)
-  18:main.c        **** {
-  46              		.loc 1 18 1
-  47              		.cfi_startproc
-  19:main.c        ****     int id[4] = {0, 1, 2, 3};
-  48              		.loc 1 19 5
-  20:main.c        **** 
-  21:main.c        ****     // Perform any driver setup necessary...
-  22:main.c        ****     colinit(); // Initialize column toolbox
-  49              		.loc 1 22 5
-  18:main.c        ****     int id[4] = {0, 1, 2, 3};
-  50              		.loc 1 18 1 is_stmt 0
-  51 0000 4111     		addi	sp,sp,-16
-  52              	.LCFI1:
-  53              		.cfi_def_cfa_offset 16
-  54 0002 06C6     		sw	ra,12(sp)
-  55              		.cfi_offset 1, -4
-  56              		.loc 1 22 5
-  57 0004 97000000 		call	colinit
-  57      E7800000 
-  58              	.LVL5:
-  23:main.c        ****     l88init(); // Initialize 8*8 led toolbox
-  59              		.loc 1 23 5 is_stmt 1
-  60 000c 97000000 		call	l88init
-  60      E7800000 
-  61              	.LVL6:
+  39      E7800000 
+  40              	.LVL5:
+  17:main.c        ****         // l88mem(1, 1);
+  18:main.c        ****         // l88mem(2, 2);
+  19:main.c        ****         // l88mem(3, 3);
+  20:main.c        ****         l88mem(4, 0);
+  41              		.loc 1 20 9 discriminator 1
+  42 002a 8145     		li	a1,0
+  43 002c 1145     		li	a0,4
+  44 002e 97000000 		call	l88mem
+  44      E7800000 
+  45              	.LVL6:
+  21:main.c        ****         l88mem(5, 0);
+  46              		.loc 1 21 9 discriminator 1
+  47 0036 8145     		li	a1,0
+  48 0038 1545     		li	a0,5
+  49 003a 97000000 		call	l88mem
+  49      E7800000 
+  50              	.LVL7:
+  22:main.c        ****         l88mem(6, 0);
+  51              		.loc 1 22 9 discriminator 1
+  52 0042 8145     		li	a1,0
+  53 0044 1945     		li	a0,6
+  54 0046 97000000 		call	l88mem
+  54      E7800000 
+  55              	.LVL8:
+  23:main.c        ****         l88mem(7, 0);
+  56              		.loc 1 23 9 discriminator 1
+  57 004e 8145     		li	a1,0
+  58 0050 1D45     		li	a0,7
+  59 0052 97000000 		call	l88mem
+  59      E7800000 
+  60              	.LVL9:
+  61 005a 6DB7     		j	.L2
+  62              		.cfi_endproc
+  63              	.LFE2:
+  65              		.section	.text.ledTask,"ax",@progbits
+  66              		.align	1
+  67              		.globl	ledTask
+  69              	ledTask:
+  70              	.LFB3:
   24:main.c        **** 
-  25:main.c        ****     // Create (initially) needed application tasks...
-  26:main.c        ****     xTaskCreate(ledPanel, "LED", 512, (void *)NULL, 2, NULL);
-  62              		.loc 1 26 5
-  63 0014 B7050000 		lui	a1,%hi(.LC1)
-  64 0018 37050000 		lui	a0,%hi(ledPanel)
-  65 001c 8147     		li	a5,0
-  66 001e 0947     		li	a4,2
-  67 0020 8146     		li	a3,0
-  68 0022 13060020 		li	a2,512
-  69 0026 93850500 		addi	a1,a1,%lo(.LC1)
-  70 002a 13050500 		addi	a0,a0,%lo(ledPanel)
-  71 002e 97000000 		call	xTaskCreate
-  71      E7800000 
-  72              	.LVL7:
+  25:main.c        ****     } // (Must not terminate)
+  26:main.c        **** }
   27:main.c        **** 
-  28:main.c        ****     // Start the Scheduler!
-  29:main.c        ****     vTaskStartScheduler();
-  73              		.loc 1 29 5
-  74 0036 97000000 		call	vTaskStartScheduler
-  74      E7800000 
-  75              	.LVL8:
-  76              	.L5:
-  30:main.c        ****     // Should not reach here...
-  31:main.c        **** 
-  32:main.c        ****     while (1)
-  77              		.loc 1 32 5 discriminator 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s 			page 3
+  28:main.c        **** void ledTask(void *pvParameters)
+  29:main.c        **** {
+  71              		.loc 1 29 1
+  72              		.cfi_startproc
+  73              	.LVL10:
+  30:main.c        ****     int delay = (int)pvParameters * 500, counter = (int)pvParameters, LEDCol = (int)pvParameters;
+  74              		.loc 1 30 5
+  29:main.c        ****     int delay = (int)pvParameters * 500, counter = (int)pvParameters, LEDCol = (int)pvParameters;
+  75              		.loc 1 29 1 is_stmt 0
+  76 0000 4111     		addi	sp,sp,-16
+  77              	.LCFI1:
+  78              		.cfi_def_cfa_offset 16
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 3
 
 
-  33:main.c        ****         ; // ...to be sure!
-  78              		.loc 1 33 9 discriminator 1
-  79 003e 01A0     		j	.L5
-  80              		.cfi_endproc
-  81              	.LFE3:
-  83              		.section	.rodata.main.str1.4,"aMS",@progbits,1
-  84              		.align	2
-  85              	.LC1:
-  86 0000 4C454400 		.string	"LED"
-  87              		.text
-  88              	.Letext0:
-  89              		.file 2 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
-  90              		.file 3 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
-  91              		.file 4 "drivers.h"
-  92              		.file 5 "lib/freertos/include/task.h"
-  93              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s 			page 4
+  79 0002 22C4     		sw	s0,8(sp)
+  80              		.cfi_offset 8, -8
+  81              		.loc 1 30 9
+  82 0004 1304401F 		li	s0,500
+  83 0008 33048502 		mul	s0,a0,s0
+  84              	.LVL11:
+  29:main.c        ****     int delay = (int)pvParameters * 500, counter = (int)pvParameters, LEDCol = (int)pvParameters;
+  85              		.loc 1 29 1
+  86 000c 26C2     		sw	s1,4(sp)
+  87 000e 06C6     		sw	ra,12(sp)
+  88 0010 4AC0     		sw	s2,0(sp)
+  89              		.cfi_offset 9, -12
+  90              		.cfi_offset 1, -4
+  91              		.cfi_offset 18, -16
+  29:main.c        ****     int delay = (int)pvParameters * 500, counter = (int)pvParameters, LEDCol = (int)pvParameters;
+  92              		.loc 1 29 1
+  93 0012 AA84     		mv	s1,a0
+  94              		.loc 1 30 42
+  95 0014 AA85     		mv	a1,a0
+  96              	.LVL12:
+  97              	.L5:
+  31:main.c        ****     while (1)
+  98              		.loc 1 31 5 is_stmt 1 discriminator 1
+  32:main.c        ****     { // Led Panel Super Loop...
+  33:main.c        ****         l88mem(LEDCol, counter++);
+  99              		.loc 1 33 9 discriminator 1
+ 100 0016 2685     		mv	a0,s1
+ 101 0018 13891500 		addi	s2,a1,1
+ 102              	.LVL13:
+ 103 001c 97000000 		call	l88mem
+ 103      E7800000 
+ 104              	.LVL14:
+  34:main.c        **** 
+  35:main.c        ****         vTaskDelay(delay); // ...wait 2+id ms and repeat!
+ 105              		.loc 1 35 9 discriminator 1
+ 106 0024 2285     		mv	a0,s0
+ 107 0026 97000000 		call	vTaskDelay
+ 107      E7800000 
+ 108              	.LVL15:
+  33:main.c        **** 
+ 109              		.loc 1 33 9 is_stmt 0 discriminator 1
+ 110 002e CA85     		mv	a1,s2
+ 111 0030 DDB7     		j	.L5
+ 112              		.cfi_endproc
+ 113              	.LFE3:
+ 115              		.section	.text.startup.main,"ax",@progbits
+ 116              		.align	1
+ 117              		.globl	main
+ 119              	main:
+ 120              	.LFB4:
+  36:main.c        ****     } // (Must not terminate)
+  37:main.c        **** }
+  38:main.c        **** 
+  39:main.c        **** int main(void)
+  40:main.c        **** {
+ 121              		.loc 1 40 1 is_stmt 1
+ 122              		.cfi_startproc
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 4
+
+
+  41:main.c        ****     int id[4] = {0, 1, 2, 3};
+ 123              		.loc 1 41 5
+ 124              	.LVL16:
+  42:main.c        **** 
+  43:main.c        ****     // Perform any driver setup necessary...
+  44:main.c        ****     colinit(); // Initialize column toolbox
+ 125              		.loc 1 44 5
+  40:main.c        ****     int id[4] = {0, 1, 2, 3};
+ 126              		.loc 1 40 1 is_stmt 0
+ 127 0000 4111     		addi	sp,sp,-16
+ 128              	.LCFI2:
+ 129              		.cfi_def_cfa_offset 16
+ 130 0002 06C6     		sw	ra,12(sp)
+ 131 0004 22C4     		sw	s0,8(sp)
+ 132              		.cfi_offset 1, -4
+ 133              		.cfi_offset 8, -8
+ 134              		.loc 1 44 5
+ 135 0006 97000000 		call	colinit
+ 135      E7800000 
+ 136              	.LVL17:
+  45:main.c        ****     l88init(); // Initialize 8*8 led toolbox
+ 137              		.loc 1 45 5 is_stmt 1
+ 138 000e 97000000 		call	l88init
+ 138      E7800000 
+ 139              	.LVL18:
+  46:main.c        **** 
+  47:main.c        ****     // Create (initially) needed application tasks...
+  48:main.c        ****     xTaskCreate(ledPanel, "LED", 512, (void *)NULL, 2, NULL);
+ 140              		.loc 1 48 5
+ 141 0016 B7050000 		lui	a1,%hi(.LC1)
+ 142 001a 37050000 		lui	a0,%hi(ledPanel)
+ 143 001e 8147     		li	a5,0
+ 144 0020 0947     		li	a4,2
+ 145 0022 8146     		li	a3,0
+ 146 0024 13060020 		li	a2,512
+ 147 0028 93850500 		addi	a1,a1,%lo(.LC1)
+ 148 002c 13050500 		addi	a0,a0,%lo(ledPanel)
+ 149 0030 97000000 		call	xTaskCreate
+ 149      E7800000 
+ 150              	.LVL19:
+  49:main.c        ****     xTaskCreate(ledTask, "LEDTask1", 512, (void *)id[1], 1, NULL);
+ 151              		.loc 1 49 5
+ 152 0038 37040000 		lui	s0,%hi(ledTask)
+ 153 003c B7050000 		lui	a1,%hi(.LC2)
+ 154 0040 8147     		li	a5,0
+ 155 0042 0547     		li	a4,1
+ 156 0044 8546     		li	a3,1
+ 157 0046 13060020 		li	a2,512
+ 158 004a 93850500 		addi	a1,a1,%lo(.LC2)
+ 159 004e 13050400 		addi	a0,s0,%lo(ledTask)
+ 160 0052 97000000 		call	xTaskCreate
+ 160      E7800000 
+ 161              	.LVL20:
+  50:main.c        ****     xTaskCreate(ledTask, "LEDTask2", 512, (void *)id[2], 1, NULL);
+ 162              		.loc 1 50 5
+ 163 005a B7050000 		lui	a1,%hi(.LC3)
+ 164 005e 8147     		li	a5,0
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 5
+
+
+ 165 0060 0547     		li	a4,1
+ 166 0062 8946     		li	a3,2
+ 167 0064 13060020 		li	a2,512
+ 168 0068 93850500 		addi	a1,a1,%lo(.LC3)
+ 169 006c 13050400 		addi	a0,s0,%lo(ledTask)
+ 170 0070 97000000 		call	xTaskCreate
+ 170      E7800000 
+ 171              	.LVL21:
+  51:main.c        ****     xTaskCreate(ledTask, "LEDTask3", 512, (void *)id[3], 1, NULL);
+ 172              		.loc 1 51 5
+ 173 0078 B7050000 		lui	a1,%hi(.LC4)
+ 174 007c 8147     		li	a5,0
+ 175 007e 0547     		li	a4,1
+ 176 0080 8D46     		li	a3,3
+ 177 0082 13060020 		li	a2,512
+ 178 0086 93850500 		addi	a1,a1,%lo(.LC4)
+ 179 008a 13050400 		addi	a0,s0,%lo(ledTask)
+ 180 008e 97000000 		call	xTaskCreate
+ 180      E7800000 
+ 181              	.LVL22:
+  52:main.c        **** 
+  53:main.c        ****     // Start the Scheduler!
+  54:main.c        ****     vTaskStartScheduler();
+ 182              		.loc 1 54 5
+ 183 0096 97000000 		call	vTaskStartScheduler
+ 183      E7800000 
+ 184              	.LVL23:
+ 185              	.L8:
+  55:main.c        ****     // Should not reach here...
+  56:main.c        **** 
+  57:main.c        ****     while (1)
+ 186              		.loc 1 57 5 discriminator 1
+  58:main.c        ****         ; // ...to be sure!
+ 187              		.loc 1 58 9 discriminator 1
+ 188 009e 01A0     		j	.L8
+ 189              		.cfi_endproc
+ 190              	.LFE4:
+ 192              		.section	.rodata.main.str1.4,"aMS",@progbits,1
+ 193              		.align	2
+ 194              	.LC1:
+ 195 0000 4C454400 		.string	"LED"
+ 196              	.LC2:
+ 197 0004 4C454454 		.string	"LEDTask1"
+ 197      61736B31 
+ 197      00
+ 198 000d 000000   		.zero	3
+ 199              	.LC3:
+ 200 0010 4C454454 		.string	"LEDTask2"
+ 200      61736B32 
+ 200      00
+ 201 0019 000000   		.zero	3
+ 202              	.LC4:
+ 203 001c 4C454454 		.string	"LEDTask3"
+ 203      61736B33 
+ 203      00
+ 204              		.text
+ 205              	.Letext0:
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 6
+
+
+ 206              		.file 2 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 207              		.file 3 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
+ 208              		.file 4 "drivers.h"
+ 209              		.file 5 "lib/freertos/include/task.h"
+ 210              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:13     .text.ledPanel:0000000000000000 ledPanel
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:17     .text.ledPanel:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:19     .text.ledPanel:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:21     .text.ledPanel:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:23     .text.ledPanel:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:27     .text.ledPanel:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:28     .text.ledPanel:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:33     .text.ledPanel:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:37     .text.ledPanel:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:44     .text.startup.main:0000000000000000 main
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:47     .text.startup.main:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:48     .text.startup.main:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:49     .text.startup.main:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:50     .text.startup.main:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:51     .text.startup.main:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:53     .text.startup.main:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:55     .text.startup.main:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:57     .text.startup.main:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:60     .text.startup.main:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:63     .text.startup.main:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:74     .text.startup.main:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:78     .text.startup.main:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:79     .text.startup.main:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:80     .text.startup.main:0000000000000040 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:40     .text.ledPanel:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:83     .text.startup.main:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:13     .text.ledPanel:0000000000000000 ledPanel
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:17     .text.ledPanel:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:19     .text.ledPanel:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:21     .text.ledPanel:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:23     .text.ledPanel:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:27     .text.ledPanel:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:28     .text.ledPanel:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:33     .text.ledPanel:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:37     .text.ledPanel:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:42     .text.ledPanel:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:47     .text.ledPanel:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:52     .text.ledPanel:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:57     .text.ledPanel:000000000000004e .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:62     .text.ledPanel:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:69     .text.ledTask:0000000000000000 ledTask
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:72     .text.ledTask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:74     .text.ledTask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:75     .text.ledTask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:76     .text.ledTask:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:78     .text.ledTask:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:80     .text.ledTask:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:82     .text.ledTask:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:86     .text.ledTask:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:89     .text.ledTask:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:90     .text.ledTask:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:91     .text.ledTask:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:93     .text.ledTask:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:95     .text.ledTask:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:99     .text.ledTask:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:100    .text.ledTask:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:106    .text.ledTask:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:110    .text.ledTask:000000000000002e .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:112    .text.ledTask:0000000000000032 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:119    .text.startup.main:0000000000000000 main
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:122    .text.startup.main:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:123    .text.startup.main:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:125    .text.startup.main:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:126    .text.startup.main:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:127    .text.startup.main:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:129    .text.startup.main:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:132    .text.startup.main:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:133    .text.startup.main:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:135    .text.startup.main:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:138    .text.startup.main:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:141    .text.startup.main:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:152    .text.startup.main:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:163    .text.startup.main:000000000000005a .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:173    .text.startup.main:0000000000000078 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:183    .text.startup.main:0000000000000096 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:187    .text.startup.main:000000000000009e .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:188    .text.startup.main:000000000000009e .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:189    .text.startup.main:00000000000000a0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:65     .text.ledPanel:000000000000005c .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:115    .text.ledTask:0000000000000032 .L0 
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:192    .text.startup.main:00000000000000a0 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 8
+
+
                      .debug_frame:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:25     .text.ledPanel:0000000000000004 .L2
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:85     .rodata.main.str1.4:0000000000000000 .LC1
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:76     .text.startup.main:000000000000003e .L5
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:346    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:717    .debug_str:00000000000000d4 .LASF20
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:687    .debug_str:0000000000000022 .LASF21
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:733    .debug_str:00000000000001ac .LASF22
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:671    .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:679    .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:683    .debug_str:000000000000000e .LASF0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:719    .debug_str:000000000000015c .LASF1
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:681    .debug_str:0000000000000000 .LASF2
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:729    .debug_str:0000000000000196 .LASF3
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:721    .debug_str:000000000000016f .LASF4
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:697    .debug_str:0000000000000064 .LASF5
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:731    .debug_str:00000000000001a2 .LASF6
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:723    .debug_str:000000000000017b .LASF7
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:691    .debug_str:0000000000000030 .LASF10
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:693    .debug_str:000000000000003b .LASF8
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:695    .debug_str:000000000000004d .LASF9
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:707    .debug_str:0000000000000097 .LASF11
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:709    .debug_str:00000000000000a0 .LASF23
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:705    .debug_str:0000000000000092 .LASF12
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:727    .debug_str:0000000000000191 .LASF24
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:45     .text.startup.main:0000000000000000 .LFB3
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:81     .text.startup.main:0000000000000040 .LFE3
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:616    .debug_loc:0000000000000000 .LLST2
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:58     .text.startup.main:000000000000000c .LVL5
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s 			page 5
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:25     .text.ledPanel:0000000000000004 .L2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:97     .text.ledTask:0000000000000016 .L5
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:194    .rodata.main.str1.4:0000000000000000 .LC1
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:196    .rodata.main.str1.4:0000000000000004 .LC2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:199    .rodata.main.str1.4:0000000000000010 .LC3
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:202    .rodata.main.str1.4:000000000000001c .LC4
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:185    .text.startup.main:000000000000009e .L8
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:744    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1217   .debug_str:0000000000000108 .LASF27
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1209   .debug_str:00000000000000e5 .LASF28
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1229   .debug_str:00000000000001c4 .LASF29
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1157   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1167   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1201   .debug_str:00000000000000ac .LASF0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1187   .debug_str:0000000000000064 .LASF1
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1207   .debug_str:00000000000000d7 .LASF2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1225   .debug_str:00000000000001ac .LASF3
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1227   .debug_str:00000000000001b8 .LASF4
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1183   .debug_str:0000000000000044 .LASF5
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1193   .debug_str:0000000000000089 .LASF6
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1175   .debug_str:0000000000000019 .LASF7
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1189   .debug_str:0000000000000077 .LASF10
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1185   .debug_str:0000000000000052 .LASF8
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1203   .debug_str:00000000000000b9 .LASF9
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1219   .debug_str:0000000000000190 .LASF11
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1213   .debug_str:00000000000000f1 .LASF30
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1211   .debug_str:00000000000000ec .LASF12
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1199   .debug_str:00000000000000a7 .LASF31
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:120    .text.startup.main:0000000000000000 .LFB4
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:190    .text.startup.main:00000000000000a0 .LFE4
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1050   .debug_loc:0000000000000000 .LLST6
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:136    .text.startup.main:000000000000000e .LVL17
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:139    .text.startup.main:0000000000000016 .LVL18
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:150    .text.startup.main:0000000000000038 .LVL19
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:161    .text.startup.main:000000000000005a .LVL20
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:171    .text.startup.main:0000000000000078 .LVL21
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:181    .text.startup.main:0000000000000096 .LVL22
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:184    .text.startup.main:000000000000009e .LVL23
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1171   .debug_str:0000000000000009 .LASF16
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:70     .text.ledTask:0000000000000000 .LFB3
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:113    .text.ledTask:0000000000000032 .LFE3
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1063   .debug_loc:0000000000000020 .LLST2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1197   .debug_str:000000000000009a .LASF18
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1076   .debug_loc:0000000000000040 .LLST3
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1181   .debug_str:000000000000003e .LASF13
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1179   .debug_str:0000000000000036 .LASF14
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1087   .debug_loc:000000000000005e .LLST4
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1191   .debug_str:0000000000000082 .LASF15
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1102   .debug_loc:0000000000000087 .LLST5
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:104    .text.ledTask:0000000000000024 .LVL14
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:108    .text.ledTask:000000000000002e .LVL15
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1169   .debug_str:0000000000000000 .LASF17
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:14     .text.ledPanel:0000000000000000 .LFB2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:63     .text.ledPanel:000000000000005c .LFE2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1113   .debug_loc:00000000000000a5 .LLST0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1126   .debug_loc:00000000000000c5 .LLST1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cczYimZY.s 			page 9
 
 
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:61     .text.startup.main:0000000000000014 .LVL6
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:72     .text.startup.main:0000000000000036 .LVL7
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:75     .text.startup.main:000000000000003e .LVL8
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:701    .debug_str:000000000000007e .LASF25
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:14     .text.ledPanel:0000000000000000 .LFB2
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:38     .text.ledPanel:0000000000000020 .LFE2
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:629    .debug_loc:0000000000000020 .LLST0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:725    .debug_str:0000000000000184 .LASF26
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:642    .debug_loc:0000000000000040 .LLST1
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:29     .text.ledPanel:000000000000000c .LVL2
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:31     .text.ledPanel:0000000000000014 .LVL3
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:35     .text.ledPanel:000000000000001e .LVL4
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:713    .debug_str:00000000000000c4 .LASF13
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:715    .debug_str:00000000000000cc .LASF14
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:699    .debug_str:0000000000000072 .LASF15
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:711    .debug_str:00000000000000b0 .LASF16
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:685    .debug_str:000000000000001b .LASF17
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:689    .debug_str:0000000000000029 .LASF18
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:703    .debug_str:0000000000000087 .LASF19
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:52     .text.startup.main:0000000000000002 .LCFI1
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:20     .text.ledPanel:0000000000000002 .LCFI0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:18     .text.ledPanel:0000000000000000 .LVL0
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:24     .text.ledPanel:0000000000000004 .LVL1
-C:\Users\kasie\AppData\Local\Temp\cc6bnB9n.s:95     .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:29     .text.ledPanel:000000000000000c .LVL2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:31     .text.ledPanel:0000000000000014 .LVL3
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:35     .text.ledPanel:000000000000001e .LVL4
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:40     .text.ledPanel:000000000000002a .LVL5
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:45     .text.ledPanel:0000000000000036 .LVL6
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:50     .text.ledPanel:0000000000000042 .LVL7
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:55     .text.ledPanel:000000000000004e .LVL8
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:60     .text.ledPanel:000000000000005a .LVL9
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1173   .debug_str:0000000000000011 .LASF19
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1221   .debug_str:0000000000000199 .LASF20
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1231   .debug_str:0000000000000208 .LASF21
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1177   .debug_str:0000000000000022 .LASF22
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1205   .debug_str:00000000000000d0 .LASF23
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1223   .debug_str:00000000000001a1 .LASF24
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1195   .debug_str:0000000000000093 .LASF25
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:1215   .debug_str:0000000000000101 .LASF26
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:128    .text.startup.main:0000000000000002 .LCFI2
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:77     .text.ledTask:0000000000000002 .LCFI1
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:73     .text.ledTask:0000000000000000 .LVL10
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:96     .text.ledTask:0000000000000016 .LVL12
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:84     .text.ledTask:000000000000000c .LVL11
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:102    .text.ledTask:000000000000001c .LVL13
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:20     .text.ledPanel:0000000000000002 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:18     .text.ledPanel:0000000000000000 .LVL0
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:24     .text.ledPanel:0000000000000004 .LVL1
+C:\Users\kasie\AppData\Local\Temp\cczYimZY.s:212    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 colset
 l88row
 vTaskDelay
+l88mem
 colinit
 l88init
 xTaskCreate

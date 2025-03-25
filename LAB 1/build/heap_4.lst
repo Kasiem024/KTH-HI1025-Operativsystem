@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 1
 
 
    1              		.file	"heap_4.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
   42:lib/freertos/src/heap_4.c **** 
   43:lib/freertos/src/heap_4.c ****     http://www.FreeRTOS.org/support - In return for receiving this top quality
   44:lib/freertos/src/heap_4.c ****     embedded software for free we request you assist our global community by
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 2
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 2
 
 
   45:lib/freertos/src/heap_4.c ****     participating in the support forum.
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
   99:lib/freertos/src/heap_4.c **** 
  100:lib/freertos/src/heap_4.c **** /* Allocate the memory for the heap. */
  101:lib/freertos/src/heap_4.c **** #if( configAPPLICATION_ALLOCATED_HEAP == 1 )
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 3
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 3
 
 
  102:lib/freertos/src/heap_4.c **** 	/* The application writer has already defined the array used for the RTOS
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  156:lib/freertos/src/heap_4.c **** {
  157:lib/freertos/src/heap_4.c **** BlockLink_t *pxBlock, *pxPreviousBlock, *pxNewBlockLink;
  158:lib/freertos/src/heap_4.c **** void *pvReturn = NULL;
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 4
 
 
  159:lib/freertos/src/heap_4.c **** 
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  213:lib/freertos/src/heap_4.c **** 				}
  214:lib/freertos/src/heap_4.c **** 
  215:lib/freertos/src/heap_4.c **** 				/* If the end marker was reached then a block of adequate size
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 5
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 5
 
 
  216:lib/freertos/src/heap_4.c **** 				was	not found. */
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  270:lib/freertos/src/heap_4.c **** 				}
  271:lib/freertos/src/heap_4.c **** 			}
  272:lib/freertos/src/heap_4.c **** 			else
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 6
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 6
 
 
  273:lib/freertos/src/heap_4.c **** 			{
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  327:lib/freertos/src/heap_4.c **** 				/* The block is being returned to the heap - it is no longer
  328:lib/freertos/src/heap_4.c **** 				allocated. */
  329:lib/freertos/src/heap_4.c **** 				pxLink->xBlockSize &= ~xBlockAllocatedBit;
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 7
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 7
 
 
  330:lib/freertos/src/heap_4.c **** 
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  384:lib/freertos/src/heap_4.c **** 		uxAddress &= ~( ( size_t ) portBYTE_ALIGNMENT_MASK );
  385:lib/freertos/src/heap_4.c **** 		xTotalHeapSize -= uxAddress - ( size_t ) ucHeap;
  386:lib/freertos/src/heap_4.c **** 	}
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 8
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 8
 
 
  387:lib/freertos/src/heap_4.c **** 
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
   29 000a 636FA702 		bltu	a4,a0,.L8
  427:lib/freertos/src/heap_4.c **** 	{
  428:lib/freertos/src/heap_4.c **** 		/* Nothing to do here, just iterate to the right position. */
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 9
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 9
 
 
  429:lib/freertos/src/heap_4.c **** 	}
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
   63 0032 6306D700 		beq	a4,a3,.L4
  450:lib/freertos/src/heap_4.c **** 		{
  451:lib/freertos/src/heap_4.c **** 			/* Form one big block from the two blocks. */
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 10
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 10
 
 
  452:lib/freertos/src/heap_4.c **** 			pxBlockToInsert->xBlockSize += pxIterator->pxNextFreeBlock->xBlockSize;
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
   91 004a 7DBF     		j	.L2
   92              		.cfi_endproc
   93              	.LFE8:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 11
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 11
 
 
   95              		.section	.text.pvPortMalloc,"ax",@progbits
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  139              	.LBB7:
  373:lib/freertos/src/heap_4.c **** uint8_t *pucAlignedHeap;
  140              		.loc 1 373 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 12
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 12
 
 
  374:lib/freertos/src/heap_4.c **** size_t uxAddress;
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  397:lib/freertos/src/heap_4.c **** 	uxAddress -= xHeapStructSize;
  176              		.loc 1 397 2
  177              	.LVL13:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 13
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 13
 
 
  398:lib/freertos/src/heap_4.c **** 	uxAddress &= ~( ( size_t ) portBYTE_ALIGNMENT_MASK );
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  214 0084 4CC3     		sw	a1,4(a4)
  408:lib/freertos/src/heap_4.c **** 
  215              		.loc 1 408 2 is_stmt 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 14
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 14
 
 
  411:lib/freertos/src/heap_4.c **** 	xFreeBytesRemaining = pxFirstFreeBlock->xBlockSize;
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  200:lib/freertos/src/heap_4.c **** 			}
  252              		.loc 1 200 29
  203:lib/freertos/src/heap_4.c **** 			{
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 15
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 15
 
 
  253              		.loc 1 203 4
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  290              		.loc 1 221 61
  291 00d2 0443     		lw	s1,0(a4)
  292              	.LVL25:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 16
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 16
 
 
  225:lib/freertos/src/heap_4.c **** 
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  331              	.LVL30:
  332 00f2 2E84     		mv	s0,a1
  333              	.LVL31:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 17
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 17
 
 
  334 00f4 F1B7     		j	.L15
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  369              		.loc 1 221 15
  370 0120 A104     		addi	s1,s1,8
  371              	.LVL34:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 18
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 18
 
 
  259:lib/freertos/src/heap_4.c **** 					}
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  407 013a 01A0     		j	.L21
  408              	.LVL38:
  409              	.L28:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 19
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 19
 
 
  158:lib/freertos/src/heap_4.c **** 
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  456 0006 0327C5FF 		lw	a4,-4(a0)
  457 000a 83A70700 		lw	a5,%lo(.LANCHOR4)(a5)
  458 000e B376F700 		and	a3,a4,a5
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 20
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 20
 
 
  459 0012 81E6     		bne	a3,zero,.L36
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  497              		.loc 1 321 3 discriminator 2
  321:lib/freertos/src/heap_4.c **** 
  498              		.loc 1 321 3 discriminator 2
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 21
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 21
 
 
  321:lib/freertos/src/heap_4.c **** 
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  536              		.loc 1 336 6
  537 0056 97000000 		call	prvInsertBlockIntoFreeList
  537      E7800000 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 22
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 22
 
 
  538              	.LVL46:
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  586              		.cfi_endproc
  587              	.LFE5:
  589              		.section	.text.vPortInitialiseBlocks,"ax",@progbits
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 23
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 23
 
 
  590              		.align	1
@@ -1378,610 +1378,610 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 1
  651              		.file 8 "c:\\hukas\\code\\repositories\\kth-hi1025-operativsystem\\compiler\\riscv64-unknown-elf\\
  652              		.file 9 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
  653              		.file 10 "lib/freertos/include/task.h"
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 24
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 24
 
 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 25
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 heap_4.c
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:12     .text.prvInsertBlockIntoFreeList:0000000000000000 prvInsertBlockIntoFreeList
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:16     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:18     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:19     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:20     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:21     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:22     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:27     .text.prvInsertBlockIntoFreeList:0000000000000008 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:29     .text.prvInsertBlockIntoFreeList:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:32     .text.prvInsertBlockIntoFreeList:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:33     .text.prvInsertBlockIntoFreeList:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:34     .text.prvInsertBlockIntoFreeList:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:36     .text.prvInsertBlockIntoFreeList:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:38     .text.prvInsertBlockIntoFreeList:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:40     .text.prvInsertBlockIntoFreeList:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:41     .text.prvInsertBlockIntoFreeList:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:49     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:50     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:51     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:52     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:53     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:55     .text.prvInsertBlockIntoFreeList:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:57     .text.prvInsertBlockIntoFreeList:0000000000000026 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:59     .text.prvInsertBlockIntoFreeList:000000000000002a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:60     .text.prvInsertBlockIntoFreeList:000000000000002a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:63     .text.prvInsertBlockIntoFreeList:0000000000000032 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:65     .text.prvInsertBlockIntoFreeList:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:66     .text.prvInsertBlockIntoFreeList:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:68     .text.prvInsertBlockIntoFreeList:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:70     .text.prvInsertBlockIntoFreeList:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:74     .text.prvInsertBlockIntoFreeList:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:75     .text.prvInsertBlockIntoFreeList:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:76     .text.prvInsertBlockIntoFreeList:000000000000003e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:78     .text.prvInsertBlockIntoFreeList:0000000000000040 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:79     .text.prvInsertBlockIntoFreeList:0000000000000040 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:81     .text.prvInsertBlockIntoFreeList:0000000000000044 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:82     .text.prvInsertBlockIntoFreeList:0000000000000044 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:85     .text.prvInsertBlockIntoFreeList:0000000000000046 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:86     .text.prvInsertBlockIntoFreeList:0000000000000046 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:92     .text.prvInsertBlockIntoFreeList:000000000000004c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:99     .text.pvPortMalloc:0000000000000000 pvPortMalloc
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:102    .text.pvPortMalloc:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:104    .text.pvPortMalloc:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:105    .text.pvPortMalloc:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:106    .text.pvPortMalloc:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:107    .text.pvPortMalloc:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:108    .text.pvPortMalloc:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:110    .text.pvPortMalloc:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:118    .text.pvPortMalloc:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:119    .text.pvPortMalloc:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:120    .text.pvPortMalloc:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:121    .text.pvPortMalloc:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:122    .text.pvPortMalloc:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:123    .text.pvPortMalloc:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:125    .text.pvPortMalloc:0000000000000010 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 26
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:12     .text.prvInsertBlockIntoFreeList:0000000000000000 prvInsertBlockIntoFreeList
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:16     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:18     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:19     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:20     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:21     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:22     .text.prvInsertBlockIntoFreeList:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:27     .text.prvInsertBlockIntoFreeList:0000000000000008 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:29     .text.prvInsertBlockIntoFreeList:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:32     .text.prvInsertBlockIntoFreeList:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:33     .text.prvInsertBlockIntoFreeList:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:34     .text.prvInsertBlockIntoFreeList:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:36     .text.prvInsertBlockIntoFreeList:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:38     .text.prvInsertBlockIntoFreeList:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:40     .text.prvInsertBlockIntoFreeList:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:41     .text.prvInsertBlockIntoFreeList:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:49     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:50     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:51     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:52     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:53     .text.prvInsertBlockIntoFreeList:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:55     .text.prvInsertBlockIntoFreeList:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:57     .text.prvInsertBlockIntoFreeList:0000000000000026 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:59     .text.prvInsertBlockIntoFreeList:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:60     .text.prvInsertBlockIntoFreeList:000000000000002a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:63     .text.prvInsertBlockIntoFreeList:0000000000000032 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:65     .text.prvInsertBlockIntoFreeList:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:66     .text.prvInsertBlockIntoFreeList:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:68     .text.prvInsertBlockIntoFreeList:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:70     .text.prvInsertBlockIntoFreeList:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:74     .text.prvInsertBlockIntoFreeList:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:75     .text.prvInsertBlockIntoFreeList:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:76     .text.prvInsertBlockIntoFreeList:000000000000003e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:78     .text.prvInsertBlockIntoFreeList:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:79     .text.prvInsertBlockIntoFreeList:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:81     .text.prvInsertBlockIntoFreeList:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:82     .text.prvInsertBlockIntoFreeList:0000000000000044 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:85     .text.prvInsertBlockIntoFreeList:0000000000000046 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:86     .text.prvInsertBlockIntoFreeList:0000000000000046 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:92     .text.prvInsertBlockIntoFreeList:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:99     .text.pvPortMalloc:0000000000000000 pvPortMalloc
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:102    .text.pvPortMalloc:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:104    .text.pvPortMalloc:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:105    .text.pvPortMalloc:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:106    .text.pvPortMalloc:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:107    .text.pvPortMalloc:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:108    .text.pvPortMalloc:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:110    .text.pvPortMalloc:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:118    .text.pvPortMalloc:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:119    .text.pvPortMalloc:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:120    .text.pvPortMalloc:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:121    .text.pvPortMalloc:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:122    .text.pvPortMalloc:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:123    .text.pvPortMalloc:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:125    .text.pvPortMalloc:0000000000000010 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 26
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:128    .text.pvPortMalloc:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:129    .text.pvPortMalloc:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:131    .text.pvPortMalloc:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:140    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:141    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:142    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:143    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:145    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:146    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:606    .bss.ucHeap:0000000000000000 ucHeap
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:147    .text.pvPortMalloc:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:151    .text.pvPortMalloc:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:152    .text.pvPortMalloc:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:154    .text.pvPortMalloc:000000000000003c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:157    .text.pvPortMalloc:0000000000000042 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:158    .text.pvPortMalloc:0000000000000042 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:161    .text.pvPortMalloc:0000000000000046 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:162    .text.pvPortMalloc:0000000000000046 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:166    .text.pvPortMalloc:0000000000000048 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:167    .text.pvPortMalloc:0000000000000048 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:168    .text.pvPortMalloc:0000000000000048 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:169    .text.pvPortMalloc:0000000000000048 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:172    .text.pvPortMalloc:0000000000000050 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:174    .text.pvPortMalloc:0000000000000054 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:176    .text.pvPortMalloc:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:178    .text.pvPortMalloc:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:179    .text.pvPortMalloc:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:180    .text.pvPortMalloc:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:185    .text.pvPortMalloc:000000000000005e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:186    .text.pvPortMalloc:000000000000005e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:189    .text.pvPortMalloc:0000000000000060 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:190    .text.pvPortMalloc:0000000000000060 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:192    .text.pvPortMalloc:0000000000000064 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:194    .text.pvPortMalloc:0000000000000068 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:196    .text.pvPortMalloc:000000000000006c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:198    .text.pvPortMalloc:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:199    .text.pvPortMalloc:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:201    .text.pvPortMalloc:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:202    .text.pvPortMalloc:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:203    .text.pvPortMalloc:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:205    .text.pvPortMalloc:0000000000000070 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:209    .text.pvPortMalloc:0000000000000078 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:212    .text.pvPortMalloc:0000000000000080 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:214    .text.pvPortMalloc:0000000000000084 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:216    .text.pvPortMalloc:0000000000000086 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:217    .text.pvPortMalloc:0000000000000086 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:218    .text.pvPortMalloc:0000000000000086 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:219    .text.pvPortMalloc:0000000000000086 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:220    .text.pvPortMalloc:0000000000000086 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:226    .text.pvPortMalloc:0000000000000088 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:227    .text.pvPortMalloc:0000000000000088 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:228    .text.pvPortMalloc:0000000000000088 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:231    .text.pvPortMalloc:0000000000000090 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:233    .text.pvPortMalloc:0000000000000092 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:234    .text.pvPortMalloc:0000000000000092 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:236    .text.pvPortMalloc:0000000000000094 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:237    .text.pvPortMalloc:0000000000000094 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 27
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:128    .text.pvPortMalloc:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:129    .text.pvPortMalloc:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:131    .text.pvPortMalloc:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:140    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:141    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:142    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:143    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:145    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:146    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:606    .bss.ucHeap:0000000000000000 ucHeap
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:147    .text.pvPortMalloc:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:151    .text.pvPortMalloc:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:152    .text.pvPortMalloc:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:154    .text.pvPortMalloc:000000000000003c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:157    .text.pvPortMalloc:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:158    .text.pvPortMalloc:0000000000000042 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:161    .text.pvPortMalloc:0000000000000046 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:162    .text.pvPortMalloc:0000000000000046 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:166    .text.pvPortMalloc:0000000000000048 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:167    .text.pvPortMalloc:0000000000000048 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:168    .text.pvPortMalloc:0000000000000048 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:169    .text.pvPortMalloc:0000000000000048 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:172    .text.pvPortMalloc:0000000000000050 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:174    .text.pvPortMalloc:0000000000000054 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:176    .text.pvPortMalloc:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:178    .text.pvPortMalloc:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:179    .text.pvPortMalloc:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:180    .text.pvPortMalloc:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:185    .text.pvPortMalloc:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:186    .text.pvPortMalloc:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:189    .text.pvPortMalloc:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:190    .text.pvPortMalloc:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:192    .text.pvPortMalloc:0000000000000064 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:194    .text.pvPortMalloc:0000000000000068 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:196    .text.pvPortMalloc:000000000000006c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:198    .text.pvPortMalloc:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:199    .text.pvPortMalloc:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:201    .text.pvPortMalloc:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:202    .text.pvPortMalloc:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:203    .text.pvPortMalloc:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:205    .text.pvPortMalloc:0000000000000070 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:209    .text.pvPortMalloc:0000000000000078 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:212    .text.pvPortMalloc:0000000000000080 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:214    .text.pvPortMalloc:0000000000000084 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:216    .text.pvPortMalloc:0000000000000086 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:217    .text.pvPortMalloc:0000000000000086 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:218    .text.pvPortMalloc:0000000000000086 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:219    .text.pvPortMalloc:0000000000000086 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:220    .text.pvPortMalloc:0000000000000086 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:226    .text.pvPortMalloc:0000000000000088 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:227    .text.pvPortMalloc:0000000000000088 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:228    .text.pvPortMalloc:0000000000000088 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:231    .text.pvPortMalloc:0000000000000090 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:233    .text.pvPortMalloc:0000000000000092 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:234    .text.pvPortMalloc:0000000000000092 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:236    .text.pvPortMalloc:0000000000000094 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:237    .text.pvPortMalloc:0000000000000094 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 27
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:240    .text.pvPortMalloc:0000000000000098 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:241    .text.pvPortMalloc:0000000000000098 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:243    .text.pvPortMalloc:000000000000009c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:245    .text.pvPortMalloc:000000000000009e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:246    .text.pvPortMalloc:000000000000009e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:252    .text.pvPortMalloc:00000000000000a2 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:253    .text.pvPortMalloc:00000000000000a2 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:254    .text.pvPortMalloc:00000000000000a2 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:255    .text.pvPortMalloc:00000000000000a2 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:257    .text.pvPortMalloc:00000000000000a4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:261    .text.pvPortMalloc:00000000000000b0 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:264    .text.pvPortMalloc:00000000000000b4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:265    .text.pvPortMalloc:00000000000000b4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:266    .text.pvPortMalloc:00000000000000b4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:270    .text.pvPortMalloc:00000000000000bc .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:271    .text.pvPortMalloc:00000000000000bc .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:275    .text.pvPortMalloc:00000000000000c0 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:277    .text.pvPortMalloc:00000000000000c2 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:279    .text.pvPortMalloc:00000000000000c6 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:281    .text.pvPortMalloc:00000000000000c8 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:284    .text.pvPortMalloc:00000000000000ca .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:285    .text.pvPortMalloc:00000000000000ca .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:288    .text.pvPortMalloc:00000000000000d0 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:289    .text.pvPortMalloc:00000000000000d0 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:291    .text.pvPortMalloc:00000000000000d2 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:294    .text.pvPortMalloc:00000000000000d4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:295    .text.pvPortMalloc:00000000000000d4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:297    .text.pvPortMalloc:00000000000000d6 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:298    .text.pvPortMalloc:00000000000000d6 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:301    .text.pvPortMalloc:00000000000000da .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:304    .text.pvPortMalloc:00000000000000e0 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:305    .text.pvPortMalloc:00000000000000e0 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:308    .text.pvPortMalloc:00000000000000e4 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:312    .text.pvPortMalloc:00000000000000ea .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:313    .text.pvPortMalloc:00000000000000ea .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:314    .text.pvPortMalloc:00000000000000ea .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:240    .text.pvPortMalloc:0000000000000098 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:241    .text.pvPortMalloc:0000000000000098 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:243    .text.pvPortMalloc:000000000000009c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:245    .text.pvPortMalloc:000000000000009e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:246    .text.pvPortMalloc:000000000000009e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:252    .text.pvPortMalloc:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:253    .text.pvPortMalloc:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:254    .text.pvPortMalloc:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:255    .text.pvPortMalloc:00000000000000a2 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:257    .text.pvPortMalloc:00000000000000a4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:261    .text.pvPortMalloc:00000000000000b0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:264    .text.pvPortMalloc:00000000000000b4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:265    .text.pvPortMalloc:00000000000000b4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:266    .text.pvPortMalloc:00000000000000b4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:270    .text.pvPortMalloc:00000000000000bc .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:271    .text.pvPortMalloc:00000000000000bc .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:275    .text.pvPortMalloc:00000000000000c0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:277    .text.pvPortMalloc:00000000000000c2 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:279    .text.pvPortMalloc:00000000000000c6 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:281    .text.pvPortMalloc:00000000000000c8 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:284    .text.pvPortMalloc:00000000000000ca .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:285    .text.pvPortMalloc:00000000000000ca .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:288    .text.pvPortMalloc:00000000000000d0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:289    .text.pvPortMalloc:00000000000000d0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:291    .text.pvPortMalloc:00000000000000d2 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:294    .text.pvPortMalloc:00000000000000d4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:295    .text.pvPortMalloc:00000000000000d4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:297    .text.pvPortMalloc:00000000000000d6 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:298    .text.pvPortMalloc:00000000000000d6 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:301    .text.pvPortMalloc:00000000000000da .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:304    .text.pvPortMalloc:00000000000000e0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:305    .text.pvPortMalloc:00000000000000e0 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:308    .text.pvPortMalloc:00000000000000e4 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:312    .text.pvPortMalloc:00000000000000ea .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:313    .text.pvPortMalloc:00000000000000ea .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:314    .text.pvPortMalloc:00000000000000ea .L0 
 lib/freertos/src/heap_4.c:236    .text.pvPortMalloc:00000000000000ea .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:324    .text.pvPortMalloc:00000000000000ee .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:325    .text.pvPortMalloc:00000000000000ee .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:326    .text.pvPortMalloc:00000000000000ee .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:327    .text.pvPortMalloc:00000000000000ee .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:338    .text.pvPortMalloc:00000000000000f6 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:339    .text.pvPortMalloc:00000000000000f6 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:340    .text.pvPortMalloc:00000000000000f6 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:342    .text.pvPortMalloc:00000000000000f8 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:343    .text.pvPortMalloc:00000000000000f8 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:345    .text.pvPortMalloc:00000000000000fa .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:349    .text.pvPortMalloc:0000000000000102 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:350    .text.pvPortMalloc:0000000000000102 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:351    .text.pvPortMalloc:0000000000000102 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:353    .text.pvPortMalloc:0000000000000104 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:356    .text.pvPortMalloc:000000000000010c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:358    .text.pvPortMalloc:000000000000010e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:361    .text.pvPortMalloc:0000000000000116 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:362    .text.pvPortMalloc:0000000000000116 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:364    .text.pvPortMalloc:000000000000011a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:365    .text.pvPortMalloc:000000000000011a .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 28
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:324    .text.pvPortMalloc:00000000000000ee .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:325    .text.pvPortMalloc:00000000000000ee .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:326    .text.pvPortMalloc:00000000000000ee .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:327    .text.pvPortMalloc:00000000000000ee .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:338    .text.pvPortMalloc:00000000000000f6 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:339    .text.pvPortMalloc:00000000000000f6 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:340    .text.pvPortMalloc:00000000000000f6 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:342    .text.pvPortMalloc:00000000000000f8 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:343    .text.pvPortMalloc:00000000000000f8 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:345    .text.pvPortMalloc:00000000000000fa .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:349    .text.pvPortMalloc:0000000000000102 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:350    .text.pvPortMalloc:0000000000000102 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:351    .text.pvPortMalloc:0000000000000102 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:353    .text.pvPortMalloc:0000000000000104 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:356    .text.pvPortMalloc:000000000000010c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:358    .text.pvPortMalloc:000000000000010e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:361    .text.pvPortMalloc:0000000000000116 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:362    .text.pvPortMalloc:0000000000000116 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:364    .text.pvPortMalloc:000000000000011a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:365    .text.pvPortMalloc:000000000000011a .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 28
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:368    .text.pvPortMalloc:000000000000011c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:370    .text.pvPortMalloc:0000000000000120 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:373    .text.pvPortMalloc:0000000000000122 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:374    .text.pvPortMalloc:0000000000000122 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:375    .text.pvPortMalloc:0000000000000122 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:377    .text.pvPortMalloc:0000000000000124 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:378    .text.pvPortMalloc:0000000000000124 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:382    .text.pvPortMalloc:0000000000000128 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:383    .text.pvPortMalloc:0000000000000128 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:384    .text.pvPortMalloc:0000000000000128 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:385    .text.pvPortMalloc:0000000000000128 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:388    .text.pvPortMalloc:0000000000000130 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:392    .text.pvPortMalloc:0000000000000136 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:393    .text.pvPortMalloc:0000000000000136 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:394    .text.pvPortMalloc:0000000000000136 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:368    .text.pvPortMalloc:000000000000011c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:370    .text.pvPortMalloc:0000000000000120 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:373    .text.pvPortMalloc:0000000000000122 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:374    .text.pvPortMalloc:0000000000000122 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:375    .text.pvPortMalloc:0000000000000122 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:377    .text.pvPortMalloc:0000000000000124 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:378    .text.pvPortMalloc:0000000000000124 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:382    .text.pvPortMalloc:0000000000000128 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:383    .text.pvPortMalloc:0000000000000128 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:384    .text.pvPortMalloc:0000000000000128 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:385    .text.pvPortMalloc:0000000000000128 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:388    .text.pvPortMalloc:0000000000000130 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:392    .text.pvPortMalloc:0000000000000136 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:393    .text.pvPortMalloc:0000000000000136 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:394    .text.pvPortMalloc:0000000000000136 .L0 
 lib/freertos/src/heap_4.c:300    .text.pvPortMalloc:0000000000000136 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:404    .text.pvPortMalloc:000000000000013a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:405    .text.pvPortMalloc:000000000000013a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:406    .text.pvPortMalloc:000000000000013a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:407    .text.pvPortMalloc:000000000000013a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:411    .text.pvPortMalloc:000000000000013c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:416    .text.pvPortMalloc:0000000000000140 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:417    .text.pvPortMalloc:0000000000000142 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:419    .text.pvPortMalloc:0000000000000144 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:422    .text.pvPortMalloc:0000000000000148 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:424    .text.pvPortMalloc:000000000000014a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:427    .text.pvPortMalloc:000000000000014c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:429    .text.pvPortMalloc:000000000000014e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:432    .text.pvPortMalloc:0000000000000150 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:434    .text.pvPortMalloc:0000000000000152 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:441    .text.vPortFree:0000000000000000 vPortFree
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:444    .text.vPortFree:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:446    .text.vPortFree:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:447    .text.vPortFree:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:448    .text.vPortFree:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:449    .text.vPortFree:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:450    .text.vPortFree:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:453    .text.vPortFree:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:454    .text.vPortFree:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:455    .text.vPortFree:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:462    .text.vPortFree:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:463    .text.vPortFree:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:464    .text.vPortFree:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:404    .text.pvPortMalloc:000000000000013a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:405    .text.pvPortMalloc:000000000000013a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:406    .text.pvPortMalloc:000000000000013a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:407    .text.pvPortMalloc:000000000000013a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:411    .text.pvPortMalloc:000000000000013c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:416    .text.pvPortMalloc:0000000000000140 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:417    .text.pvPortMalloc:0000000000000142 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:419    .text.pvPortMalloc:0000000000000144 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:422    .text.pvPortMalloc:0000000000000148 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:424    .text.pvPortMalloc:000000000000014a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:427    .text.pvPortMalloc:000000000000014c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:429    .text.pvPortMalloc:000000000000014e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:432    .text.pvPortMalloc:0000000000000150 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:434    .text.pvPortMalloc:0000000000000152 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:441    .text.vPortFree:0000000000000000 vPortFree
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:444    .text.vPortFree:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:446    .text.vPortFree:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:447    .text.vPortFree:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:448    .text.vPortFree:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:449    .text.vPortFree:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:450    .text.vPortFree:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:453    .text.vPortFree:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:454    .text.vPortFree:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:455    .text.vPortFree:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:462    .text.vPortFree:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:463    .text.vPortFree:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:464    .text.vPortFree:0000000000000014 .L0 
 lib/freertos/src/heap_4.c:320    .text.vPortFree:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:474    .text.vPortFree:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:475    .text.vPortFree:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:476    .text.vPortFree:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:477    .text.vPortFree:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:480    .text.vPortFree:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:481    .text.vPortFree:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:485    .text.vPortFree:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:486    .text.vPortFree:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:487    .text.vPortFree:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:474    .text.vPortFree:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:475    .text.vPortFree:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:476    .text.vPortFree:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:477    .text.vPortFree:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:480    .text.vPortFree:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:481    .text.vPortFree:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:485    .text.vPortFree:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:486    .text.vPortFree:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:487    .text.vPortFree:0000000000000020 .L0 
 lib/freertos/src/heap_4.c:321    .text.vPortFree:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:497    .text.vPortFree:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:498    .text.vPortFree:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:499    .text.vPortFree:0000000000000024 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 29
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:497    .text.vPortFree:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:498    .text.vPortFree:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:499    .text.vPortFree:0000000000000024 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 29
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:500    .text.vPortFree:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:503    .text.vPortFree:0000000000000026 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:505    .text.vPortFree:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:507    .text.vPortFree:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:509    .text.vPortFree:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:511    .text.vPortFree:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:512    .text.vPortFree:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:514    .text.vPortFree:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:518    .text.vPortFree:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:519    .text.vPortFree:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:520    .text.vPortFree:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:521    .text.vPortFree:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:522    .text.vPortFree:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:525    .text.vPortFree:0000000000000040 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:526    .text.vPortFree:0000000000000040 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:531    .text.vPortFree:000000000000004e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:533    .text.vPortFree:0000000000000052 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:536    .text.vPortFree:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:537    .text.vPortFree:0000000000000056 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:540    .text.vPortFree:000000000000005e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:541    .text.vPortFree:000000000000005e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:542    .text.vPortFree:0000000000000060 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:545    .text.vPortFree:0000000000000062 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:548    .text.vPortFree:0000000000000064 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:550    .text.vPortFree:0000000000000064 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:554    .text.vPortFree:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:561    .text.xPortGetFreeHeapSize:0000000000000000 xPortGetFreeHeapSize
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:564    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:565    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:566    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:567    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:570    .text.xPortGetFreeHeapSize:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:577    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 xPortGetMinimumEverFreeHeapSize
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:580    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:581    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:582    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:583    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:586    .text.xPortGetMinimumEverFreeHeapSize:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:593    .text.vPortInitialiseBlocks:0000000000000000 vPortInitialiseBlocks
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:596    .text.vPortInitialiseBlocks:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:597    .text.vPortInitialiseBlocks:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:598    .text.vPortInitialiseBlocks:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:599    .text.vPortInitialiseBlocks:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:610    .sbss.pxEnd:0000000000000000 .LANCHOR1
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:613    .sbss.pxEnd:0000000000000000 pxEnd
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:617    .sbss.xBlockAllocatedBit:0000000000000000 .LANCHOR4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:620    .sbss.xBlockAllocatedBit:0000000000000000 xBlockAllocatedBit
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:624    .sbss.xFreeBytesRemaining:0000000000000000 .LANCHOR3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:627    .sbss.xFreeBytesRemaining:0000000000000000 xFreeBytesRemaining
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:631    .sbss.xMinimumEverFreeBytesRemaining:0000000000000000 .LANCHOR2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:634    .sbss.xMinimumEverFreeBytesRemaining:0000000000000000 xMinimumEverFreeBytesRemaining
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:638    .sbss.xStart:0000000000000000 .LANCHOR0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:641    .sbss.xStart:0000000000000000 xStart
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:95     .text.prvInsertBlockIntoFreeList:000000000000004c .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:437    .text.pvPortMalloc:0000000000000152 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:557    .text.vPortFree:000000000000006e .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:573    .text.xPortGetFreeHeapSize:000000000000000a .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 30
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:500    .text.vPortFree:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:503    .text.vPortFree:0000000000000026 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:505    .text.vPortFree:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:507    .text.vPortFree:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:509    .text.vPortFree:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:511    .text.vPortFree:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:512    .text.vPortFree:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:514    .text.vPortFree:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:518    .text.vPortFree:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:519    .text.vPortFree:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:520    .text.vPortFree:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:521    .text.vPortFree:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:522    .text.vPortFree:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:525    .text.vPortFree:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:526    .text.vPortFree:0000000000000040 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:531    .text.vPortFree:000000000000004e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:533    .text.vPortFree:0000000000000052 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:536    .text.vPortFree:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:537    .text.vPortFree:0000000000000056 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:540    .text.vPortFree:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:541    .text.vPortFree:000000000000005e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:542    .text.vPortFree:0000000000000060 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:545    .text.vPortFree:0000000000000062 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:548    .text.vPortFree:0000000000000064 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:550    .text.vPortFree:0000000000000064 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:554    .text.vPortFree:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:561    .text.xPortGetFreeHeapSize:0000000000000000 xPortGetFreeHeapSize
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:564    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:565    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:566    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:567    .text.xPortGetFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:570    .text.xPortGetFreeHeapSize:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:577    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 xPortGetMinimumEverFreeHeapSize
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:580    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:581    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:582    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:583    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:586    .text.xPortGetMinimumEverFreeHeapSize:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:593    .text.vPortInitialiseBlocks:0000000000000000 vPortInitialiseBlocks
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:596    .text.vPortInitialiseBlocks:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:597    .text.vPortInitialiseBlocks:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:598    .text.vPortInitialiseBlocks:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:599    .text.vPortInitialiseBlocks:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:610    .sbss.pxEnd:0000000000000000 .LANCHOR1
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:613    .sbss.pxEnd:0000000000000000 pxEnd
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:617    .sbss.xBlockAllocatedBit:0000000000000000 .LANCHOR4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:620    .sbss.xBlockAllocatedBit:0000000000000000 xBlockAllocatedBit
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:624    .sbss.xFreeBytesRemaining:0000000000000000 .LANCHOR3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:627    .sbss.xFreeBytesRemaining:0000000000000000 xFreeBytesRemaining
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:631    .sbss.xMinimumEverFreeBytesRemaining:0000000000000000 .LANCHOR2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:634    .sbss.xMinimumEverFreeBytesRemaining:0000000000000000 xMinimumEverFreeBytesRemaining
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:638    .sbss.xStart:0000000000000000 .LANCHOR0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:641    .sbss.xStart:0000000000000000 xStart
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:95     .text.prvInsertBlockIntoFreeList:000000000000004c .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:437    .text.pvPortMalloc:0000000000000152 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:557    .text.vPortFree:000000000000006e .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:573    .text.xPortGetFreeHeapSize:000000000000000a .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 30
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:589    .text.xPortGetMinimumEverFreeHeapSize:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:602    .text.vPortInitialiseBlocks:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:589    .text.xPortGetMinimumEverFreeHeapSize:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:602    .text.vPortInitialiseBlocks:0000000000000002 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:88     .text.prvInsertBlockIntoFreeList:0000000000000048 .L8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:48     .text.prvInsertBlockIntoFreeList:0000000000000020 .L3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:73     .text.prvInsertBlockIntoFreeList:000000000000003e .L4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:84     .text.prvInsertBlockIntoFreeList:0000000000000046 .L1
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:25     .text.prvInsertBlockIntoFreeList:0000000000000008 .L2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:222    .text.pvPortMalloc:0000000000000088 .L10
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:165    .text.pvPortMalloc:0000000000000048 .L11
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:409    .text.pvPortMalloc:000000000000013c .L28
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:251    .text.pvPortMalloc:00000000000000a2 .L13
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:282    .text.pvPortMalloc:00000000000000ca .L14
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:329    .text.pvPortMalloc:00000000000000f0 .L27
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:347    .text.pvPortMalloc:0000000000000102 .L16
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:336    .text.pvPortMalloc:00000000000000f6 .L17
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:322    .text.pvPortMalloc:00000000000000ee .L18
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:273    .text.pvPortMalloc:00000000000000c0 .L15
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:366    .text.pvPortMalloc:000000000000011c .L19
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:414    .text.pvPortMalloc:0000000000000140 .L9
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:402    .text.pvPortMalloc:000000000000013a .L21
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:380    .text.pvPortMalloc:0000000000000128 .L12
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:552    .text.vPortFree:000000000000006c .L34
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:478    .text.vPortFree:000000000000001a .L36
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:472    .text.vPortFree:0000000000000018 .L37
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:501    .text.vPortFree:0000000000000026 .L38
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:495    .text.vPortFree:0000000000000024 .L39
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:2513   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3989   .debug_str:00000000000005eb .LASF155
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3945   .debug_str:0000000000000504 .LASF156
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3851   .debug_str:00000000000002c3 .LASF157
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3699   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3715   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3725   .debug_str:0000000000000026 .LASF4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3979   .debug_str:00000000000005ba .LASF0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3995   .debug_str:0000000000000685 .LASF1
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3803   .debug_str:00000000000001c2 .LASF2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3969   .debug_str:0000000000000590 .LASF3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3899   .debug_str:00000000000003e8 .LASF5
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3771   .debug_str:000000000000013b .LASF6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3733   .debug_str:0000000000000050 .LASF7
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3911   .debug_str:0000000000000441 .LASF8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3719   .debug_str:000000000000000c .LASF9
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3789   .debug_str:0000000000000188 .LASF10
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3817   .debug_str:0000000000000221 .LASF11
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3847   .debug_str:00000000000002ab .LASF12
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3749   .debug_str:00000000000000b1 .LASF13
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3767   .debug_str:000000000000012d .LASF14
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3721   .debug_str:0000000000000016 .LASF15
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4017   .debug_str:00000000000006fd .LASF16
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3867   .debug_str:0000000000000345 .LASF17
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3839   .debug_str:0000000000000284 .LASF18
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3959   .debug_str:0000000000000560 .LASF19
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3961   .debug_str:0000000000000568 .LASF20
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3929   .debug_str:000000000000049c .LASF21
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4001   .debug_str:00000000000006a3 .LASF22
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3907   .debug_str:0000000000000422 .LASF23
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 31
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:88     .text.prvInsertBlockIntoFreeList:0000000000000048 .L8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:48     .text.prvInsertBlockIntoFreeList:0000000000000020 .L3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:73     .text.prvInsertBlockIntoFreeList:000000000000003e .L4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:84     .text.prvInsertBlockIntoFreeList:0000000000000046 .L1
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:25     .text.prvInsertBlockIntoFreeList:0000000000000008 .L2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:222    .text.pvPortMalloc:0000000000000088 .L10
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:165    .text.pvPortMalloc:0000000000000048 .L11
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:409    .text.pvPortMalloc:000000000000013c .L28
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:251    .text.pvPortMalloc:00000000000000a2 .L13
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:282    .text.pvPortMalloc:00000000000000ca .L14
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:329    .text.pvPortMalloc:00000000000000f0 .L27
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:347    .text.pvPortMalloc:0000000000000102 .L16
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:336    .text.pvPortMalloc:00000000000000f6 .L17
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:322    .text.pvPortMalloc:00000000000000ee .L18
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:273    .text.pvPortMalloc:00000000000000c0 .L15
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:366    .text.pvPortMalloc:000000000000011c .L19
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:414    .text.pvPortMalloc:0000000000000140 .L9
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:402    .text.pvPortMalloc:000000000000013a .L21
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:380    .text.pvPortMalloc:0000000000000128 .L12
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:552    .text.vPortFree:000000000000006c .L34
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:478    .text.vPortFree:000000000000001a .L36
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:472    .text.vPortFree:0000000000000018 .L37
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:501    .text.vPortFree:0000000000000026 .L38
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:495    .text.vPortFree:0000000000000024 .L39
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:2513   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3989   .debug_str:00000000000005eb .LASF155
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3945   .debug_str:0000000000000504 .LASF156
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3851   .debug_str:00000000000002c3 .LASF157
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3699   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3715   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3725   .debug_str:0000000000000026 .LASF4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3979   .debug_str:00000000000005ba .LASF0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3995   .debug_str:0000000000000685 .LASF1
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3803   .debug_str:00000000000001c2 .LASF2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3969   .debug_str:0000000000000590 .LASF3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3899   .debug_str:00000000000003e8 .LASF5
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3771   .debug_str:000000000000013b .LASF6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3733   .debug_str:0000000000000050 .LASF7
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3911   .debug_str:0000000000000441 .LASF8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3719   .debug_str:000000000000000c .LASF9
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3789   .debug_str:0000000000000188 .LASF10
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3817   .debug_str:0000000000000221 .LASF11
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3847   .debug_str:00000000000002ab .LASF12
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3749   .debug_str:00000000000000b1 .LASF13
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3767   .debug_str:000000000000012d .LASF14
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3721   .debug_str:0000000000000016 .LASF15
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4017   .debug_str:00000000000006fd .LASF16
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3867   .debug_str:0000000000000345 .LASF17
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3839   .debug_str:0000000000000284 .LASF18
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3959   .debug_str:0000000000000560 .LASF19
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3961   .debug_str:0000000000000568 .LASF20
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3929   .debug_str:000000000000049c .LASF21
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4001   .debug_str:00000000000006a3 .LASF22
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3907   .debug_str:0000000000000422 .LASF23
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 31
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3919   .debug_str:0000000000000473 .LASF24
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3829   .debug_str:000000000000025f .LASF29
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3985   .debug_str:00000000000005d8 .LASF25
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3953   .debug_str:000000000000054b .LASF26
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3819   .debug_str:000000000000022c .LASF27
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4011   .debug_str:00000000000006e3 .LASF28
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3837   .debug_str:000000000000027f .LASF30
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3763   .debug_str:0000000000000114 .LASF31
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3831   .debug_str:0000000000000267 .LASF32
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3779   .debug_str:000000000000015b .LASF33
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4043   .debug_str:0000000000000783 .LASF34
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3887   .debug_str:00000000000003ac .LASF35
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3879   .debug_str:000000000000037e .LASF36
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3965   .debug_str:0000000000000576 .LASF37
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3921   .debug_str:000000000000047c .LASF38
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4029   .debug_str:0000000000000738 .LASF39
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3783   .debug_str:000000000000016a .LASF40
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3723   .debug_str:000000000000001e .LASF41
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3717   .debug_str:0000000000000000 .LASF42
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3981   .debug_str:00000000000005c7 .LASF43
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3795   .debug_str:000000000000019f .LASF44
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3891   .debug_str:00000000000003bc .LASF45
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3941   .debug_str:00000000000004e0 .LASF46
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3861   .debug_str:000000000000032b .LASF47
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3923   .debug_str:0000000000000486 .LASF48
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3777   .debug_str:0000000000000155 .LASF49
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3977   .debug_str:00000000000005b4 .LASF50
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3931   .debug_str:00000000000004a7 .LASF51
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3793   .debug_str:0000000000000198 .LASF52
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3849   .debug_str:00000000000002bd .LASF53
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3753   .debug_str:00000000000000d8 .LASF54
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3785   .debug_str:0000000000000178 .LASF55
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3835   .debug_str:0000000000000279 .LASF56
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3877   .debug_str:0000000000000377 .LASF57
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3963   .debug_str:0000000000000570 .LASF58
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3769   .debug_str:0000000000000134 .LASF59
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3775   .debug_str:000000000000014f .LASF60
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4025   .debug_str:000000000000072a .LASF61
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3833   .debug_str:0000000000000270 .LASF62
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3807   .debug_str:00000000000001d8 .LASF63
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3855   .debug_str:0000000000000313 .LASF64
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3871   .debug_str:0000000000000350 .LASF65
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3933   .debug_str:00000000000004af .LASF66
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3925   .debug_str:000000000000048d .LASF67
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3955   .debug_str:0000000000000553 .LASF68
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3971   .debug_str:000000000000059c .LASF69
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3797   .debug_str:00000000000001a7 .LASF70
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3843   .debug_str:000000000000029b .LASF71
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3827   .debug_str:0000000000000257 .LASF72
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3939   .debug_str:00000000000004db .LASF73
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3729   .debug_str:0000000000000035 .LASF74
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3949   .debug_str:0000000000000528 .LASF75
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4041   .debug_str:000000000000077b .LASF76
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3895   .debug_str:00000000000003ce .LASF77
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3947   .debug_str:000000000000051e .LASF78
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3865   .debug_str:000000000000033d .LASF79
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3799   .debug_str:00000000000001ae .LASF80
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 32
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3919   .debug_str:0000000000000473 .LASF24
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3829   .debug_str:000000000000025f .LASF29
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3985   .debug_str:00000000000005d8 .LASF25
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3953   .debug_str:000000000000054b .LASF26
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3819   .debug_str:000000000000022c .LASF27
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4011   .debug_str:00000000000006e3 .LASF28
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3837   .debug_str:000000000000027f .LASF30
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3763   .debug_str:0000000000000114 .LASF31
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3831   .debug_str:0000000000000267 .LASF32
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3779   .debug_str:000000000000015b .LASF33
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4043   .debug_str:0000000000000783 .LASF34
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3887   .debug_str:00000000000003ac .LASF35
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3879   .debug_str:000000000000037e .LASF36
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3965   .debug_str:0000000000000576 .LASF37
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3921   .debug_str:000000000000047c .LASF38
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4029   .debug_str:0000000000000738 .LASF39
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3783   .debug_str:000000000000016a .LASF40
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3723   .debug_str:000000000000001e .LASF41
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3717   .debug_str:0000000000000000 .LASF42
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3981   .debug_str:00000000000005c7 .LASF43
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3795   .debug_str:000000000000019f .LASF44
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3891   .debug_str:00000000000003bc .LASF45
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3941   .debug_str:00000000000004e0 .LASF46
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3861   .debug_str:000000000000032b .LASF47
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3923   .debug_str:0000000000000486 .LASF48
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3777   .debug_str:0000000000000155 .LASF49
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3977   .debug_str:00000000000005b4 .LASF50
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3931   .debug_str:00000000000004a7 .LASF51
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3793   .debug_str:0000000000000198 .LASF52
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3849   .debug_str:00000000000002bd .LASF53
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3753   .debug_str:00000000000000d8 .LASF54
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3785   .debug_str:0000000000000178 .LASF55
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3835   .debug_str:0000000000000279 .LASF56
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3877   .debug_str:0000000000000377 .LASF57
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3963   .debug_str:0000000000000570 .LASF58
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3769   .debug_str:0000000000000134 .LASF59
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3775   .debug_str:000000000000014f .LASF60
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4025   .debug_str:000000000000072a .LASF61
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3833   .debug_str:0000000000000270 .LASF62
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3807   .debug_str:00000000000001d8 .LASF63
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3855   .debug_str:0000000000000313 .LASF64
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3871   .debug_str:0000000000000350 .LASF65
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3933   .debug_str:00000000000004af .LASF66
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3925   .debug_str:000000000000048d .LASF67
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3955   .debug_str:0000000000000553 .LASF68
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3971   .debug_str:000000000000059c .LASF69
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3797   .debug_str:00000000000001a7 .LASF70
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3843   .debug_str:000000000000029b .LASF71
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3827   .debug_str:0000000000000257 .LASF72
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3939   .debug_str:00000000000004db .LASF73
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3729   .debug_str:0000000000000035 .LASF74
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3949   .debug_str:0000000000000528 .LASF75
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4041   .debug_str:000000000000077b .LASF76
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3895   .debug_str:00000000000003ce .LASF77
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3947   .debug_str:000000000000051e .LASF78
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3865   .debug_str:000000000000033d .LASF79
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3799   .debug_str:00000000000001ae .LASF80
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 32
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4039   .debug_str:0000000000000776 .LASF81
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3901   .debug_str:00000000000003ef .LASF82
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3845   .debug_str:00000000000002a3 .LASF83
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3805   .debug_str:00000000000001d0 .LASF84
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3869   .debug_str:000000000000034b .LASF85
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3739   .debug_str:0000000000000076 .LASF86
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4023   .debug_str:0000000000000720 .LASF87
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3787   .debug_str:0000000000000180 .LASF88
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3781   .debug_str:0000000000000165 .LASF89
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3973   .debug_str:00000000000005a3 .LASF90
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3927   .debug_str:0000000000000495 .LASF91
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4013   .debug_str:00000000000006e8 .LASF92
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3857   .debug_str:0000000000000319 .LASF93
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3915   .debug_str:0000000000000464 .LASF94
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3727   .debug_str:000000000000002d .LASF95
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3957   .debug_str:000000000000055a .LASF96
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3873   .debug_str:0000000000000356 .LASF97
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3999   .debug_str:000000000000069e .LASF98
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4009   .debug_str:00000000000006d6 .LASF99
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3987   .debug_str:00000000000005de .LASF100
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3863   .debug_str:0000000000000330 .LASF101
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4031   .debug_str:0000000000000743 .LASF102
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3897   .debug_str:00000000000003d9 .LASF103
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3859   .debug_str:0000000000000320 .LASF104
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4035   .debug_str:0000000000000763 .LASF105
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3937   .debug_str:00000000000004ce .LASF106
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4037   .debug_str:0000000000000768 .LASF107
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3761   .debug_str:0000000000000106 .LASF108
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4019   .debug_str:0000000000000706 .LASF109
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3975   .debug_str:00000000000005a8 .LASF110
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3737   .debug_str:0000000000000069 .LASF111
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3813   .debug_str:0000000000000200 .LASF112
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3759   .debug_str:00000000000000f7 .LASF113
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3811   .debug_str:00000000000001ef .LASF114
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3741   .debug_str:000000000000007f .LASF115
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3743   .debug_str:000000000000008e .LASF116
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3917   .debug_str:000000000000046a .LASF117
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3885   .debug_str:00000000000003a5 .LASF118
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3881   .debug_str:0000000000000388 .LASF119
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4027   .debug_str:0000000000000730 .LASF120
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3755   .debug_str:00000000000000e1 .LASF158
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3825   .debug_str:000000000000024b .LASF121
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4005   .debug_str:00000000000006ba .LASF122
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3893   .debug_str:00000000000003c4 .LASF123
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3983   .debug_str:00000000000005d0 .LASF124
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4007   .debug_str:00000000000006cd .LASF125
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3841   .debug_str:000000000000028b .LASF126
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3889   .debug_str:00000000000003b5 .LASF131
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3909   .debug_str:0000000000000434 .LASF127
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3765   .debug_str:000000000000011d .LASF128
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3757   .debug_str:00000000000000ec .LASF129
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3991   .debug_str:0000000000000673 .LASF130
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3751   .debug_str:00000000000000c8 .LASF132
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3791   .debug_str:0000000000000191 .LASF133
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3997   .debug_str:0000000000000698 .LASF134
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3883   .debug_str:0000000000000391 .LASF135
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3943   .debug_str:00000000000004e5 .LASF136
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 33
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4039   .debug_str:0000000000000776 .LASF81
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3901   .debug_str:00000000000003ef .LASF82
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3845   .debug_str:00000000000002a3 .LASF83
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3805   .debug_str:00000000000001d0 .LASF84
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3869   .debug_str:000000000000034b .LASF85
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3739   .debug_str:0000000000000076 .LASF86
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4023   .debug_str:0000000000000720 .LASF87
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3787   .debug_str:0000000000000180 .LASF88
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3781   .debug_str:0000000000000165 .LASF89
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3973   .debug_str:00000000000005a3 .LASF90
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3927   .debug_str:0000000000000495 .LASF91
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4013   .debug_str:00000000000006e8 .LASF92
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3857   .debug_str:0000000000000319 .LASF93
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3915   .debug_str:0000000000000464 .LASF94
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3727   .debug_str:000000000000002d .LASF95
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3957   .debug_str:000000000000055a .LASF96
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3873   .debug_str:0000000000000356 .LASF97
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3999   .debug_str:000000000000069e .LASF98
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4009   .debug_str:00000000000006d6 .LASF99
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3987   .debug_str:00000000000005de .LASF100
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3863   .debug_str:0000000000000330 .LASF101
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4031   .debug_str:0000000000000743 .LASF102
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3897   .debug_str:00000000000003d9 .LASF103
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3859   .debug_str:0000000000000320 .LASF104
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4035   .debug_str:0000000000000763 .LASF105
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3937   .debug_str:00000000000004ce .LASF106
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4037   .debug_str:0000000000000768 .LASF107
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3761   .debug_str:0000000000000106 .LASF108
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4019   .debug_str:0000000000000706 .LASF109
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3975   .debug_str:00000000000005a8 .LASF110
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3737   .debug_str:0000000000000069 .LASF111
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3813   .debug_str:0000000000000200 .LASF112
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3759   .debug_str:00000000000000f7 .LASF113
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3811   .debug_str:00000000000001ef .LASF114
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3741   .debug_str:000000000000007f .LASF115
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3743   .debug_str:000000000000008e .LASF116
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3917   .debug_str:000000000000046a .LASF117
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3885   .debug_str:00000000000003a5 .LASF118
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3881   .debug_str:0000000000000388 .LASF119
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4027   .debug_str:0000000000000730 .LASF120
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3755   .debug_str:00000000000000e1 .LASF158
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3825   .debug_str:000000000000024b .LASF121
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4005   .debug_str:00000000000006ba .LASF122
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3893   .debug_str:00000000000003c4 .LASF123
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3983   .debug_str:00000000000005d0 .LASF124
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4007   .debug_str:00000000000006cd .LASF125
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3841   .debug_str:000000000000028b .LASF126
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3889   .debug_str:00000000000003b5 .LASF131
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3909   .debug_str:0000000000000434 .LASF127
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3765   .debug_str:000000000000011d .LASF128
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3757   .debug_str:00000000000000ec .LASF129
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3991   .debug_str:0000000000000673 .LASF130
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3751   .debug_str:00000000000000c8 .LASF132
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3791   .debug_str:0000000000000191 .LASF133
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3997   .debug_str:0000000000000698 .LASF134
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3883   .debug_str:0000000000000391 .LASF135
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3943   .debug_str:00000000000004e5 .LASF136
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 33
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3815   .debug_str:000000000000020e .LASF137
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3875   .debug_str:000000000000035c .LASF159
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:13     .text.prvInsertBlockIntoFreeList:0000000000000000 .LFB8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:93     .text.prvInsertBlockIntoFreeList:000000000000004c .LFE8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4021   .debug_str:0000000000000710 .LASF145
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3362   .debug_loc:0000000000000000 .LLST0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3747   .debug_str:00000000000000a6 .LASF138
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3380   .debug_loc:000000000000002c .LLST1
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3393   .debug_loc:000000000000004f .LLST2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3823   .debug_str:000000000000023f .LASF160
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4033   .debug_str:0000000000000752 .LASF139
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4015   .debug_str:00000000000006ee .LASF140
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3801   .debug_str:00000000000001b8 .LASF141
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3735   .debug_str:000000000000005a .LASF142
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3935   .debug_str:00000000000004b8 .LASF161
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:594    .text.vPortInitialiseBlocks:0000000000000000 .LFB6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:600    .text.vPortInitialiseBlocks:0000000000000002 .LFE6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3905   .debug_str:0000000000000402 .LASF143
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:578    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .LFB5
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:587    .text.xPortGetMinimumEverFreeHeapSize:000000000000000a .LFE5
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3913   .debug_str:000000000000044f .LASF144
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:562    .text.xPortGetFreeHeapSize:0000000000000000 .LFB4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:571    .text.xPortGetFreeHeapSize:000000000000000a .LFE4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3951   .debug_str:0000000000000541 .LASF162
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:442    .text.vPortFree:0000000000000000 .LFB3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:555    .text.vPortFree:000000000000006e .LFE3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3404   .debug_loc:000000000000006d .LLST13
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3422   .debug_loc:0000000000000099 .LLST14
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3444   .debug_loc:00000000000000d0 .LLST15
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3745   .debug_str:000000000000009f .LASF146
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3476   .debug_loc:0000000000000118 .LLST16
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:461    .text.vPortFree:0000000000000014 .LBB10
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:473    .text.vPortFree:0000000000000018 .LBE10
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3993   .debug_str:000000000000067f .LASF147
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:484    .text.vPortFree:0000000000000020 .LBB11
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:496    .text.vPortFree:0000000000000024 .LBE11
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:523    .text.vPortFree:0000000000000040 .LVL45
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:538    .text.vPortFree:000000000000005e .LVL46
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:551    .text.vPortFree:000000000000006c .LVL48
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3821   .debug_str:0000000000000232 .LASF163
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:100    .text.pvPortMalloc:0000000000000000 .LFB2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:435    .text.pvPortMalloc:0000000000000152 .LFE2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3500   .debug_loc:000000000000014a .LLST3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3853   .debug_str:0000000000000307 .LASF148
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3518   .debug_loc:0000000000000176 .LLST4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3773   .debug_str:0000000000000147 .LASF149
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3548   .debug_loc:00000000000001c3 .LLST5
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3731   .debug_str:0000000000000040 .LASF150
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3563   .debug_loc:00000000000001ec .LLST6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:4003   .debug_str:00000000000006ab .LASF151
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3580   .debug_loc:000000000000021a .LLST7
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3903   .debug_str:00000000000003f9 .LASF152
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3591   .debug_loc:0000000000000238 .LLST8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:311    .text.pvPortMalloc:00000000000000ea .LBB8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:323    .text.pvPortMalloc:00000000000000ee .LBE8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:391    .text.pvPortMalloc:0000000000000136 .LBB9
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:403    .text.pvPortMalloc:000000000000013a .LBE9
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 34
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3815   .debug_str:000000000000020e .LASF137
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3875   .debug_str:000000000000035c .LASF159
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:13     .text.prvInsertBlockIntoFreeList:0000000000000000 .LFB8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:93     .text.prvInsertBlockIntoFreeList:000000000000004c .LFE8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4021   .debug_str:0000000000000710 .LASF145
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3362   .debug_loc:0000000000000000 .LLST0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3747   .debug_str:00000000000000a6 .LASF138
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3380   .debug_loc:000000000000002c .LLST1
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3393   .debug_loc:000000000000004f .LLST2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3823   .debug_str:000000000000023f .LASF160
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4033   .debug_str:0000000000000752 .LASF139
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4015   .debug_str:00000000000006ee .LASF140
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3801   .debug_str:00000000000001b8 .LASF141
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3735   .debug_str:000000000000005a .LASF142
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3935   .debug_str:00000000000004b8 .LASF161
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:594    .text.vPortInitialiseBlocks:0000000000000000 .LFB6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:600    .text.vPortInitialiseBlocks:0000000000000002 .LFE6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3905   .debug_str:0000000000000402 .LASF143
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:578    .text.xPortGetMinimumEverFreeHeapSize:0000000000000000 .LFB5
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:587    .text.xPortGetMinimumEverFreeHeapSize:000000000000000a .LFE5
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3913   .debug_str:000000000000044f .LASF144
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:562    .text.xPortGetFreeHeapSize:0000000000000000 .LFB4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:571    .text.xPortGetFreeHeapSize:000000000000000a .LFE4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3951   .debug_str:0000000000000541 .LASF162
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:442    .text.vPortFree:0000000000000000 .LFB3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:555    .text.vPortFree:000000000000006e .LFE3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3404   .debug_loc:000000000000006d .LLST13
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3422   .debug_loc:0000000000000099 .LLST14
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3444   .debug_loc:00000000000000d0 .LLST15
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3745   .debug_str:000000000000009f .LASF146
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3476   .debug_loc:0000000000000118 .LLST16
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:461    .text.vPortFree:0000000000000014 .LBB10
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:473    .text.vPortFree:0000000000000018 .LBE10
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3993   .debug_str:000000000000067f .LASF147
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:484    .text.vPortFree:0000000000000020 .LBB11
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:496    .text.vPortFree:0000000000000024 .LBE11
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:523    .text.vPortFree:0000000000000040 .LVL45
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:538    .text.vPortFree:000000000000005e .LVL46
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:551    .text.vPortFree:000000000000006c .LVL48
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3821   .debug_str:0000000000000232 .LASF163
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:100    .text.pvPortMalloc:0000000000000000 .LFB2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:435    .text.pvPortMalloc:0000000000000152 .LFE2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3500   .debug_loc:000000000000014a .LLST3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3853   .debug_str:0000000000000307 .LASF148
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3518   .debug_loc:0000000000000176 .LLST4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3773   .debug_str:0000000000000147 .LASF149
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3548   .debug_loc:00000000000001c3 .LLST5
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3731   .debug_str:0000000000000040 .LASF150
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3563   .debug_loc:00000000000001ec .LLST6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:4003   .debug_str:00000000000006ab .LASF151
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3580   .debug_loc:000000000000021a .LLST7
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3903   .debug_str:00000000000003f9 .LASF152
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3591   .debug_loc:0000000000000238 .LLST8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:311    .text.pvPortMalloc:00000000000000ea .LBB8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:323    .text.pvPortMalloc:00000000000000ee .LBE8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:391    .text.pvPortMalloc:0000000000000136 .LBB9
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:403    .text.pvPortMalloc:000000000000013a .LBE9
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 34
 
 
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:138    .text.pvPortMalloc:0000000000000030 .LBB6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:224    .text.pvPortMalloc:0000000000000088 .LBE6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:139    .text.pvPortMalloc:0000000000000030 .LBB7
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:223    .text.pvPortMalloc:0000000000000088 .LBE7
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3633   .debug_loc:000000000000029f .LLST9
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3640   .debug_loc:00000000000002b2 .LLST10
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3647   .debug_loc:00000000000002c5 .LLST11
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3667   .debug_loc:00000000000002fa .LLST12
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:126    .text.pvPortMalloc:0000000000000018 .LVL8
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:346    .text.pvPortMalloc:0000000000000102 .LVL33
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:386    .text.pvPortMalloc:0000000000000130 .LVL36
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3967   .debug_str:0000000000000580 .LASF153
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:3809   .debug_str:00000000000001e0 .LASF154
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:17     .text.prvInsertBlockIntoFreeList:0000000000000000 .LVL0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:43     .text.prvInsertBlockIntoFreeList:000000000000001c .LVL3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:47     .text.prvInsertBlockIntoFreeList:0000000000000020 .LVL4
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:24     .text.prvInsertBlockIntoFreeList:0000000000000008 .LVL1
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:90     .text.prvInsertBlockIntoFreeList:000000000000004a .LVL6
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:31     .text.prvInsertBlockIntoFreeList:000000000000000e .LVL2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:87     .text.prvInsertBlockIntoFreeList:0000000000000048 .LVL5
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:504    .text.vPortFree:0000000000000028 .LCFI2
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:547    .text.vPortFree:0000000000000064 .LCFI3
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:445    .text.vPortFree:0000000000000000 .LVL41
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:543    .text.vPortFree:0000000000000060 .LVL47
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:452    .text.vPortFree:0000000000000002 .LVL42
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:109    .text.pvPortMalloc:0000000000000002 .LCFI0
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:431    .text.pvPortMalloc:0000000000000150 .LCFI1
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:103    .text.pvPortMalloc:0000000000000000 .LVL7
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:238    .text.pvPortMalloc:0000000000000098 .LVL19
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:247    .text.pvPortMalloc:00000000000000a0 .LVL20
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:249    .text.pvPortMalloc:00000000000000a2 .LVL21
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:319    .text.pvPortMalloc:00000000000000ee .LVL28
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:328    .text.pvPortMalloc:00000000000000f0 .LVL29
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:268    .text.pvPortMalloc:00000000000000bc .LVL23
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:333    .text.pvPortMalloc:00000000000000f4 .LVL31
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:335    .text.pvPortMalloc:00000000000000f6 .LVL32
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:379    .text.pvPortMalloc:0000000000000128 .LVL35
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:263    .text.pvPortMalloc:00000000000000b4 .LVL22
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:272    .text.pvPortMalloc:00000000000000c0 .LVL24
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:299    .text.pvPortMalloc:00000000000000da .LVL26
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:331    .text.pvPortMalloc:00000000000000f2 .LVL30
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:306    .text.pvPortMalloc:00000000000000e4 .LVL27
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:292    .text.pvPortMalloc:00000000000000d4 .LVL25
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:371    .text.pvPortMalloc:0000000000000122 .LVL34
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:408    .text.pvPortMalloc:000000000000013c .LVL38
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:413    .text.pvPortMalloc:0000000000000140 .LVL39
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:425    .text.pvPortMalloc:000000000000014a .LVL40
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:200    .text.pvPortMalloc:000000000000006e .LVL16
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:221    .text.pvPortMalloc:0000000000000088 .LVL18
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:163    .text.pvPortMalloc:0000000000000048 .LVL12
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:149    .text.pvPortMalloc:0000000000000038 .LVL10
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:159    .text.pvPortMalloc:0000000000000046 .LVL11
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:177    .text.pvPortMalloc:0000000000000056 .LVL13
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:183    .text.pvPortMalloc:000000000000005e .LVL14
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:206    .text.pvPortMalloc:0000000000000074 .LVL17
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:144    .text.pvPortMalloc:0000000000000030 .LVL9
-C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s:655    .debug_info:0000000000000000 .Ldebug_info0
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cclAxY9K.s 			page 35
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:138    .text.pvPortMalloc:0000000000000030 .LBB6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:224    .text.pvPortMalloc:0000000000000088 .LBE6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:139    .text.pvPortMalloc:0000000000000030 .LBB7
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:223    .text.pvPortMalloc:0000000000000088 .LBE7
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3633   .debug_loc:000000000000029f .LLST9
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3640   .debug_loc:00000000000002b2 .LLST10
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3647   .debug_loc:00000000000002c5 .LLST11
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3667   .debug_loc:00000000000002fa .LLST12
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:126    .text.pvPortMalloc:0000000000000018 .LVL8
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:346    .text.pvPortMalloc:0000000000000102 .LVL33
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:386    .text.pvPortMalloc:0000000000000130 .LVL36
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3967   .debug_str:0000000000000580 .LASF153
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:3809   .debug_str:00000000000001e0 .LASF154
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:17     .text.prvInsertBlockIntoFreeList:0000000000000000 .LVL0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:43     .text.prvInsertBlockIntoFreeList:000000000000001c .LVL3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:47     .text.prvInsertBlockIntoFreeList:0000000000000020 .LVL4
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:24     .text.prvInsertBlockIntoFreeList:0000000000000008 .LVL1
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:90     .text.prvInsertBlockIntoFreeList:000000000000004a .LVL6
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:31     .text.prvInsertBlockIntoFreeList:000000000000000e .LVL2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:87     .text.prvInsertBlockIntoFreeList:0000000000000048 .LVL5
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:504    .text.vPortFree:0000000000000028 .LCFI2
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:547    .text.vPortFree:0000000000000064 .LCFI3
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:445    .text.vPortFree:0000000000000000 .LVL41
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:543    .text.vPortFree:0000000000000060 .LVL47
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:452    .text.vPortFree:0000000000000002 .LVL42
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:109    .text.pvPortMalloc:0000000000000002 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:431    .text.pvPortMalloc:0000000000000150 .LCFI1
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:103    .text.pvPortMalloc:0000000000000000 .LVL7
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:238    .text.pvPortMalloc:0000000000000098 .LVL19
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:247    .text.pvPortMalloc:00000000000000a0 .LVL20
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:249    .text.pvPortMalloc:00000000000000a2 .LVL21
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:319    .text.pvPortMalloc:00000000000000ee .LVL28
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:328    .text.pvPortMalloc:00000000000000f0 .LVL29
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:268    .text.pvPortMalloc:00000000000000bc .LVL23
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:333    .text.pvPortMalloc:00000000000000f4 .LVL31
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:335    .text.pvPortMalloc:00000000000000f6 .LVL32
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:379    .text.pvPortMalloc:0000000000000128 .LVL35
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:263    .text.pvPortMalloc:00000000000000b4 .LVL22
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:272    .text.pvPortMalloc:00000000000000c0 .LVL24
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:299    .text.pvPortMalloc:00000000000000da .LVL26
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:331    .text.pvPortMalloc:00000000000000f2 .LVL30
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:306    .text.pvPortMalloc:00000000000000e4 .LVL27
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:292    .text.pvPortMalloc:00000000000000d4 .LVL25
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:371    .text.pvPortMalloc:0000000000000122 .LVL34
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:408    .text.pvPortMalloc:000000000000013c .LVL38
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:413    .text.pvPortMalloc:0000000000000140 .LVL39
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:425    .text.pvPortMalloc:000000000000014a .LVL40
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:200    .text.pvPortMalloc:000000000000006e .LVL16
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:221    .text.pvPortMalloc:0000000000000088 .LVL18
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:163    .text.pvPortMalloc:0000000000000048 .LVL12
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:149    .text.pvPortMalloc:0000000000000038 .LVL10
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:159    .text.pvPortMalloc:0000000000000046 .LVL11
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:177    .text.pvPortMalloc:0000000000000056 .LVL13
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:183    .text.pvPortMalloc:000000000000005e .LVL14
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:206    .text.pvPortMalloc:0000000000000074 .LVL17
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:144    .text.pvPortMalloc:0000000000000030 .LVL9
+C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s:655    .debug_info:0000000000000000 .Ldebug_info0
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc7xk2tk.s 			page 35
 
 
 

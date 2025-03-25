@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 1
 
 
    1              		.file	"gd32vf103_pmu.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \param[in]  none
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \param[out] none
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \retval     none
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 2
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c **** */
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
   57:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****       \arg        PMU_LVDT_1: voltage threshold is 2.3V
   58:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****       \arg        PMU_LVDT_2: voltage threshold is 2.4V
   59:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****       \arg        PMU_LVDT_3: voltage threshold is 2.5V
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 3
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 3
 
 
   60:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****       \arg        PMU_LVDT_4: voltage threshold is 2.6V
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
   80:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \brief      disable PMU lvd
   81:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \param[in]  none
   82:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \param[out] none
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 4
 
 
   83:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     \retval     none
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  122              	 #NO_APP
  123              	.LBE31:
  105:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     /* select WFI or WFE command to enter sleep mode */
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 5
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 5
 
 
  106:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     if(WFI_CMD == sleepmodecmd){
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
   46:./../../firmware/RISCV/drivers/n200_func.h **** void eclic_set_intctrl (uint32_t source, uint8_t intctrl);
   47:./../../firmware/RISCV/drivers/n200_func.h **** uint8_t eclic_get_intctrl  (uint32_t source);
   48:./../../firmware/RISCV/drivers/n200_func.h **** 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 6
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 6
 
 
   49:./../../firmware/RISCV/drivers/n200_func.h **** void eclic_set_intattr (uint32_t source, uint8_t intattr);
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  109:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****         clear_csr(mstatus, MSTATUS_MIE);
  141              		.loc 1 109 9 discriminator 1
  142              	.LBB34:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 7
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 7
 
 
  143              		.loc 1 109 9 discriminator 1
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  189              	 #NO_APP
  190              	.LBE38:
  191              		.loc 1 113 9 discriminator 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 8
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 8
 
 
  192              	.LBB39:
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  225              		.loc 1 135 13 is_stmt 0
  226 000a 9843     		lw	a4,0(a5)
  227 000c 598D     		or	a0,a4,a0
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 9
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 9
 
 
  228              	.LVL11:
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  265              		csrrc a5, 0x811U, 1
  266              	# 0 "" 2
  267              	.LVL13:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 10
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 10
 
 
  149:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     clear_csr(0x811U, 0x1U);
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  309              	.LBE47:
  310              	.LBE46:
  145:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****         set_csr(mstatus, MSTATUS_MIE);
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 11
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 11
 
 
  311              		.loc 1 145 9 discriminator 1
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  162:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c **** {
  347              		.loc 1 162 1
  348              		.cfi_startproc
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 12
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 12
 
 
  349              	.LVL18:
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  175:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     }else{
  176:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****         clear_csr(mstatus, MSTATUS_MIE);
  177:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****         set_csr(0x810U, 0x1U);
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 13
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 13
 
 
  178:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****         __WFI();
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  427              	.LVL22:
  177:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****         __WFI();
  428              		.loc 1 177 9 discriminator 1
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 14
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 14
 
 
  429              	 #NO_APP
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  472              		.section	.text.pmu_wakeup_pin_enable,"ax",@progbits
  473              		.align	1
  474              		.globl	pmu_wakeup_pin_enable
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 15
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 15
 
 
  476              	pmu_wakeup_pin_enable:
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  511              		.align	1
  512              		.globl	pmu_backup_write_enable
  514              	pmu_backup_write_enable:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 16
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 16
 
 
  515              	.LFB10:
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  550              		.globl	pmu_flag_get
  552              	pmu_flag_get:
  553              	.LFB12:
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 17
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 17
 
 
  228:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c **** 
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  259:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c ****     switch(flag_reset){
  579              		.loc 1 259 5
  580 0000 09C5     		beq	a0,zero,.L20
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 18
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 18
 
 
  581 0002 8547     		li	a5,1
@@ -1066,427 +1066,427 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 1
  610              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  611              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  612              		.file 7 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 19
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_pmu.c
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:13     .text.pmu_deinit:0000000000000000 pmu_deinit
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:17     .text.pmu_deinit:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:18     .text.pmu_deinit:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:19     .text.pmu_deinit:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:20     .text.pmu_deinit:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:22     .text.pmu_deinit:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:24     .text.pmu_deinit:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:26     .text.pmu_deinit:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:27     .text.pmu_deinit:0000000000000008 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:29     .text.pmu_deinit:0000000000000008 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:32     .text.pmu_deinit:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:33     .text.pmu_deinit:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:34     .text.pmu_deinit:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:36     .text.pmu_deinit:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:38     .text.pmu_deinit:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:40     .text.pmu_deinit:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:42     .text.pmu_deinit:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:44     .text.pmu_deinit:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:51     .text.pmu_lvd_select:0000000000000000 pmu_lvd_select
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:54     .text.pmu_lvd_select:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:56     .text.pmu_lvd_select:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:57     .text.pmu_lvd_select:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:58     .text.pmu_lvd_select:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:63     .text.pmu_lvd_select:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:64     .text.pmu_lvd_select:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:68     .text.pmu_lvd_select:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:69     .text.pmu_lvd_select:0000000000000012 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:74     .text.pmu_lvd_select:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:75     .text.pmu_lvd_select:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:79     .text.pmu_lvd_select:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:80     .text.pmu_lvd_select:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:87     .text.pmu_lvd_disable:0000000000000000 pmu_lvd_disable
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:90     .text.pmu_lvd_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:91     .text.pmu_lvd_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:92     .text.pmu_lvd_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:93     .text.pmu_lvd_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:98     .text.pmu_lvd_disable:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:99     .text.pmu_lvd_disable:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:106    .text.pmu_to_sleepmode:0000000000000000 pmu_to_sleepmode
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:109    .text.pmu_to_sleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:111    .text.pmu_to_sleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:113    .text.pmu_to_sleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:114    .text.pmu_to_sleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:115    .text.pmu_to_sleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:13     .text.pmu_deinit:0000000000000000 pmu_deinit
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:17     .text.pmu_deinit:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:18     .text.pmu_deinit:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:19     .text.pmu_deinit:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:20     .text.pmu_deinit:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:22     .text.pmu_deinit:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:24     .text.pmu_deinit:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:26     .text.pmu_deinit:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:27     .text.pmu_deinit:0000000000000008 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:29     .text.pmu_deinit:0000000000000008 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:32     .text.pmu_deinit:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:33     .text.pmu_deinit:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:34     .text.pmu_deinit:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:36     .text.pmu_deinit:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:38     .text.pmu_deinit:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:40     .text.pmu_deinit:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:42     .text.pmu_deinit:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:44     .text.pmu_deinit:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:51     .text.pmu_lvd_select:0000000000000000 pmu_lvd_select
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:54     .text.pmu_lvd_select:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:56     .text.pmu_lvd_select:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:57     .text.pmu_lvd_select:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:58     .text.pmu_lvd_select:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:63     .text.pmu_lvd_select:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:64     .text.pmu_lvd_select:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:68     .text.pmu_lvd_select:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:69     .text.pmu_lvd_select:0000000000000012 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:74     .text.pmu_lvd_select:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:75     .text.pmu_lvd_select:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:79     .text.pmu_lvd_select:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:80     .text.pmu_lvd_select:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:87     .text.pmu_lvd_disable:0000000000000000 pmu_lvd_disable
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:90     .text.pmu_lvd_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:91     .text.pmu_lvd_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:92     .text.pmu_lvd_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:93     .text.pmu_lvd_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:98     .text.pmu_lvd_disable:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:99     .text.pmu_lvd_disable:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:106    .text.pmu_to_sleepmode:0000000000000000 pmu_to_sleepmode
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:109    .text.pmu_to_sleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:111    .text.pmu_to_sleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:113    .text.pmu_to_sleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:114    .text.pmu_to_sleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:115    .text.pmu_to_sleepmode:0000000000000000 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:103    .text.pmu_to_sleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:124    .text.pmu_to_sleepmode:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:125    .text.pmu_to_sleepmode:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:126    .text.pmu_to_sleepmode:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:131    .text.pmu_to_sleepmode:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:124    .text.pmu_to_sleepmode:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:125    .text.pmu_to_sleepmode:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:126    .text.pmu_to_sleepmode:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:131    .text.pmu_to_sleepmode:0000000000000006 .L0 
 ./../../firmware/RISCV/drivers/n200_func.h:90     .text.pmu_to_sleepmode:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:143    .text.pmu_to_sleepmode:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:144    .text.pmu_to_sleepmode:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:145    .text.pmu_to_sleepmode:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:143    .text.pmu_to_sleepmode:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:144    .text.pmu_to_sleepmode:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:145    .text.pmu_to_sleepmode:000000000000000c .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:109    .text.pmu_to_sleepmode:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:154    .text.pmu_to_sleepmode:0000000000000010 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 20
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:154    .text.pmu_to_sleepmode:0000000000000010 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 20
 
 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:156    .text.pmu_to_sleepmode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:157    .text.pmu_to_sleepmode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:158    .text.pmu_to_sleepmode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:156    .text.pmu_to_sleepmode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:157    .text.pmu_to_sleepmode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:158    .text.pmu_to_sleepmode:0000000000000010 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:110    .text.pmu_to_sleepmode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:167    .text.pmu_to_sleepmode:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:170    .text.pmu_to_sleepmode:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:167    .text.pmu_to_sleepmode:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:170    .text.pmu_to_sleepmode:0000000000000014 .L0 
 ./../../firmware/RISCV/drivers/n200_func.h:90     .text.pmu_to_sleepmode:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:180    .text.pmu_to_sleepmode:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:181    .text.pmu_to_sleepmode:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:182    .text.pmu_to_sleepmode:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:180    .text.pmu_to_sleepmode:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:181    .text.pmu_to_sleepmode:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:182    .text.pmu_to_sleepmode:0000000000000018 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:112    .text.pmu_to_sleepmode:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:191    .text.pmu_to_sleepmode:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:193    .text.pmu_to_sleepmode:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:194    .text.pmu_to_sleepmode:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:195    .text.pmu_to_sleepmode:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:191    .text.pmu_to_sleepmode:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:193    .text.pmu_to_sleepmode:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:194    .text.pmu_to_sleepmode:000000000000001c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:195    .text.pmu_to_sleepmode:000000000000001c .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:113    .text.pmu_to_sleepmode:000000000000001c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:204    .text.pmu_to_sleepmode:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:205    .text.pmu_to_sleepmode:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:206    .text.pmu_to_sleepmode:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:213    .text.pmu_to_deepsleepmode:0000000000000000 pmu_to_deepsleepmode
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:216    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:218    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:219    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:220    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:225    .text.pmu_to_deepsleepmode:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:226    .text.pmu_to_deepsleepmode:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:232    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:233    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:234    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:204    .text.pmu_to_sleepmode:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:205    .text.pmu_to_sleepmode:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:206    .text.pmu_to_sleepmode:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:213    .text.pmu_to_deepsleepmode:0000000000000000 pmu_to_deepsleepmode
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:216    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:218    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:219    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:220    .text.pmu_to_deepsleepmode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:225    .text.pmu_to_deepsleepmode:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:226    .text.pmu_to_deepsleepmode:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:232    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:233    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:234    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:137    .text.pmu_to_deepsleepmode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:243    .text.pmu_to_deepsleepmode:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:244    .text.pmu_to_deepsleepmode:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:245    .text.pmu_to_deepsleepmode:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:249    .text.pmu_to_deepsleepmode:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:243    .text.pmu_to_deepsleepmode:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:244    .text.pmu_to_deepsleepmode:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:245    .text.pmu_to_deepsleepmode:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:249    .text.pmu_to_deepsleepmode:0000000000000016 .L0 
 ./../../firmware/RISCV/drivers/n200_func.h:90     .text.pmu_to_deepsleepmode:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:260    .text.pmu_to_deepsleepmode:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:261    .text.pmu_to_deepsleepmode:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:262    .text.pmu_to_deepsleepmode:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:260    .text.pmu_to_deepsleepmode:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:261    .text.pmu_to_deepsleepmode:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:262    .text.pmu_to_deepsleepmode:000000000000001a .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:149    .text.pmu_to_deepsleepmode:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:271    .text.pmu_to_deepsleepmode:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:272    .text.pmu_to_deepsleepmode:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:276    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:277    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:278    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:271    .text.pmu_to_deepsleepmode:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:272    .text.pmu_to_deepsleepmode:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:276    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:277    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:278    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:142    .text.pmu_to_deepsleepmode:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:287    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:289    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:290    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:291    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:287    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:289    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:290    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:291    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:143    .text.pmu_to_deepsleepmode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:300    .text.pmu_to_deepsleepmode:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:303    .text.pmu_to_deepsleepmode:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:300    .text.pmu_to_deepsleepmode:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:303    .text.pmu_to_deepsleepmode:0000000000000028 .L0 
 ./../../firmware/RISCV/drivers/n200_func.h:90     .text.pmu_to_deepsleepmode:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:313    .text.pmu_to_deepsleepmode:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:314    .text.pmu_to_deepsleepmode:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:315    .text.pmu_to_deepsleepmode:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:313    .text.pmu_to_deepsleepmode:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:314    .text.pmu_to_deepsleepmode:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:315    .text.pmu_to_deepsleepmode:000000000000002c .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:145    .text.pmu_to_deepsleepmode:000000000000002c .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 21
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 21
 
 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:324    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:326    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:327    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:328    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:324    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:326    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:327    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:328    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:146    .text.pmu_to_deepsleepmode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:336    .text.pmu_to_deepsleepmode:0000000000000034 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:338    .text.pmu_to_deepsleepmode:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:345    .text.pmu_to_standbymode:0000000000000000 pmu_to_standbymode
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:348    .text.pmu_to_standbymode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:350    .text.pmu_to_standbymode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:352    .text.pmu_to_standbymode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:353    .text.pmu_to_standbymode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:354    .text.pmu_to_standbymode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:336    .text.pmu_to_deepsleepmode:0000000000000034 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:338    .text.pmu_to_deepsleepmode:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:345    .text.pmu_to_standbymode:0000000000000000 pmu_to_standbymode
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:348    .text.pmu_to_standbymode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:350    .text.pmu_to_standbymode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:352    .text.pmu_to_standbymode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:353    .text.pmu_to_standbymode:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:354    .text.pmu_to_standbymode:0000000000000000 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:164    .text.pmu_to_standbymode:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:363    .text.pmu_to_standbymode:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:364    .text.pmu_to_standbymode:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:365    .text.pmu_to_standbymode:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:370    .text.pmu_to_standbymode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:371    .text.pmu_to_standbymode:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:375    .text.pmu_to_standbymode:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:376    .text.pmu_to_standbymode:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:380    .text.pmu_to_standbymode:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:363    .text.pmu_to_standbymode:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:364    .text.pmu_to_standbymode:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:365    .text.pmu_to_standbymode:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:370    .text.pmu_to_standbymode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:371    .text.pmu_to_standbymode:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:375    .text.pmu_to_standbymode:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:376    .text.pmu_to_standbymode:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:380    .text.pmu_to_standbymode:000000000000001a .L0 
 ./../../firmware/RISCV/drivers/n200_func.h:90     .text.pmu_to_standbymode:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:391    .text.pmu_to_standbymode:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:392    .text.pmu_to_standbymode:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:393    .text.pmu_to_standbymode:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:391    .text.pmu_to_standbymode:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:392    .text.pmu_to_standbymode:000000000000001e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:393    .text.pmu_to_standbymode:000000000000001e .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:182    .text.pmu_to_standbymode:000000000000001e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:402    .text.pmu_to_standbymode:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:403    .text.pmu_to_standbymode:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:407    .text.pmu_to_standbymode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:408    .text.pmu_to_standbymode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:409    .text.pmu_to_standbymode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:402    .text.pmu_to_standbymode:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:403    .text.pmu_to_standbymode:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:407    .text.pmu_to_standbymode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:408    .text.pmu_to_standbymode:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:409    .text.pmu_to_standbymode:0000000000000024 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:176    .text.pmu_to_standbymode:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:418    .text.pmu_to_standbymode:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:420    .text.pmu_to_standbymode:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:421    .text.pmu_to_standbymode:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:422    .text.pmu_to_standbymode:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:418    .text.pmu_to_standbymode:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:420    .text.pmu_to_standbymode:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:421    .text.pmu_to_standbymode:0000000000000028 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:422    .text.pmu_to_standbymode:0000000000000028 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:177    .text.pmu_to_standbymode:0000000000000028 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:431    .text.pmu_to_standbymode:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:434    .text.pmu_to_standbymode:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:431    .text.pmu_to_standbymode:000000000000002c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:434    .text.pmu_to_standbymode:000000000000002c .L0 
 ./../../firmware/RISCV/drivers/n200_func.h:90     .text.pmu_to_standbymode:000000000000002c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:444    .text.pmu_to_standbymode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:445    .text.pmu_to_standbymode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:446    .text.pmu_to_standbymode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:444    .text.pmu_to_standbymode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:445    .text.pmu_to_standbymode:0000000000000030 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:446    .text.pmu_to_standbymode:0000000000000030 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:179    .text.pmu_to_standbymode:0000000000000030 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:455    .text.pmu_to_standbymode:0000000000000034 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:457    .text.pmu_to_standbymode:0000000000000034 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:458    .text.pmu_to_standbymode:0000000000000034 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:459    .text.pmu_to_standbymode:0000000000000034 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:455    .text.pmu_to_standbymode:0000000000000034 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:457    .text.pmu_to_standbymode:0000000000000034 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:458    .text.pmu_to_standbymode:0000000000000034 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:459    .text.pmu_to_standbymode:0000000000000034 .L0 
 ./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_pmu.c:180    .text.pmu_to_standbymode:0000000000000034 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:467    .text.pmu_to_standbymode:0000000000000038 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:469    .text.pmu_to_standbymode:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:476    .text.pmu_wakeup_pin_enable:0000000000000000 pmu_wakeup_pin_enable
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:479    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:480    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:481    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:482    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 22
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:467    .text.pmu_to_standbymode:0000000000000038 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:469    .text.pmu_to_standbymode:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:476    .text.pmu_wakeup_pin_enable:0000000000000000 pmu_wakeup_pin_enable
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:479    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:480    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:481    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:482    .text.pmu_wakeup_pin_enable:0000000000000000 .L0 
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 22
 
 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:487    .text.pmu_wakeup_pin_enable:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:488    .text.pmu_wakeup_pin_enable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:495    .text.pmu_wakeup_pin_disable:0000000000000000 pmu_wakeup_pin_disable
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:498    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:499    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:500    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:501    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:506    .text.pmu_wakeup_pin_disable:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:507    .text.pmu_wakeup_pin_disable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:514    .text.pmu_backup_write_enable:0000000000000000 pmu_backup_write_enable
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:517    .text.pmu_backup_write_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:518    .text.pmu_backup_write_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:519    .text.pmu_backup_write_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:520    .text.pmu_backup_write_enable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:525    .text.pmu_backup_write_enable:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:526    .text.pmu_backup_write_enable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:533    .text.pmu_backup_write_disable:0000000000000000 pmu_backup_write_disable
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:536    .text.pmu_backup_write_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:537    .text.pmu_backup_write_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:538    .text.pmu_backup_write_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:539    .text.pmu_backup_write_disable:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:544    .text.pmu_backup_write_disable:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:545    .text.pmu_backup_write_disable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:552    .text.pmu_flag_get:0000000000000000 pmu_flag_get
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:555    .text.pmu_flag_get:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:557    .text.pmu_flag_get:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:558    .text.pmu_flag_get:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:559    .text.pmu_flag_get:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:562    .text.pmu_flag_get:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:565    .text.pmu_flag_get:0000000000000008 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:567    .text.pmu_flag_get:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:574    .text.pmu_flag_clear:0000000000000000 pmu_flag_clear
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:577    .text.pmu_flag_clear:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:579    .text.pmu_flag_clear:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:580    .text.pmu_flag_clear:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:586    .text.pmu_flag_clear:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:587    .text.pmu_flag_clear:000000000000000a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:592    .text.pmu_flag_clear:0000000000000014 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:594    .text.pmu_flag_clear:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:595    .text.pmu_flag_clear:0000000000000016 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:598    .text.pmu_flag_clear:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:599    .text.pmu_flag_clear:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:603    .text.pmu_flag_clear:0000000000000024 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:47     .text.pmu_deinit:0000000000000020 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:83     .text.pmu_lvd_select:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:102    .text.pmu_lvd_disable:000000000000000c .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:209    .text.pmu_to_sleepmode:0000000000000022 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:341    .text.pmu_to_deepsleepmode:0000000000000036 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:472    .text.pmu_to_standbymode:000000000000003a .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:491    .text.pmu_wakeup_pin_enable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:510    .text.pmu_wakeup_pin_disable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:529    .text.pmu_backup_write_enable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:548    .text.pmu_backup_write_disable:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:570    .text.pmu_flag_get:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:606    .text.pmu_flag_clear:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:487    .text.pmu_wakeup_pin_enable:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:488    .text.pmu_wakeup_pin_enable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:495    .text.pmu_wakeup_pin_disable:0000000000000000 pmu_wakeup_pin_disable
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:498    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:499    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:500    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:501    .text.pmu_wakeup_pin_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:506    .text.pmu_wakeup_pin_disable:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:507    .text.pmu_wakeup_pin_disable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:514    .text.pmu_backup_write_enable:0000000000000000 pmu_backup_write_enable
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:517    .text.pmu_backup_write_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:518    .text.pmu_backup_write_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:519    .text.pmu_backup_write_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:520    .text.pmu_backup_write_enable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:525    .text.pmu_backup_write_enable:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:526    .text.pmu_backup_write_enable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:533    .text.pmu_backup_write_disable:0000000000000000 pmu_backup_write_disable
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:536    .text.pmu_backup_write_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:537    .text.pmu_backup_write_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:538    .text.pmu_backup_write_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:539    .text.pmu_backup_write_disable:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:544    .text.pmu_backup_write_disable:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:545    .text.pmu_backup_write_disable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:552    .text.pmu_flag_get:0000000000000000 pmu_flag_get
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:555    .text.pmu_flag_get:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:557    .text.pmu_flag_get:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:558    .text.pmu_flag_get:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:559    .text.pmu_flag_get:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:562    .text.pmu_flag_get:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:565    .text.pmu_flag_get:0000000000000008 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:567    .text.pmu_flag_get:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:574    .text.pmu_flag_clear:0000000000000000 pmu_flag_clear
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:577    .text.pmu_flag_clear:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:579    .text.pmu_flag_clear:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:580    .text.pmu_flag_clear:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:586    .text.pmu_flag_clear:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:587    .text.pmu_flag_clear:000000000000000a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:592    .text.pmu_flag_clear:0000000000000014 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:594    .text.pmu_flag_clear:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:595    .text.pmu_flag_clear:0000000000000016 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:598    .text.pmu_flag_clear:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:599    .text.pmu_flag_clear:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:603    .text.pmu_flag_clear:0000000000000024 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:47     .text.pmu_deinit:0000000000000020 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:83     .text.pmu_lvd_select:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:102    .text.pmu_lvd_disable:000000000000000c .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:209    .text.pmu_to_sleepmode:0000000000000022 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:341    .text.pmu_to_deepsleepmode:0000000000000036 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:472    .text.pmu_to_standbymode:000000000000003a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:491    .text.pmu_wakeup_pin_enable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:510    .text.pmu_wakeup_pin_disable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:529    .text.pmu_backup_write_enable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:548    .text.pmu_backup_write_disable:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:570    .text.pmu_flag_get:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:606    .text.pmu_flag_clear:0000000000000024 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:138    .text.pmu_to_sleepmode:000000000000000c .L6
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 23
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:138    .text.pmu_to_sleepmode:000000000000000c .L6
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 23
 
 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:273    .text.pmu_to_deepsleepmode:0000000000000020 .L9
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:255    .text.pmu_to_deepsleepmode:000000000000001a .L10
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:404    .text.pmu_to_standbymode:0000000000000024 .L12
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:386    .text.pmu_to_standbymode:000000000000001e .L13
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:584    .text.pmu_flag_clear:000000000000000a .L20
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:596    .text.pmu_flag_clear:0000000000000018 .L21
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:590    .text.pmu_flag_clear:0000000000000014 .L23
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1328   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1916   .debug_str:0000000000000027 .LASF68
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1924   .debug_str:00000000000000d8 .LASF69
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2006   .debug_str:0000000000000338 .LASF70
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1882   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1910   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1994   .debug_str:00000000000002e4 .LASF0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1984   .debug_str:00000000000002a0 .LASF1
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1968   .debug_str:0000000000000238 .LASF6
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1978   .debug_str:0000000000000275 .LASF2
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1944   .debug_str:0000000000000192 .LASF3
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2000   .debug_str:000000000000030a .LASF4
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1962   .debug_str:0000000000000211 .LASF5
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1940   .debug_str:0000000000000179 .LASF7
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1964   .debug_str:000000000000021a .LASF8
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1960   .debug_str:0000000000000203 .LASF9
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1988   .debug_str:00000000000002b7 .LASF10
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1950   .debug_str:00000000000001be .LASF11
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1992   .debug_str:00000000000002db .LASF12
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2010   .debug_str:000000000000038a .LASF71
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2030   .debug_str:0000000000000418 .LASF13
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2050   .debug_str:000000000000049f .LASF14
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1920   .debug_str:00000000000000be .LASF15
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2004   .debug_str:000000000000032a .LASF16
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1954   .debug_str:00000000000001dc .LASF17
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1942   .debug_str:0000000000000184 .LASF18
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1972   .debug_str:000000000000024d .LASF19
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2008   .debug_str:000000000000037c .LASF20
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2048   .debug_str:0000000000000491 .LASF21
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2058   .debug_str:00000000000004d3 .LASF22
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1936   .debug_str:0000000000000154 .LASF23
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1966   .debug_str:000000000000022c .LASF24
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2016   .debug_str:00000000000003c1 .LASF25
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2056   .debug_str:00000000000004c5 .LASF26
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2020   .debug_str:00000000000003d6 .LASF27
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1922   .debug_str:00000000000000cb .LASF28
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2054   .debug_str:00000000000004b9 .LASF29
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2024   .debug_str:00000000000003f0 .LASF30
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1928   .debug_str:000000000000012b .LASF31
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1958   .debug_str:00000000000001f7 .LASF32
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1934   .debug_str:0000000000000148 .LASF33
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2026   .debug_str:00000000000003fc .LASF34
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1986   .debug_str:00000000000002ac .LASF35
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1980   .debug_str:0000000000000283 .LASF36
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1990   .debug_str:00000000000002ce .LASF37
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2022   .debug_str:00000000000003e3 .LASF38
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1926   .debug_str:000000000000011e .LASF39
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1956   .debug_str:00000000000001ea .LASF40
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1996   .debug_str:00000000000002f1 .LASF41
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1998   .debug_str:00000000000002fe .LASF42
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 24
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:273    .text.pmu_to_deepsleepmode:0000000000000020 .L9
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:255    .text.pmu_to_deepsleepmode:000000000000001a .L10
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:404    .text.pmu_to_standbymode:0000000000000024 .L12
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:386    .text.pmu_to_standbymode:000000000000001e .L13
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:584    .text.pmu_flag_clear:000000000000000a .L20
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:596    .text.pmu_flag_clear:0000000000000018 .L21
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:590    .text.pmu_flag_clear:0000000000000014 .L23
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1328   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1916   .debug_str:0000000000000027 .LASF68
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1924   .debug_str:00000000000000d8 .LASF69
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2006   .debug_str:0000000000000338 .LASF70
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1882   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1910   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1994   .debug_str:00000000000002e4 .LASF0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1984   .debug_str:00000000000002a0 .LASF1
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1968   .debug_str:0000000000000238 .LASF6
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1978   .debug_str:0000000000000275 .LASF2
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1944   .debug_str:0000000000000192 .LASF3
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2000   .debug_str:000000000000030a .LASF4
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1962   .debug_str:0000000000000211 .LASF5
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1940   .debug_str:0000000000000179 .LASF7
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1964   .debug_str:000000000000021a .LASF8
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1960   .debug_str:0000000000000203 .LASF9
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1988   .debug_str:00000000000002b7 .LASF10
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1950   .debug_str:00000000000001be .LASF11
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1992   .debug_str:00000000000002db .LASF12
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2010   .debug_str:000000000000038a .LASF71
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2030   .debug_str:0000000000000418 .LASF13
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2050   .debug_str:000000000000049f .LASF14
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1920   .debug_str:00000000000000be .LASF15
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2004   .debug_str:000000000000032a .LASF16
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1954   .debug_str:00000000000001dc .LASF17
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1942   .debug_str:0000000000000184 .LASF18
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1972   .debug_str:000000000000024d .LASF19
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2008   .debug_str:000000000000037c .LASF20
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2048   .debug_str:0000000000000491 .LASF21
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2058   .debug_str:00000000000004d3 .LASF22
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1936   .debug_str:0000000000000154 .LASF23
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1966   .debug_str:000000000000022c .LASF24
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2016   .debug_str:00000000000003c1 .LASF25
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2056   .debug_str:00000000000004c5 .LASF26
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2020   .debug_str:00000000000003d6 .LASF27
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1922   .debug_str:00000000000000cb .LASF28
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2054   .debug_str:00000000000004b9 .LASF29
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2024   .debug_str:00000000000003f0 .LASF30
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1928   .debug_str:000000000000012b .LASF31
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1958   .debug_str:00000000000001f7 .LASF32
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1934   .debug_str:0000000000000148 .LASF33
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2026   .debug_str:00000000000003fc .LASF34
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1986   .debug_str:00000000000002ac .LASF35
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1980   .debug_str:0000000000000283 .LASF36
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1990   .debug_str:00000000000002ce .LASF37
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2022   .debug_str:00000000000003e3 .LASF38
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1926   .debug_str:000000000000011e .LASF39
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1956   .debug_str:00000000000001ea .LASF40
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1996   .debug_str:00000000000002f1 .LASF41
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1998   .debug_str:00000000000002fe .LASF42
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 24
 
 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2032   .debug_str:000000000000041e .LASF43
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1914   .debug_str:0000000000000019 .LASF44
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2036   .debug_str:0000000000000442 .LASF45
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1974   .debug_str:000000000000025b .LASF46
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1976   .debug_str:0000000000000269 .LASF47
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2052   .debug_str:00000000000004aa .LASF54
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:575    .text.pmu_flag_clear:0000000000000000 .LFB13
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:604    .text.pmu_flag_clear:0000000000000024 .LFE13
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1970   .debug_str:0000000000000242 .LASF48
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1946   .debug_str:000000000000019c .LASF72
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:553    .text.pmu_flag_get:0000000000000000 .LFB12
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:568    .text.pmu_flag_get:000000000000000e .LFE12
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2042   .debug_str:0000000000000465 .LASF49
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1787   .debug_loc:0000000000000000 .LLST3
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1912   .debug_str:0000000000000000 .LASF50
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:534    .text.pmu_backup_write_disable:0000000000000000 .LFB11
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:546    .text.pmu_backup_write_disable:000000000000000e .LFE11
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2034   .debug_str:000000000000042a .LASF51
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:515    .text.pmu_backup_write_enable:0000000000000000 .LFB10
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:527    .text.pmu_backup_write_enable:000000000000000e .LFE10
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2012   .debug_str:000000000000039a .LASF52
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:496    .text.pmu_wakeup_pin_disable:0000000000000000 .LFB9
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:508    .text.pmu_wakeup_pin_disable:000000000000000e .LFE9
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1952   .debug_str:00000000000001c6 .LASF53
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:477    .text.pmu_wakeup_pin_enable:0000000000000000 .LFB8
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:489    .text.pmu_wakeup_pin_enable:000000000000000e .LFE8
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1982   .debug_str:000000000000028d .LASF55
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:346    .text.pmu_to_standbymode:0000000000000000 .LFB7
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:470    .text.pmu_to_standbymode:000000000000003a .LFE7
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2044   .debug_str:000000000000046a .LASF56
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:351    .text.pmu_to_standbymode:0000000000000000 .LBB50
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:362    .text.pmu_to_standbymode:0000000000000004 .LBE50
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1932   .debug_str:0000000000000142 .LASF57
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:406    .text.pmu_to_standbymode:0000000000000024 .LBB54
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:417    .text.pmu_to_standbymode:0000000000000028 .LBE54
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:419    .text.pmu_to_standbymode:0000000000000028 .LBB55
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:430    .text.pmu_to_standbymode:000000000000002c .LBE55
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:443    .text.pmu_to_standbymode:0000000000000030 .LBB58
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:454    .text.pmu_to_standbymode:0000000000000034 .LBE58
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:456    .text.pmu_to_standbymode:0000000000000034 .LBB59
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:468    .text.pmu_to_standbymode:000000000000003a .LBE59
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:390    .text.pmu_to_standbymode:000000000000001e .LBB53
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:401    .text.pmu_to_standbymode:0000000000000022 .LBE53
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:378    .text.pmu_to_standbymode:000000000000001a .LBB51
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:388    .text.pmu_to_standbymode:000000000000001e .LBE51
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:432    .text.pmu_to_standbymode:000000000000002c .LBB56
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:441    .text.pmu_to_standbymode:0000000000000030 .LBE56
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1948   .debug_str:00000000000001a9 .LASF58
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:214    .text.pmu_to_deepsleepmode:0000000000000000 .LFB6
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:339    .text.pmu_to_deepsleepmode:0000000000000036 .LFE6
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1801   .debug_loc:0000000000000021 .LLST2
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2038   .debug_str:000000000000044e .LASF59
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:231    .text.pmu_to_deepsleepmode:0000000000000010 .LBB40
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:242    .text.pmu_to_deepsleepmode:0000000000000014 .LBE40
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:275    .text.pmu_to_deepsleepmode:0000000000000020 .LBB44
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:286    .text.pmu_to_deepsleepmode:0000000000000024 .LBE44
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:288    .text.pmu_to_deepsleepmode:0000000000000024 .LBB45
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 25
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2032   .debug_str:000000000000041e .LASF43
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1914   .debug_str:0000000000000019 .LASF44
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2036   .debug_str:0000000000000442 .LASF45
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1974   .debug_str:000000000000025b .LASF46
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1976   .debug_str:0000000000000269 .LASF47
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2052   .debug_str:00000000000004aa .LASF54
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:575    .text.pmu_flag_clear:0000000000000000 .LFB13
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:604    .text.pmu_flag_clear:0000000000000024 .LFE13
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1970   .debug_str:0000000000000242 .LASF48
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1946   .debug_str:000000000000019c .LASF72
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:553    .text.pmu_flag_get:0000000000000000 .LFB12
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:568    .text.pmu_flag_get:000000000000000e .LFE12
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2042   .debug_str:0000000000000465 .LASF49
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1787   .debug_loc:0000000000000000 .LLST3
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1912   .debug_str:0000000000000000 .LASF50
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:534    .text.pmu_backup_write_disable:0000000000000000 .LFB11
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:546    .text.pmu_backup_write_disable:000000000000000e .LFE11
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2034   .debug_str:000000000000042a .LASF51
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:515    .text.pmu_backup_write_enable:0000000000000000 .LFB10
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:527    .text.pmu_backup_write_enable:000000000000000e .LFE10
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2012   .debug_str:000000000000039a .LASF52
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:496    .text.pmu_wakeup_pin_disable:0000000000000000 .LFB9
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:508    .text.pmu_wakeup_pin_disable:000000000000000e .LFE9
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1952   .debug_str:00000000000001c6 .LASF53
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:477    .text.pmu_wakeup_pin_enable:0000000000000000 .LFB8
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:489    .text.pmu_wakeup_pin_enable:000000000000000e .LFE8
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1982   .debug_str:000000000000028d .LASF55
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:346    .text.pmu_to_standbymode:0000000000000000 .LFB7
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:470    .text.pmu_to_standbymode:000000000000003a .LFE7
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2044   .debug_str:000000000000046a .LASF56
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:351    .text.pmu_to_standbymode:0000000000000000 .LBB50
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:362    .text.pmu_to_standbymode:0000000000000004 .LBE50
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1932   .debug_str:0000000000000142 .LASF57
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:406    .text.pmu_to_standbymode:0000000000000024 .LBB54
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:417    .text.pmu_to_standbymode:0000000000000028 .LBE54
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:419    .text.pmu_to_standbymode:0000000000000028 .LBB55
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:430    .text.pmu_to_standbymode:000000000000002c .LBE55
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:443    .text.pmu_to_standbymode:0000000000000030 .LBB58
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:454    .text.pmu_to_standbymode:0000000000000034 .LBE58
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:456    .text.pmu_to_standbymode:0000000000000034 .LBB59
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:468    .text.pmu_to_standbymode:000000000000003a .LBE59
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:390    .text.pmu_to_standbymode:000000000000001e .LBB53
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:401    .text.pmu_to_standbymode:0000000000000022 .LBE53
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:378    .text.pmu_to_standbymode:000000000000001a .LBB51
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:388    .text.pmu_to_standbymode:000000000000001e .LBE51
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:432    .text.pmu_to_standbymode:000000000000002c .LBB56
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:441    .text.pmu_to_standbymode:0000000000000030 .LBE56
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1948   .debug_str:00000000000001a9 .LASF58
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:214    .text.pmu_to_deepsleepmode:0000000000000000 .LFB6
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:339    .text.pmu_to_deepsleepmode:0000000000000036 .LFE6
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1801   .debug_loc:0000000000000021 .LLST2
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2038   .debug_str:000000000000044e .LASF59
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:231    .text.pmu_to_deepsleepmode:0000000000000010 .LBB40
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:242    .text.pmu_to_deepsleepmode:0000000000000014 .LBE40
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:275    .text.pmu_to_deepsleepmode:0000000000000020 .LBB44
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:286    .text.pmu_to_deepsleepmode:0000000000000024 .LBE44
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:288    .text.pmu_to_deepsleepmode:0000000000000024 .LBB45
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 25
 
 
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:299    .text.pmu_to_deepsleepmode:0000000000000028 .LBE45
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:312    .text.pmu_to_deepsleepmode:000000000000002c .LBB48
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:323    .text.pmu_to_deepsleepmode:0000000000000030 .LBE48
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:325    .text.pmu_to_deepsleepmode:0000000000000030 .LBB49
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:337    .text.pmu_to_deepsleepmode:0000000000000036 .LBE49
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:259    .text.pmu_to_deepsleepmode:000000000000001a .LBB43
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:270    .text.pmu_to_deepsleepmode:000000000000001e .LBE43
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:247    .text.pmu_to_deepsleepmode:0000000000000016 .LBB41
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:257    .text.pmu_to_deepsleepmode:000000000000001a .LBE41
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:301    .text.pmu_to_deepsleepmode:0000000000000028 .LBB46
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:310    .text.pmu_to_deepsleepmode:000000000000002c .LBE46
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2028   .debug_str:0000000000000407 .LASF60
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:107    .text.pmu_to_sleepmode:0000000000000000 .LFB5
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:207    .text.pmu_to_sleepmode:0000000000000022 .LFE5
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2002   .debug_str:000000000000031d .LASF61
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:112    .text.pmu_to_sleepmode:0000000000000000 .LBB31
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:123    .text.pmu_to_sleepmode:0000000000000004 .LBE31
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:142    .text.pmu_to_sleepmode:000000000000000c .LBB34
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:153    .text.pmu_to_sleepmode:0000000000000010 .LBE34
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:155    .text.pmu_to_sleepmode:0000000000000010 .LBB35
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:166    .text.pmu_to_sleepmode:0000000000000014 .LBE35
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:179    .text.pmu_to_sleepmode:0000000000000018 .LBB38
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:190    .text.pmu_to_sleepmode:000000000000001c .LBE38
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:192    .text.pmu_to_sleepmode:000000000000001c .LBB39
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:203    .text.pmu_to_sleepmode:0000000000000020 .LBE39
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:128    .text.pmu_to_sleepmode:0000000000000006 .LBB32
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:140    .text.pmu_to_sleepmode:000000000000000c .LBE32
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:168    .text.pmu_to_sleepmode:0000000000000014 .LBB36
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:177    .text.pmu_to_sleepmode:0000000000000018 .LBE36
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2014   .debug_str:00000000000003b1 .LASF62
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:88     .text.pmu_lvd_disable:0000000000000000 .LFB4
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:100    .text.pmu_lvd_disable:000000000000000c .LFE4
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1918   .debug_str:00000000000000af .LASF63
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:52     .text.pmu_lvd_select:0000000000000000 .LFB3
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:81     .text.pmu_lvd_select:0000000000000022 .LFE3
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2018   .debug_str:00000000000003cf .LASF64
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1815   .debug_loc:0000000000000042 .LLST1
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1930   .debug_str:0000000000000137 .LASF65
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:14     .text.pmu_deinit:0000000000000000 .LFB2
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:45     .text.pmu_deinit:0000000000000020 .LFE2
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1829   .debug_loc:0000000000000063 .LLST0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:30     .text.pmu_deinit:0000000000000010 .LVL0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:43     .text.pmu_deinit:0000000000000020 .LVL1
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2040   .debug_str:000000000000045f .LASF73
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:2046   .debug_str:0000000000000479 .LASF66
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:1938   .debug_str:0000000000000160 .LASF67
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:556    .text.pmu_flag_get:0000000000000000 .LVL25
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:563    .text.pmu_flag_get:0000000000000008 .LVL26
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:217    .text.pmu_to_deepsleepmode:0000000000000000 .LVL10
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:228    .text.pmu_to_deepsleepmode:000000000000000e .LVL11
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:55     .text.pmu_lvd_select:0000000000000000 .LVL2
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:71     .text.pmu_lvd_select:0000000000000016 .LVL3
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:21     .text.pmu_deinit:0000000000000002 .LCFI0
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:39     .text.pmu_deinit:0000000000000018 .LCFI1
-C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s:614    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:299    .text.pmu_to_deepsleepmode:0000000000000028 .LBE45
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:312    .text.pmu_to_deepsleepmode:000000000000002c .LBB48
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:323    .text.pmu_to_deepsleepmode:0000000000000030 .LBE48
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:325    .text.pmu_to_deepsleepmode:0000000000000030 .LBB49
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:337    .text.pmu_to_deepsleepmode:0000000000000036 .LBE49
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:259    .text.pmu_to_deepsleepmode:000000000000001a .LBB43
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:270    .text.pmu_to_deepsleepmode:000000000000001e .LBE43
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:247    .text.pmu_to_deepsleepmode:0000000000000016 .LBB41
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:257    .text.pmu_to_deepsleepmode:000000000000001a .LBE41
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:301    .text.pmu_to_deepsleepmode:0000000000000028 .LBB46
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:310    .text.pmu_to_deepsleepmode:000000000000002c .LBE46
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2028   .debug_str:0000000000000407 .LASF60
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:107    .text.pmu_to_sleepmode:0000000000000000 .LFB5
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:207    .text.pmu_to_sleepmode:0000000000000022 .LFE5
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2002   .debug_str:000000000000031d .LASF61
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:112    .text.pmu_to_sleepmode:0000000000000000 .LBB31
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:123    .text.pmu_to_sleepmode:0000000000000004 .LBE31
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:142    .text.pmu_to_sleepmode:000000000000000c .LBB34
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:153    .text.pmu_to_sleepmode:0000000000000010 .LBE34
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:155    .text.pmu_to_sleepmode:0000000000000010 .LBB35
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:166    .text.pmu_to_sleepmode:0000000000000014 .LBE35
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:179    .text.pmu_to_sleepmode:0000000000000018 .LBB38
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:190    .text.pmu_to_sleepmode:000000000000001c .LBE38
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:192    .text.pmu_to_sleepmode:000000000000001c .LBB39
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:203    .text.pmu_to_sleepmode:0000000000000020 .LBE39
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:128    .text.pmu_to_sleepmode:0000000000000006 .LBB32
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:140    .text.pmu_to_sleepmode:000000000000000c .LBE32
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:168    .text.pmu_to_sleepmode:0000000000000014 .LBB36
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:177    .text.pmu_to_sleepmode:0000000000000018 .LBE36
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2014   .debug_str:00000000000003b1 .LASF62
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:88     .text.pmu_lvd_disable:0000000000000000 .LFB4
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:100    .text.pmu_lvd_disable:000000000000000c .LFE4
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1918   .debug_str:00000000000000af .LASF63
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:52     .text.pmu_lvd_select:0000000000000000 .LFB3
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:81     .text.pmu_lvd_select:0000000000000022 .LFE3
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2018   .debug_str:00000000000003cf .LASF64
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1815   .debug_loc:0000000000000042 .LLST1
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1930   .debug_str:0000000000000137 .LASF65
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:14     .text.pmu_deinit:0000000000000000 .LFB2
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:45     .text.pmu_deinit:0000000000000020 .LFE2
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1829   .debug_loc:0000000000000063 .LLST0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:30     .text.pmu_deinit:0000000000000010 .LVL0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:43     .text.pmu_deinit:0000000000000020 .LVL1
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2040   .debug_str:000000000000045f .LASF73
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:2046   .debug_str:0000000000000479 .LASF66
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:1938   .debug_str:0000000000000160 .LASF67
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:556    .text.pmu_flag_get:0000000000000000 .LVL25
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:563    .text.pmu_flag_get:0000000000000008 .LVL26
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:217    .text.pmu_to_deepsleepmode:0000000000000000 .LVL10
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:228    .text.pmu_to_deepsleepmode:000000000000000e .LVL11
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:55     .text.pmu_lvd_select:0000000000000000 .LVL2
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:71     .text.pmu_lvd_select:0000000000000016 .LVL3
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:21     .text.pmu_deinit:0000000000000002 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:39     .text.pmu_deinit:0000000000000018 .LCFI1
+C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s:614    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\cc2OcIiF.s 			page 26
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccsthKBw.s 			page 26
 
 
 rcu_periph_reset_enable

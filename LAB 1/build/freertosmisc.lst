@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 1
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s 			page 1
 
 
    1              		.file	"freertosmisc.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 1
   30              	vApplicationMallocFailedHook:
   31              	.LFB3:
   29:lib/freertos/src/freertosmisc.c **** /*-----------------------------------------------------------*/
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 2
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s 			page 2
 
 
   30:lib/freertos/src/freertosmisc.c **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 1
   60 000c 0545     		li	a0,1
   61              	.LVL3:
   47:lib/freertos/src/freertosmisc.c ****   //  ( void ) pcTaskName;
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 3
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s 			page 3
 
 
   62              		.loc 1 47 1
@@ -159,100 +159,100 @@ GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 1
   95              		.file 5 "lib/freertos/include/portmacro.h"
   96              		.file 6 "lib/freertos/include/task.h"
   97              		.file 7 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 4
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 freertosmisc.c
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:13     .text.vApplicationTickHook:0000000000000000 vApplicationTickHook
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:17     .text.vApplicationTickHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:18     .text.vApplicationTickHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:20     .text.vApplicationTickHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:21     .text.vApplicationTickHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:22     .text.vApplicationTickHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:23     .text.vApplicationTickHook:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:30     .text.vApplicationMallocFailedHook:0000000000000000 vApplicationMallocFailedHook
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:33     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:35     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:36     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:37     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:38     .text.vApplicationMallocFailedHook:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:45     .text.vApplicationStackOverflowHook:0000000000000000 vApplicationStackOverflowHook
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:48     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:50     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:51     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:54     .text.vApplicationStackOverflowHook:0000000000000004 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:56     .text.vApplicationStackOverflowHook:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:58     .text.vApplicationStackOverflowHook:0000000000000006 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:63     .text.vApplicationStackOverflowHook:000000000000000e .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:64     .text.vApplicationStackOverflowHook:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:66     .text.vApplicationStackOverflowHook:0000000000000010 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:70     .text.vApplicationStackOverflowHook:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:71     .text.vApplicationStackOverflowHook:0000000000000018 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:72     .text.vApplicationStackOverflowHook:000000000000001a .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:79     .text.vApplicationIdleHook:0000000000000000 vApplicationIdleHook
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:81     .text.vApplicationIdleHook:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:83     .text.vApplicationIdleHook:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:26     .text.vApplicationTickHook:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:41     .text.vApplicationMallocFailedHook:0000000000000002 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:75     .text.vApplicationStackOverflowHook:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:13     .text.vApplicationTickHook:0000000000000000 vApplicationTickHook
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:17     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:18     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:20     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:21     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:22     .text.vApplicationTickHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:23     .text.vApplicationTickHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:30     .text.vApplicationMallocFailedHook:0000000000000000 vApplicationMallocFailedHook
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:33     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:35     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:36     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:37     .text.vApplicationMallocFailedHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:38     .text.vApplicationMallocFailedHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:45     .text.vApplicationStackOverflowHook:0000000000000000 vApplicationStackOverflowHook
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:48     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:50     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:51     .text.vApplicationStackOverflowHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:54     .text.vApplicationStackOverflowHook:0000000000000004 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:56     .text.vApplicationStackOverflowHook:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:58     .text.vApplicationStackOverflowHook:0000000000000006 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:63     .text.vApplicationStackOverflowHook:000000000000000e .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:64     .text.vApplicationStackOverflowHook:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:66     .text.vApplicationStackOverflowHook:0000000000000010 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:70     .text.vApplicationStackOverflowHook:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:71     .text.vApplicationStackOverflowHook:0000000000000018 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:72     .text.vApplicationStackOverflowHook:000000000000001a .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:79     .text.vApplicationIdleHook:0000000000000000 vApplicationIdleHook
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:81     .text.vApplicationIdleHook:0000000000000000 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:83     .text.vApplicationIdleHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:26     .text.vApplicationTickHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:41     .text.vApplicationMallocFailedHook:0000000000000002 .L0 
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:75     .text.vApplicationStackOverflowHook:000000000000001a .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:34     .text.vApplicationMallocFailedHook:0000000000000000 .L3
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:88     .rodata.vApplicationStackOverflowHook.str1.4:0000000000000000 .LC0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:68     .text.vApplicationStackOverflowHook:0000000000000018 .L5
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:351    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:784    .debug_str:000000000000016d .LASF26
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:750    .debug_str:0000000000000049 .LASF27
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:796    .debug_str:000000000000022a .LASF28
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:726    .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:736    .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:744    .debug_str:0000000000000020 .LASF8
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:764    .debug_str:00000000000000cb .LASF0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:756    .debug_str:0000000000000089 .LASF1
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:772    .debug_str:000000000000011c .LASF2
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:792    .debug_str:0000000000000212 .LASF3
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:794    .debug_str:000000000000021e .LASF4
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:752    .debug_str:0000000000000069 .LASF5
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:780    .debug_str:0000000000000158 .LASF6
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:788    .debug_str:00000000000001fe .LASF7
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:760    .debug_str:00000000000000a2 .LASF9
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:754    .debug_str:0000000000000077 .LASF10
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:766    .debug_str:00000000000000d8 .LASF11
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:786    .debug_str:00000000000001f5 .LASF12
-GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s 			page 5
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:34     .text.vApplicationMallocFailedHook:0000000000000000 .L3
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:88     .rodata.vApplicationStackOverflowHook.str1.4:0000000000000000 .LC0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:68     .text.vApplicationStackOverflowHook:0000000000000018 .L5
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:351    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:784    .debug_str:000000000000016d .LASF26
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:750    .debug_str:0000000000000049 .LASF27
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:796    .debug_str:000000000000022a .LASF28
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:726    .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:736    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:744    .debug_str:0000000000000020 .LASF8
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:764    .debug_str:00000000000000cb .LASF0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:756    .debug_str:0000000000000089 .LASF1
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:772    .debug_str:000000000000011c .LASF2
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:792    .debug_str:0000000000000212 .LASF3
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:794    .debug_str:000000000000021e .LASF4
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:752    .debug_str:0000000000000069 .LASF5
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:780    .debug_str:0000000000000158 .LASF6
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:788    .debug_str:00000000000001fe .LASF7
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:760    .debug_str:00000000000000a2 .LASF9
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:754    .debug_str:0000000000000077 .LASF10
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:766    .debug_str:00000000000000d8 .LASF11
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:786    .debug_str:00000000000001f5 .LASF12
+GAS LISTING C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s 			page 5
 
 
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:776    .debug_str:000000000000012f .LASF17
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:790    .debug_str:0000000000000207 .LASF13
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:798    .debug_str:000000000000026e .LASF14
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:748    .debug_str:000000000000003c .LASF15
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:774    .debug_str:000000000000012a .LASF16
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:740    .debug_str:0000000000000006 .LASF18
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:800    .debug_str:000000000000027a .LASF29
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:770    .debug_str:000000000000010c .LASF23
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:762    .debug_str:00000000000000ad .LASF30
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:46     .text.vApplicationStackOverflowHook:0000000000000000 .LFB4
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:73     .text.vApplicationStackOverflowHook:000000000000001a .LFE4
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:668    .debug_loc:0000000000000000 .LLST0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:738    .debug_str:0000000000000000 .LASF19
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:681    .debug_loc:0000000000000020 .LLST1
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:782    .debug_str:0000000000000162 .LASF20
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:695    .debug_loc:0000000000000041 .LLST2
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:758    .debug_str:000000000000009c .LASF21
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:67     .text.vApplicationStackOverflowHook:0000000000000018 .LVL4
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:768    .debug_str:00000000000000ef .LASF31
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:31     .text.vApplicationMallocFailedHook:0000000000000000 .LFB3
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:39     .text.vApplicationMallocFailedHook:0000000000000002 .LFE3
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:746    .debug_str:0000000000000027 .LASF22
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:778    .debug_str:000000000000013f .LASF24
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:742    .debug_str:0000000000000018 .LASF25
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:14     .text.vApplicationTickHook:0000000000000000 .LFB2
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:24     .text.vApplicationTickHook:0000000000000002 .LFE2
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:55     .text.vApplicationStackOverflowHook:0000000000000006 .LCFI0
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:49     .text.vApplicationStackOverflowHook:0000000000000000 .LVL1
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:61     .text.vApplicationStackOverflowHook:000000000000000e .LVL3
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:52     .text.vApplicationStackOverflowHook:0000000000000004 .LVL2
-C:\Users\kasie\AppData\Local\Temp\ccbB8E8x.s:99     .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:776    .debug_str:000000000000012f .LASF17
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:790    .debug_str:0000000000000207 .LASF13
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:798    .debug_str:000000000000026e .LASF14
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:748    .debug_str:000000000000003c .LASF15
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:774    .debug_str:000000000000012a .LASF16
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:740    .debug_str:0000000000000006 .LASF18
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:800    .debug_str:000000000000027a .LASF29
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:770    .debug_str:000000000000010c .LASF23
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:762    .debug_str:00000000000000ad .LASF30
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:46     .text.vApplicationStackOverflowHook:0000000000000000 .LFB4
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:73     .text.vApplicationStackOverflowHook:000000000000001a .LFE4
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:668    .debug_loc:0000000000000000 .LLST0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:738    .debug_str:0000000000000000 .LASF19
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:681    .debug_loc:0000000000000020 .LLST1
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:782    .debug_str:0000000000000162 .LASF20
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:695    .debug_loc:0000000000000041 .LLST2
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:758    .debug_str:000000000000009c .LASF21
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:67     .text.vApplicationStackOverflowHook:0000000000000018 .LVL4
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:768    .debug_str:00000000000000ef .LASF31
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:31     .text.vApplicationMallocFailedHook:0000000000000000 .LFB3
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:39     .text.vApplicationMallocFailedHook:0000000000000002 .LFE3
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:746    .debug_str:0000000000000027 .LASF22
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:778    .debug_str:000000000000013f .LASF24
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:742    .debug_str:0000000000000018 .LASF25
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:14     .text.vApplicationTickHook:0000000000000000 .LFB2
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:24     .text.vApplicationTickHook:0000000000000002 .LFE2
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:55     .text.vApplicationStackOverflowHook:0000000000000006 .LCFI0
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:49     .text.vApplicationStackOverflowHook:0000000000000000 .LVL1
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:61     .text.vApplicationStackOverflowHook:000000000000000e .LVL3
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:52     .text.vApplicationStackOverflowHook:0000000000000004 .LVL2
+C:\Users\kasie\AppData\Local\Temp\ccZ9kZga.s:99     .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 write
